@@ -30,7 +30,7 @@ if [ $(echo "${rooVer%%/*} < 6.00" | bc -l) -eq 1 ]; then
 fi
 
 ## ok, do stuff
-eftSrc="WHERE/THE/EFTFITTER/SRC/DIR/IS"
+eftSrc="/nfs/dust/cms/user/zimermma/EFTFitter/src"
 txtMacro=$(readlink -f ${1})
 exeMacro=${txtMacro%.*}
 
