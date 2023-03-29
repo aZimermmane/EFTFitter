@@ -1,0 +1,16 @@
+# HTCondor submit file to submit all jobs
+
+executable              = /nfs/dust/cms/user/zimermma/EFTFitter/exec/condor_wbern_evx.sh
+arguments               = $(operator)
+log                     = /nfs/dust/cms/user/zimermma/EFTFitter/exec/wbern_evx.o$(Cluster).$(operator)
+output                  = /nfs/dust/cms/user/zimermma/EFTFitter/exec/wbern_evx.o$(Cluster).$(operator)
+error                   = /nfs/dust/cms/user/zimermma/EFTFitter/exec/wbern_evx.o$(Cluster).$(operator)
+getenv = TRUE
+should_transfer_files   = NO
+#when_to_transfer_output = ON_EXIT #_OR_EVICT
+#request_memory          = 4G
+#request_cpus            = 1
+notification            = error
+max_retries             = 3
+#+RequestRuntime         = 10800
+queue 1 operator in ut cvv c1 dt cmm cva c3 cav c123 cmp
