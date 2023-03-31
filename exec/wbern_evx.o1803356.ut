@@ -1,0 +1,4491 @@
+001 (1803356.000.000) 2023-02-03 11:20:42 Job executing on host: <131.169.77.152:36844?addrs=131.169.77.152-36844+[2001-638-700-104c--1-198]-36844&alias=bird632.desy.de>
+...
+
+Job started at Fri Feb 3 11:20:46 CET 2023 on bird632.desy.de
+
+006 (1803356.000.000) 2023-02-03 11:20:50 Image size of job updated: 383900
+	28  -  MemoryUsage of job (MB)
+	27768  -  ResidentSetSize of job (KB)
+...
+EFTFitter is initialized with mode hybrid, event statistics counted as xsec...
+Expecting as data a template with key data...
+
+EFTFitter: iteration 0 starting...
+EFTFitter: starting fit on variable b1k in iteration 0
+Adding input with key ut_0 of type all...
+
+Adding input with key ut_1 of type all...
+
+Adding input with key ut_-1 of type all...
+
+Preparing the base contents for all operators...
+Contribution of each operator at 1 (in xsec) is:
+[ [ ut :: linear ] :: 4.35133, 0 ]
+[ [ ut :: quadratic ] :: -4.16334e-17, 0 ]
+For reference: SM xsec is 0.598143, 0
+
+Assigning key ut_0 of type linear as data...
+Note: previous data is overwritten by this method!!
+
+Reading matrix TotalSystCovMatrix_AllVarNorm_rebinnedA from file /nfs/dust/cms/user/zimermma/EFTFitter/inputs/covariance_matrix/covMatSyst_purdue_full2016.root and assigning it as finalcov
+
+Drawing the requested covariance matrices...
+finalcov
+
+Info in <TCanvas::Print>: pdf file /nfs/dust/cms/user/zimermma/EFTFitter/fit_output/ttbareft_translationp_Breuther_dim6top_reweighting_13TeV/TotalSystCovMatrix_AllVarNorm_rebinnedA/ut/cov_finalcov.pdf has been created
+
+Drawing the requested key-sample templates ...
+[ ut_-1 :: all ]
+[ ut_1 :: all ]
+[ ut_0 :: all ]
+[ data :: all ]
+
+Info in <TCanvas::Print>: pdf file /nfs/dust/cms/user/zimermma/EFTFitter/fit_output/ttbareft_translationp_Breuther_dim6top_reweighting_13TeV/TotalSystCovMatrix_AllVarNorm_rebinnedA/ut/ut_var_b1k_iter_0_shape.pdf has been created
+
+Unpacking the grid of requested operator values into individual keys...
+
+Computing the chi2 for all requested keys...
+
+Drawing the 1D dChi2 graph for each operator...
+
+Minimum for op ut, sample linear found at -0.04 with chi2/nDoF 0/4, with p-value 1
+Requested fit range for operator ut is insufficient to define the 1 sigma bands! Skipping...
+Requested fit range for operator ut is insufficient to define the 2 sigma bands! Skipping...
+Best fit result ut, sample linear: -0.04 - 0 + 0 (1 sigma) - 0 + 0 (2 sigma)
+Best fit dChi2 ut, sample linear: 0 - 0 + 0 (1 sigma) - 0 + 0 (2 sigma)
+Info in <TCanvas::Print>: pdf file /nfs/dust/cms/user/zimermma/EFTFitter/fit_output/ttbareft_translationp_Breuther_dim6top_reweighting_13TeV/TotalSystCovMatrix_AllVarNorm_rebinnedA/ut/ut_dChi2.pdf has been created
+
+Clearing up contents of the current EFTFitter object...
+
+Chi2 values and corresponding keys cleared.
+
+All EFTFitter object content cleared.
+
+EFTFitter: fit on variable b1k in iteration 0 doesn't result in a constraint!
+EFTFitter: starting fit on variable b2k in iteration 0
+Adding input with key ut_0 of type all...
+
+Adding input with key ut_1 of type all...
+
+Adding input with key ut_-1 of type all...
+
+Preparing the base contents for all operators...
+Contribution of each operator at 1 (in xsec) is:
+[ [ ut :: linear ] :: 4.35133, 0 ]
+[ [ ut :: quadratic ] :: -4.16334e-17, 0 ]
+For reference: SM xsec is 0.598143, 0
+
+Assigning key ut_0 of type linear as data...
+Note: previous data is overwritten by this method!!
+
+Reading matrix TotalSystCovMatrix_AllVarNorm_rebinnedA from file /nfs/dust/cms/user/zimermma/EFTFitter/inputs/covariance_matrix/covMatSyst_purdue_full2016.root and assigning it as finalcov
+
+Drawing the requested covariance matrices...
+finalcov
+
+Info in <TCanvas::Print>: pdf file /nfs/dust/cms/user/zimermma/EFTFitter/fit_output/ttbareft_translationp_Breuther_dim6top_reweighting_13TeV/TotalSystCovMatrix_AllVarNorm_rebinnedA/ut/cov_finalcov.pdf has been created
+
+Drawing the requested key-sample templates ...
+[ ut_-1 :: all ]
+[ ut_1 :: all ]
+[ ut_0 :: all ]
+[ data :: all ]
+
+Info in <TCanvas::Print>: pdf file /nfs/dust/cms/user/zimermma/EFTFitter/fit_output/ttbareft_translationp_Breuther_dim6top_reweighting_13TeV/TotalSystCovMatrix_AllVarNorm_rebinnedA/ut/ut_var_b2k_iter_0_shape.pdf has been created
+
+Unpacking the grid of requested operator values into individual keys...
+
+Computing the chi2 for all requested keys...
+
+Drawing the 1D dChi2 graph for each operator...
+
+Minimum for op ut, sample linear found at -0.04 with chi2/nDoF 0/4, with p-value 1
+Requested fit range for operator ut is insufficient to define the 1 sigma bands! Skipping...
+Requested fit range for operator ut is insufficient to define the 2 sigma bands! Skipping...
+Best fit result ut, sample linear: -0.04 - 0 + 0 (1 sigma) - 0 + 0 (2 sigma)
+Best fit dChi2 ut, sample linear: 0 - 0 + 0 (1 sigma) - 0 + 0 (2 sigma)
+Info in <TCanvas::Print>: pdf file /nfs/dust/cms/user/zimermma/EFTFitter/fit_output/ttbareft_translationp_Breuther_dim6top_reweighting_13TeV/TotalSystCovMatrix_AllVarNorm_rebinnedA/ut/ut_dChi2.pdf has been created
+
+Clearing up contents of the current EFTFitter object...
+
+Chi2 values and corresponding keys cleared.
+
+All EFTFitter object content cleared.
+
+EFTFitter: fit on variable b2k in iteration 0 doesn't result in a constraint!
+EFTFitter: starting fit on variable b1r in iteration 0
+Adding input with key ut_0 of type all...
+
+Adding input with key ut_1 of type all...
+
+Adding input with key ut_-1 of type all...
+
+Preparing the base contents for all operators...
+Contribution of each operator at 1 (in xsec) is:
+[ [ ut :: linear ] :: 4.35133, 0 ]
+[ [ ut :: quadratic ] :: -4.16334e-17, 0 ]
+For reference: SM xsec is 0.598143, 0
+
+Assigning key ut_0 of type linear as data...
+Note: previous data is overwritten by this method!!
+
+Reading matrix TotalSystCovMatrix_AllVarNorm_rebinnedA from file /nfs/dust/cms/user/zimermma/EFTFitter/inputs/covariance_matrix/covMatSyst_purdue_full2016.root and assigning it as finalcov
+
+Drawing the requested covariance matrices...
+finalcov
+
+Info in <TCanvas::Print>: pdf file /nfs/dust/cms/user/zimermma/EFTFitter/fit_output/ttbareft_translationp_Breuther_dim6top_reweighting_13TeV/TotalSystCovMatrix_AllVarNorm_rebinnedA/ut/cov_finalcov.pdf has been created
+
+Drawing the requested key-sample templates ...
+[ ut_-1 :: all ]
+[ ut_1 :: all ]
+[ ut_0 :: all ]
+[ data :: all ]
+
+Info in <TCanvas::Print>: pdf file /nfs/dust/cms/user/zimermma/EFTFitter/fit_output/ttbareft_translationp_Breuther_dim6top_reweighting_13TeV/TotalSystCovMatrix_AllVarNorm_rebinnedA/ut/ut_var_b1r_iter_0_shape.pdf has been created
+
+Unpacking the grid of requested operator values into individual keys...
+
+Computing the chi2 for all requested keys...
+
+Drawing the 1D dChi2 graph for each operator...
+
+Minimum for op ut, sample linear found at -0.04 with chi2/nDoF 0/4, with p-value 1
+Requested fit range for operator ut is insufficient to define the 1 sigma bands! Skipping...
+Requested fit range for operator ut is insufficient to define the 2 sigma bands! Skipping...
+Best fit result ut, sample linear: -0.04 - 0 + 0 (1 sigma) - 0 + 0 (2 sigma)
+Best fit dChi2 ut, sample linear: 0 - 0 + 0 (1 sigma) - 0 + 0 (2 sigma)
+Info in <TCanvas::Print>: pdf file /nfs/dust/cms/user/zimermma/EFTFitter/fit_output/ttbareft_translationp_Breuther_dim6top_reweighting_13TeV/TotalSystCovMatrix_AllVarNorm_rebinnedA/ut/ut_dChi2.pdf has been created
+
+Clearing up contents of the current EFTFitter object...
+
+Chi2 values and corresponding keys cleared.
+
+All EFTFitter object content cleared.
+
+EFTFitter: fit on variable b1r in iteration 0 doesn't result in a constraint!
+EFTFitter: starting fit on variable b2r in iteration 0
+Adding input with key ut_0 of type all...
+
+Adding input with key ut_1 of type all...
+
+Adding input with key ut_-1 of type all...
+
+Preparing the base contents for all operators...
+Contribution of each operator at 1 (in xsec) is:
+[ [ ut :: linear ] :: 4.35133, 0 ]
+[ [ ut :: quadratic ] :: -4.16334e-17, 0 ]
+For reference: SM xsec is 0.598143, 0
+
+Assigning key ut_0 of type linear as data...
+Note: previous data is overwritten by this method!!
+
+Reading matrix TotalSystCovMatrix_AllVarNorm_rebinnedA from file /nfs/dust/cms/user/zimermma/EFTFitter/inputs/covariance_matrix/covMatSyst_purdue_full2016.root and assigning it as finalcov
+
+Drawing the requested covariance matrices...
+finalcov
+
+Info in <TCanvas::Print>: pdf file /nfs/dust/cms/user/zimermma/EFTFitter/fit_output/ttbareft_translationp_Breuther_dim6top_reweighting_13TeV/TotalSystCovMatrix_AllVarNorm_rebinnedA/ut/cov_finalcov.pdf has been created
+
+Drawing the requested key-sample templates ...
+[ ut_-1 :: all ]
+[ ut_1 :: all ]
+[ ut_0 :: all ]
+[ data :: all ]
+
+Info in <TCanvas::Print>: pdf file /nfs/dust/cms/user/zimermma/EFTFitter/fit_output/ttbareft_translationp_Breuther_dim6top_reweighting_13TeV/TotalSystCovMatrix_AllVarNorm_rebinnedA/ut/ut_var_b2r_iter_0_shape.pdf has been created
+
+Unpacking the grid of requested operator values into individual keys...
+
+Computing the chi2 for all requested keys...
+
+Drawing the 1D dChi2 graph for each operator...
+
+Minimum for op ut, sample linear found at -0.04 with chi2/nDoF 0/4, with p-value 1
+Requested fit range for operator ut is insufficient to define the 1 sigma bands! Skipping...
+Requested fit range for operator ut is insufficient to define the 2 sigma bands! Skipping...
+Best fit result ut, sample linear: -0.04 - 0 + 0 (1 sigma) - 0 + 0 (2 sigma)
+Best fit dChi2 ut, sample linear: 0 - 0 + 0 (1 sigma) - 0 + 0 (2 sigma)
+Info in <TCanvas::Print>: pdf file /nfs/dust/cms/user/zimermma/EFTFitter/fit_output/ttbareft_translationp_Breuther_dim6top_reweighting_13TeV/TotalSystCovMatrix_AllVarNorm_rebinnedA/ut/ut_dChi2.pdf has been created
+
+Clearing up contents of the current EFTFitter object...
+
+Chi2 values and corresponding keys cleared.
+
+All EFTFitter object content cleared.
+
+EFTFitter: fit on variable b2r in iteration 0 doesn't result in a constraint!
+EFTFitter: starting fit on variable b1n in iteration 0
+Adding input with key ut_0 of type all...
+
+Adding input with key ut_1 of type all...
+
+Adding input with key ut_-1 of type all...
+
+Preparing the base contents for all operators...
+Contribution of each operator at 1 (in xsec) is:
+[ [ ut :: linear ] :: 4.35133, 0 ]
+[ [ ut :: quadratic ] :: -4.16334e-17, 0 ]
+For reference: SM xsec is 0.598143, 0
+
+Assigning key ut_0 of type linear as data...
+Note: previous data is overwritten by this method!!
+
+Reading matrix TotalSystCovMatrix_AllVarNorm_rebinnedA from file /nfs/dust/cms/user/zimermma/EFTFitter/inputs/covariance_matrix/covMatSyst_purdue_full2016.root and assigning it as finalcov
+
+Drawing the requested covariance matrices...
+finalcov
+
+Info in <TCanvas::Print>: pdf file /nfs/dust/cms/user/zimermma/EFTFitter/fit_output/ttbareft_translationp_Breuther_dim6top_reweighting_13TeV/TotalSystCovMatrix_AllVarNorm_rebinnedA/ut/cov_finalcov.pdf has been created
+
+Drawing the requested key-sample templates ...
+[ ut_-1 :: all ]
+[ ut_1 :: all ]
+[ ut_0 :: all ]
+[ data :: all ]
+
+Info in <TCanvas::Print>: pdf file /nfs/dust/cms/user/zimermma/EFTFitter/fit_output/ttbareft_translationp_Breuther_dim6top_reweighting_13TeV/TotalSystCovMatrix_AllVarNorm_rebinnedA/ut/ut_var_b1n_iter_0_shape.pdf has been created
+
+Unpacking the grid of requested operator values into individual keys...
+
+Computing the chi2 for all requested keys...
+
+Drawing the 1D dChi2 graph for each operator...
+
+Minimum for op ut, sample linear found at -0.04 with chi2/nDoF 0/4, with p-value 1
+Requested fit range for operator ut is insufficient to define the 1 sigma bands! Skipping...
+Requested fit range for operator ut is insufficient to define the 2 sigma bands! Skipping...
+Best fit result ut, sample linear: -0.04 - 0 + 0 (1 sigma) - 0 + 0 (2 sigma)
+Best fit dChi2 ut, sample linear: 0 - 0 + 0 (1 sigma) - 0 + 0 (2 sigma)
+Info in <TCanvas::Print>: pdf file /nfs/dust/cms/user/zimermma/EFTFitter/fit_output/ttbareft_translationp_Breuther_dim6top_reweighting_13TeV/TotalSystCovMatrix_AllVarNorm_rebinnedA/ut/ut_dChi2.pdf has been created
+
+Clearing up contents of the current EFTFitter object...
+
+Chi2 values and corresponding keys cleared.
+
+All EFTFitter object content cleared.
+
+EFTFitter: fit on variable b1n in iteration 0 doesn't result in a constraint!
+EFTFitter: starting fit on variable b2n in iteration 0
+Adding input with key ut_0 of type all...
+
+Adding input with key ut_1 of type all...
+
+Adding input with key ut_-1 of type all...
+
+Preparing the base contents for all operators...
+Contribution of each operator at 1 (in xsec) is:
+[ [ ut :: linear ] :: 4.35133, 0 ]
+[ [ ut :: quadratic ] :: -4.16334e-17, 0 ]
+For reference: SM xsec is 0.598143, 0
+
+Assigning key ut_0 of type linear as data...
+Note: previous data is overwritten by this method!!
+
+Reading matrix TotalSystCovMatrix_AllVarNorm_rebinnedA from file /nfs/dust/cms/user/zimermma/EFTFitter/inputs/covariance_matrix/covMatSyst_purdue_full2016.root and assigning it as finalcov
+
+Drawing the requested covariance matrices...
+finalcov
+
+Info in <TCanvas::Print>: pdf file /nfs/dust/cms/user/zimermma/EFTFitter/fit_output/ttbareft_translationp_Breuther_dim6top_reweighting_13TeV/TotalSystCovMatrix_AllVarNorm_rebinnedA/ut/cov_finalcov.pdf has been created
+
+Drawing the requested key-sample templates ...
+[ ut_-1 :: all ]
+[ ut_1 :: all ]
+[ ut_0 :: all ]
+[ data :: all ]
+
+Info in <TCanvas::Print>: pdf file /nfs/dust/cms/user/zimermma/EFTFitter/fit_output/ttbareft_translationp_Breuther_dim6top_reweighting_13TeV/TotalSystCovMatrix_AllVarNorm_rebinnedA/ut/ut_var_b2n_iter_0_shape.pdf has been created
+
+Unpacking the grid of requested operator values into individual keys...
+
+Computing the chi2 for all requested keys...
+
+Drawing the 1D dChi2 graph for each operator...
+
+Minimum for op ut, sample linear found at -0.04 with chi2/nDoF 0/4, with p-value 1
+Requested fit range for operator ut is insufficient to define the 1 sigma bands! Skipping...
+Requested fit range for operator ut is insufficient to define the 2 sigma bands! Skipping...
+Best fit result ut, sample linear: -0.04 - 0 + 0 (1 sigma) - 0 + 0 (2 sigma)
+Best fit dChi2 ut, sample linear: 0 - 0 + 0 (1 sigma) - 0 + 0 (2 sigma)
+Info in <TCanvas::Print>: pdf file /nfs/dust/cms/user/zimermma/EFTFitter/fit_output/ttbareft_translationp_Breuther_dim6top_reweighting_13TeV/TotalSystCovMatrix_AllVarNorm_rebinnedA/ut/ut_dChi2.pdf has been created
+
+Clearing up contents of the current EFTFitter object...
+
+Chi2 values and corresponding keys cleared.
+
+All EFTFitter object content cleared.
+
+EFTFitter: fit on variable b2n in iteration 0 doesn't result in a constraint!
+EFTFitter: starting fit on variable b1j in iteration 0
+Adding input with key ut_0 of type all...
+
+Adding input with key ut_1 of type all...
+
+Adding input with key ut_-1 of type all...
+
+Preparing the base contents for all operators...
+Contribution of each operator at 1 (in xsec) is:
+[ [ ut :: linear ] :: 4.35133, 0 ]
+[ [ ut :: quadratic ] :: -4.16334e-17, 0 ]
+For reference: SM xsec is 0.598143, 0
+
+Assigning key ut_0 of type linear as data...
+Note: previous data is overwritten by this method!!
+
+Reading matrix TotalSystCovMatrix_AllVarNorm_rebinnedA from file /nfs/dust/cms/user/zimermma/EFTFitter/inputs/covariance_matrix/covMatSyst_purdue_full2016.root and assigning it as finalcov
+
+Drawing the requested covariance matrices...
+finalcov
+
+Info in <TCanvas::Print>: pdf file /nfs/dust/cms/user/zimermma/EFTFitter/fit_output/ttbareft_translationp_Breuther_dim6top_reweighting_13TeV/TotalSystCovMatrix_AllVarNorm_rebinnedA/ut/cov_finalcov.pdf has been created
+
+Drawing the requested key-sample templates ...
+[ ut_-1 :: all ]
+[ ut_1 :: all ]
+[ ut_0 :: all ]
+[ data :: all ]
+
+Info in <TCanvas::Print>: pdf file /nfs/dust/cms/user/zimermma/EFTFitter/fit_output/ttbareft_translationp_Breuther_dim6top_reweighting_13TeV/TotalSystCovMatrix_AllVarNorm_rebinnedA/ut/ut_var_b1j_iter_0_shape.pdf has been created
+
+Unpacking the grid of requested operator values into individual keys...
+
+Computing the chi2 for all requested keys...
+
+Drawing the 1D dChi2 graph for each operator...
+
+Minimum for op ut, sample linear found at -0.04 with chi2/nDoF 0/4, with p-value 1
+Requested fit range for operator ut is insufficient to define the 1 sigma bands! Skipping...
+Requested fit range for operator ut is insufficient to define the 2 sigma bands! Skipping...
+Best fit result ut, sample linear: -0.04 - 0 + 0 (1 sigma) - 0 + 0 (2 sigma)
+Best fit dChi2 ut, sample linear: 0 - 0 + 0 (1 sigma) - 0 + 0 (2 sigma)
+Info in <TCanvas::Print>: pdf file /nfs/dust/cms/user/zimermma/EFTFitter/fit_output/ttbareft_translationp_Breuther_dim6top_reweighting_13TeV/TotalSystCovMatrix_AllVarNorm_rebinnedA/ut/ut_dChi2.pdf has been created
+
+Clearing up contents of the current EFTFitter object...
+
+Chi2 values and corresponding keys cleared.
+
+All EFTFitter object content cleared.
+
+EFTFitter: fit on variable b1j in iteration 0 doesn't result in a constraint!
+EFTFitter: starting fit on variable b2j in iteration 0
+Adding input with key ut_0 of type all...
+
+Adding input with key ut_1 of type all...
+
+Adding input with key ut_-1 of type all...
+
+Preparing the base contents for all operators...
+Contribution of each operator at 1 (in xsec) is:
+[ [ ut :: linear ] :: 4.35133, 0 ]
+[ [ ut :: quadratic ] :: -4.16334e-17, 0 ]
+For reference: SM xsec is 0.598143, 0
+
+Assigning key ut_0 of type linear as data...
+Note: previous data is overwritten by this method!!
+
+Reading matrix TotalSystCovMatrix_AllVarNorm_rebinnedA from file /nfs/dust/cms/user/zimermma/EFTFitter/inputs/covariance_matrix/covMatSyst_purdue_full2016.root and assigning it as finalcov
+
+Drawing the requested covariance matrices...
+finalcov
+
+Info in <TCanvas::Print>: pdf file /nfs/dust/cms/user/zimermma/EFTFitter/fit_output/ttbareft_translationp_Breuther_dim6top_reweighting_13TeV/TotalSystCovMatrix_AllVarNorm_rebinnedA/ut/cov_finalcov.pdf has been created
+
+Drawing the requested key-sample templates ...
+[ ut_-1 :: all ]
+[ ut_1 :: all ]
+[ ut_0 :: all ]
+[ data :: all ]
+
+Info in <TCanvas::Print>: pdf file /nfs/dust/cms/user/zimermma/EFTFitter/fit_output/ttbareft_translationp_Breuther_dim6top_reweighting_13TeV/TotalSystCovMatrix_AllVarNorm_rebinnedA/ut/ut_var_b2j_iter_0_shape.pdf has been created
+
+Unpacking the grid of requested operator values into individual keys...
+
+Computing the chi2 for all requested keys...
+
+Drawing the 1D dChi2 graph for each operator...
+
+Minimum for op ut, sample linear found at -0.04 with chi2/nDoF 0/4, with p-value 1
+Requested fit range for operator ut is insufficient to define the 1 sigma bands! Skipping...
+Requested fit range for operator ut is insufficient to define the 2 sigma bands! Skipping...
+Best fit result ut, sample linear: -0.04 - 0 + 0 (1 sigma) - 0 + 0 (2 sigma)
+Best fit dChi2 ut, sample linear: 0 - 0 + 0 (1 sigma) - 0 + 0 (2 sigma)
+Info in <TCanvas::Print>: pdf file /nfs/dust/cms/user/zimermma/EFTFitter/fit_output/ttbareft_translationp_Breuther_dim6top_reweighting_13TeV/TotalSystCovMatrix_AllVarNorm_rebinnedA/ut/ut_dChi2.pdf has been created
+
+Clearing up contents of the current EFTFitter object...
+
+Chi2 values and corresponding keys cleared.
+
+All EFTFitter object content cleared.
+
+EFTFitter: fit on variable b2j in iteration 0 doesn't result in a constraint!
+EFTFitter: starting fit on variable b1q in iteration 0
+Adding input with key ut_0 of type all...
+
+Adding input with key ut_1 of type all...
+
+Adding input with key ut_-1 of type all...
+
+Preparing the base contents for all operators...
+Contribution of each operator at 1 (in xsec) is:
+[ [ ut :: linear ] :: 4.35133, 0 ]
+[ [ ut :: quadratic ] :: -4.16334e-17, 0 ]
+For reference: SM xsec is 0.598143, 0
+
+Assigning key ut_0 of type linear as data...
+Note: previous data is overwritten by this method!!
+
+Reading matrix TotalSystCovMatrix_AllVarNorm_rebinnedA from file /nfs/dust/cms/user/zimermma/EFTFitter/inputs/covariance_matrix/covMatSyst_purdue_full2016.root and assigning it as finalcov
+
+Drawing the requested covariance matrices...
+finalcov
+
+Info in <TCanvas::Print>: pdf file /nfs/dust/cms/user/zimermma/EFTFitter/fit_output/ttbareft_translationp_Breuther_dim6top_reweighting_13TeV/TotalSystCovMatrix_AllVarNorm_rebinnedA/ut/cov_finalcov.pdf has been created
+
+Drawing the requested key-sample templates ...
+[ ut_-1 :: all ]
+[ ut_1 :: all ]
+[ ut_0 :: all ]
+[ data :: all ]
+
+Info in <TCanvas::Print>: pdf file /nfs/dust/cms/user/zimermma/EFTFitter/fit_output/ttbareft_translationp_Breuther_dim6top_reweighting_13TeV/TotalSystCovMatrix_AllVarNorm_rebinnedA/ut/ut_var_b1q_iter_0_shape.pdf has been created
+
+Unpacking the grid of requested operator values into individual keys...
+
+Computing the chi2 for all requested keys...
+
+Drawing the 1D dChi2 graph for each operator...
+
+Minimum for op ut, sample linear found at -0.04 with chi2/nDoF 0/4, with p-value 1
+Requested fit range for operator ut is insufficient to define the 1 sigma bands! Skipping...
+Requested fit range for operator ut is insufficient to define the 2 sigma bands! Skipping...
+Best fit result ut, sample linear: -0.04 - 0 + 0 (1 sigma) - 0 + 0 (2 sigma)
+Best fit dChi2 ut, sample linear: 0 - 0 + 0 (1 sigma) - 0 + 0 (2 sigma)
+Info in <TCanvas::Print>: pdf file /nfs/dust/cms/user/zimermma/EFTFitter/fit_output/ttbareft_translationp_Breuther_dim6top_reweighting_13TeV/TotalSystCovMatrix_AllVarNorm_rebinnedA/ut/ut_dChi2.pdf has been created
+
+Clearing up contents of the current EFTFitter object...
+
+Chi2 values and corresponding keys cleared.
+
+All EFTFitter object content cleared.
+
+EFTFitter: fit on variable b1q in iteration 0 doesn't result in a constraint!
+EFTFitter: starting fit on variable b2q in iteration 0
+Adding input with key ut_0 of type all...
+
+Adding input with key ut_1 of type all...
+
+Adding input with key ut_-1 of type all...
+
+Preparing the base contents for all operators...
+Contribution of each operator at 1 (in xsec) is:
+[ [ ut :: linear ] :: 4.35133, 0 ]
+[ [ ut :: quadratic ] :: -4.16334e-17, 0 ]
+For reference: SM xsec is 0.598143, 0
+
+Assigning key ut_0 of type linear as data...
+Note: previous data is overwritten by this method!!
+
+Reading matrix TotalSystCovMatrix_AllVarNorm_rebinnedA from file /nfs/dust/cms/user/zimermma/EFTFitter/inputs/covariance_matrix/covMatSyst_purdue_full2016.root and assigning it as finalcov
+
+Drawing the requested covariance matrices...
+finalcov
+
+Info in <TCanvas::Print>: pdf file /nfs/dust/cms/user/zimermma/EFTFitter/fit_output/ttbareft_translationp_Breuther_dim6top_reweighting_13TeV/TotalSystCovMatrix_AllVarNorm_rebinnedA/ut/cov_finalcov.pdf has been created
+
+Drawing the requested key-sample templates ...
+[ ut_-1 :: all ]
+[ ut_1 :: all ]
+[ ut_0 :: all ]
+[ data :: all ]
+
+Info in <TCanvas::Print>: pdf file /nfs/dust/cms/user/zimermma/EFTFitter/fit_output/ttbareft_translationp_Breuther_dim6top_reweighting_13TeV/TotalSystCovMatrix_AllVarNorm_rebinnedA/ut/ut_var_b2q_iter_0_shape.pdf has been created
+
+Unpacking the grid of requested operator values into individual keys...
+
+Computing the chi2 for all requested keys...
+
+Drawing the 1D dChi2 graph for each operator...
+
+Minimum for op ut, sample linear found at -0.04 with chi2/nDoF 0/4, with p-value 1
+Requested fit range for operator ut is insufficient to define the 1 sigma bands! Skipping...
+Requested fit range for operator ut is insufficient to define the 2 sigma bands! Skipping...
+Best fit result ut, sample linear: -0.04 - 0 + 0 (1 sigma) - 0 + 0 (2 sigma)
+Best fit dChi2 ut, sample linear: 0 - 0 + 0 (1 sigma) - 0 + 0 (2 sigma)
+Info in <TCanvas::Print>: pdf file /nfs/dust/cms/user/zimermma/EFTFitter/fit_output/ttbareft_translationp_Breuther_dim6top_reweighting_13TeV/TotalSystCovMatrix_AllVarNorm_rebinnedA/ut/ut_dChi2.pdf has been created
+
+Clearing up contents of the current EFTFitter object...
+
+Chi2 values and corresponding keys cleared.
+
+All EFTFitter object content cleared.
+
+EFTFitter: fit on variable b2q in iteration 0 doesn't result in a constraint!
+EFTFitter: starting fit on variable ckk in iteration 0
+Adding input with key ut_0 of type all...
+
+Adding input with key ut_1 of type all...
+
+Adding input with key ut_-1 of type all...
+
+Preparing the base contents for all operators...
+Contribution of each operator at 1 (in xsec) is:
+[ [ ut :: linear ] :: 4.35133, 0 ]
+[ [ ut :: quadratic ] :: -4.16334e-17, 0 ]
+For reference: SM xsec is 0.598143, 0
+
+Assigning key ut_0 of type linear as data...
+Note: previous data is overwritten by this method!!
+
+Reading matrix TotalSystCovMatrix_AllVarNorm_rebinnedA from file /nfs/dust/cms/user/zimermma/EFTFitter/inputs/covariance_matrix/covMatSyst_purdue_full2016.root and assigning it as finalcov
+
+Drawing the requested covariance matrices...
+finalcov
+
+Info in <TCanvas::Print>: pdf file /nfs/dust/cms/user/zimermma/EFTFitter/fit_output/ttbareft_translationp_Breuther_dim6top_reweighting_13TeV/TotalSystCovMatrix_AllVarNorm_rebinnedA/ut/cov_finalcov.pdf has been created
+
+Drawing the requested key-sample templates ...
+[ ut_-1 :: all ]
+[ ut_1 :: all ]
+[ ut_0 :: all ]
+[ data :: all ]
+
+Info in <TCanvas::Print>: pdf file /nfs/dust/cms/user/zimermma/EFTFitter/fit_output/ttbareft_translationp_Breuther_dim6top_reweighting_13TeV/TotalSystCovMatrix_AllVarNorm_rebinnedA/ut/ut_var_ckk_iter_0_shape.pdf has been created
+
+Unpacking the grid of requested operator values into individual keys...
+
+Computing the chi2 for all requested keys...
+
+Drawing the 1D dChi2 graph for each operator...
+
+Minimum for op ut, sample linear found at 0 with chi2/nDoF 0/4, with p-value 1
+Best fit result ut, sample linear: 0 - 0.0134 + 0.0134 (1 sigma) - 0.0268 + 0.0268 (2 sigma)
+Best fit dChi2 ut, sample linear: 0 - 1.00007 + 1.00007 (1 sigma) - 4.00027 + 4.00027 (2 sigma)
+Info in <TCanvas::Print>: pdf file /nfs/dust/cms/user/zimermma/EFTFitter/fit_output/ttbareft_translationp_Breuther_dim6top_reweighting_13TeV/TotalSystCovMatrix_AllVarNorm_rebinnedA/ut/ut_dChi2.pdf has been created
+
+Clearing up contents of the current EFTFitter object...
+
+Chi2 values and corresponding keys cleared.
+
+All EFTFitter object content cleared.
+
+EFTFitter: fit on variable ckk in iteration 0 saved for evolution scan...
+EFTFitter: starting fit on variable crr in iteration 0
+Adding input with key ut_0 of type all...
+
+Adding input with key ut_1 of type all...
+
+Adding input with key ut_-1 of type all...
+
+Preparing the base contents for all operators...
+Contribution of each operator at 1 (in xsec) is:
+[ [ ut :: linear ] :: 4.35133, 0 ]
+[ [ ut :: quadratic ] :: -4.16334e-17, 0 ]
+For reference: SM xsec is 0.598143, 0
+
+Assigning key ut_0 of type linear as data...
+Note: previous data is overwritten by this method!!
+
+Reading matrix TotalSystCovMatrix_AllVarNorm_rebinnedA from file /nfs/dust/cms/user/zimermma/EFTFitter/inputs/covariance_matrix/covMatSyst_purdue_full2016.root and assigning it as finalcov
+
+Drawing the requested covariance matrices...
+finalcov
+
+Info in <TCanvas::Print>: pdf file /nfs/dust/cms/user/zimermma/EFTFitter/fit_output/ttbareft_translationp_Breuther_dim6top_reweighting_13TeV/TotalSystCovMatrix_AllVarNorm_rebinnedA/ut/cov_finalcov.pdf has been created
+
+Drawing the requested key-sample templates ...
+[ ut_-1 :: all ]
+[ ut_1 :: all ]
+[ ut_0 :: all ]
+[ data :: all ]
+
+Info in <TCanvas::Print>: pdf file /nfs/dust/cms/user/zimermma/EFTFitter/fit_output/ttbareft_translationp_Breuther_dim6top_reweighting_13TeV/TotalSystCovMatrix_AllVarNorm_rebinnedA/ut/ut_var_crr_iter_0_shape.pdf has been created
+
+Unpacking the grid of requested operator values into individual keys...
+
+Computing the chi2 for all requested keys...
+
+Drawing the 1D dChi2 graph for each operator...
+
+Minimum for op ut, sample linear found at 0 with chi2/nDoF 0/4, with p-value 1
+Best fit result ut, sample linear: 0 - 0.00418 + 0.00418 (1 sigma) - 0.00836 + 0.00836 (2 sigma)
+Best fit dChi2 ut, sample linear: 0 - 1.00021 + 1.00021 (1 sigma) - 4.00086 + 4.00086 (2 sigma)
+Info in <TCanvas::Print>: pdf file /nfs/dust/cms/user/zimermma/EFTFitter/fit_output/ttbareft_translationp_Breuther_dim6top_reweighting_13TeV/TotalSystCovMatrix_AllVarNorm_rebinnedA/ut/ut_dChi2.pdf has been created
+
+Clearing up contents of the current EFTFitter object...
+
+Chi2 values and corresponding keys cleared.
+
+All EFTFitter object content cleared.
+
+EFTFitter: fit on variable crr in iteration 0 saved for evolution scan...
+EFTFitter: starting fit on variable cnn in iteration 0
+Adding input with key ut_0 of type all...
+
+Adding input with key ut_1 of type all...
+
+Adding input with key ut_-1 of type all...
+
+Preparing the base contents for all operators...
+Contribution of each operator at 1 (in xsec) is:
+[ [ ut :: linear ] :: 4.35133, 0 ]
+[ [ ut :: quadratic ] :: -4.16334e-17, 0 ]
+For reference: SM xsec is 0.598143, 0
+
+Assigning key ut_0 of type linear as data...
+Note: previous data is overwritten by this method!!
+
+Reading matrix TotalSystCovMatrix_AllVarNorm_rebinnedA from file /nfs/dust/cms/user/zimermma/EFTFitter/inputs/covariance_matrix/covMatSyst_purdue_full2016.root and assigning it as finalcov
+
+Drawing the requested covariance matrices...
+finalcov
+
+Info in <TCanvas::Print>: pdf file /nfs/dust/cms/user/zimermma/EFTFitter/fit_output/ttbareft_translationp_Breuther_dim6top_reweighting_13TeV/TotalSystCovMatrix_AllVarNorm_rebinnedA/ut/cov_finalcov.pdf has been created
+
+Drawing the requested key-sample templates ...
+[ ut_-1 :: all ]
+[ ut_1 :: all ]
+[ ut_0 :: all ]
+[ data :: all ]
+
+Info in <TCanvas::Print>: pdf file /nfs/dust/cms/user/zimermma/EFTFitter/fit_output/ttbareft_translationp_Breuther_dim6top_reweighting_13TeV/TotalSystCovMatrix_AllVarNorm_rebinnedA/ut/ut_var_cnn_iter_0_shape.pdf has been created
+
+Unpacking the grid of requested operator values into individual keys...
+
+Computing the chi2 for all requested keys...
+
+Drawing the 1D dChi2 graph for each operator...
+
+Minimum for op ut, sample linear found at 0 with chi2/nDoF 0/4, with p-value 1
+Best fit result ut, sample linear: 0 - 0.00398 + 0.00398 (1 sigma) - 0.00796 + 0.00796 (2 sigma)
+Best fit dChi2 ut, sample linear: 0 - 1.00097 + 1.00097 (1 sigma) - 4.00389 + 4.00389 (2 sigma)
+Info in <TCanvas::Print>: pdf file /nfs/dust/cms/user/zimermma/EFTFitter/fit_output/ttbareft_translationp_Breuther_dim6top_reweighting_13TeV/TotalSystCovMatrix_AllVarNorm_rebinnedA/ut/ut_dChi2.pdf has been created
+
+Clearing up contents of the current EFTFitter object...
+
+Chi2 values and corresponding keys cleared.
+
+All EFTFitter object content cleared.
+
+EFTFitter: fit on variable cnn in iteration 0 saved for evolution scan...
+EFTFitter: starting fit on variable cP_rk in iteration 0
+Adding input with key ut_0 of type all...
+
+Adding input with key ut_1 of type all...
+
+Adding input with key ut_-1 of type all...
+
+Preparing the base contents for all operators...
+Contribution of each operator at 1 (in xsec) is:
+[ [ ut :: linear ] :: 4.35133, 0 ]
+[ [ ut :: quadratic ] :: -4.16334e-17, 0 ]
+For reference: SM xsec is 0.598143, 0
+
+Assigning key ut_0 of type linear as data...
+Note: previous data is overwritten by this method!!
+
+Reading matrix TotalSystCovMatrix_AllVarNorm_rebinnedA from file /nfs/dust/cms/user/zimermma/EFTFitter/inputs/covariance_matrix/covMatSyst_purdue_full2016.root and assigning it as finalcov
+
+Drawing the requested covariance matrices...
+finalcov
+
+Info in <TCanvas::Print>: pdf file /nfs/dust/cms/user/zimermma/EFTFitter/fit_output/ttbareft_translationp_Breuther_dim6top_reweighting_13TeV/TotalSystCovMatrix_AllVarNorm_rebinnedA/ut/cov_finalcov.pdf has been created
+
+Drawing the requested key-sample templates ...
+[ ut_-1 :: all ]
+[ ut_1 :: all ]
+[ ut_0 :: all ]
+[ data :: all ]
+
+Info in <TCanvas::Print>: pdf file /nfs/dust/cms/user/zimermma/EFTFitter/fit_output/ttbareft_translationp_Breuther_dim6top_reweighting_13TeV/TotalSystCovMatrix_AllVarNorm_rebinnedA/ut/ut_var_cP_rk_iter_0_shape.pdf has been created
+
+Unpacking the grid of requested operator values into individual keys...
+
+Computing the chi2 for all requested keys...
+
+Drawing the 1D dChi2 graph for each operator...
+
+Minimum for op ut, sample linear found at 0 with chi2/nDoF 0/4, with p-value 1
+Requested fit range for operator ut is insufficient to define the 2 sigma bands! Skipping...
+Best fit result ut, sample linear: 0 - 0.036904 + 0.036904 (1 sigma) - 0 + 0 (2 sigma)
+Best fit dChi2 ut, sample linear: 0 - 1.00006 + 1.00006 (1 sigma) - 0 + 0 (2 sigma)
+Info in <TCanvas::Print>: pdf file /nfs/dust/cms/user/zimermma/EFTFitter/fit_output/ttbareft_translationp_Breuther_dim6top_reweighting_13TeV/TotalSystCovMatrix_AllVarNorm_rebinnedA/ut/ut_dChi2.pdf has been created
+
+Clearing up contents of the current EFTFitter object...
+
+Chi2 values and corresponding keys cleared.
+
+All EFTFitter object content cleared.
+
+EFTFitter: fit on variable cP_rk in iteration 0 doesn't result in a constraint!
+EFTFitter: starting fit on variable cM_rk in iteration 0
+Adding input with key ut_0 of type all...
+
+Adding input with key ut_1 of type all...
+
+Adding input with key ut_-1 of type all...
+
+Preparing the base contents for all operators...
+Contribution of each operator at 1 (in xsec) is:
+[ [ ut :: linear ] :: 4.35133, 0 ]
+[ [ ut :: quadratic ] :: -4.16334e-17, 0 ]
+For reference: SM xsec is 0.598143, 0
+
+Assigning key ut_0 of type linear as data...
+Note: previous data is overwritten by this method!!
+
+Reading matrix TotalSystCovMatrix_AllVarNorm_rebinnedA from file /nfs/dust/cms/user/zimermma/EFTFitter/inputs/covariance_matrix/covMatSyst_purdue_full2016.root and assigning it as finalcov
+
+Drawing the requested covariance matrices...
+finalcov
+
+Info in <TCanvas::Print>: pdf file /nfs/dust/cms/user/zimermma/EFTFitter/fit_output/ttbareft_translationp_Breuther_dim6top_reweighting_13TeV/TotalSystCovMatrix_AllVarNorm_rebinnedA/ut/cov_finalcov.pdf has been created
+
+Drawing the requested key-sample templates ...
+[ ut_-1 :: all ]
+[ ut_1 :: all ]
+[ ut_0 :: all ]
+[ data :: all ]
+
+Info in <TCanvas::Print>: pdf file /nfs/dust/cms/user/zimermma/EFTFitter/fit_output/ttbareft_translationp_Breuther_dim6top_reweighting_13TeV/TotalSystCovMatrix_AllVarNorm_rebinnedA/ut/ut_var_cM_rk_iter_0_shape.pdf has been created
+
+Unpacking the grid of requested operator values into individual keys...
+
+Computing the chi2 for all requested keys...
+
+Drawing the 1D dChi2 graph for each operator...
+
+Minimum for op ut, sample linear found at -0.04 with chi2/nDoF 0/4, with p-value 1
+Requested fit range for operator ut is insufficient to define the 1 sigma bands! Skipping...
+Requested fit range for operator ut is insufficient to define the 2 sigma bands! Skipping...
+Best fit result ut, sample linear: -0.04 - 0 + 0 (1 sigma) - 0 + 0 (2 sigma)
+Best fit dChi2 ut, sample linear: 0 - 0 + 0 (1 sigma) - 0 + 0 (2 sigma)
+Info in <TCanvas::Print>: pdf file /nfs/dust/cms/user/zimermma/EFTFitter/fit_output/ttbareft_translationp_Breuther_dim6top_reweighting_13TeV/TotalSystCovMatrix_AllVarNorm_rebinnedA/ut/ut_dChi2.pdf has been created
+
+Clearing up contents of the current EFTFitter object...
+
+Chi2 values and corresponding keys cleared.
+
+All EFTFitter object content cleared.
+
+EFTFitter: fit on variable cM_rk in iteration 0 doesn't result in a constraint!
+EFTFitter: starting fit on variable cP_nr in iteration 0
+Adding input with key ut_0 of type all...
+
+Adding input with key ut_1 of type all...
+
+Adding input with key ut_-1 of type all...
+
+Preparing the base contents for all operators...
+Contribution of each operator at 1 (in xsec) is:
+[ [ ut :: linear ] :: 4.35133, 0 ]
+[ [ ut :: quadratic ] :: -4.16334e-17, 0 ]
+For reference: SM xsec is 0.598143, 0
+
+Assigning key ut_0 of type linear as data...
+Note: previous data is overwritten by this method!!
+
+Reading matrix TotalSystCovMatrix_AllVarNorm_rebinnedA from file /nfs/dust/cms/user/zimermma/EFTFitter/inputs/covariance_matrix/covMatSyst_purdue_full2016.root and assigning it as finalcov
+
+Drawing the requested covariance matrices...
+finalcov
+
+Info in <TCanvas::Print>: pdf file /nfs/dust/cms/user/zimermma/EFTFitter/fit_output/ttbareft_translationp_Breuther_dim6top_reweighting_13TeV/TotalSystCovMatrix_AllVarNorm_rebinnedA/ut/cov_finalcov.pdf has been created
+
+Drawing the requested key-sample templates ...
+[ ut_-1 :: all ]
+[ ut_1 :: all ]
+[ ut_0 :: all ]
+[ data :: all ]
+
+Info in <TCanvas::Print>: pdf file /nfs/dust/cms/user/zimermma/EFTFitter/fit_output/ttbareft_translationp_Breuther_dim6top_reweighting_13TeV/TotalSystCovMatrix_AllVarNorm_rebinnedA/ut/ut_var_cP_nr_iter_0_shape.pdf has been created
+
+Unpacking the grid of requested operator values into individual keys...
+
+Computing the chi2 for all requested keys...
+
+Drawing the 1D dChi2 graph for each operator...
+
+Minimum for op ut, sample linear found at -0.04 with chi2/nDoF 0/4, with p-value 1
+Requested fit range for operator ut is insufficient to define the 1 sigma bands! Skipping...
+Requested fit range for operator ut is insufficient to define the 2 sigma bands! Skipping...
+Best fit result ut, sample linear: -0.04 - 0 + 0 (1 sigma) - 0 + 0 (2 sigma)
+Best fit dChi2 ut, sample linear: 0 - 0 + 0 (1 sigma) - 0 + 0 (2 sigma)
+Info in <TCanvas::Print>: pdf file /nfs/dust/cms/user/zimermma/EFTFitter/fit_output/ttbareft_translationp_Breuther_dim6top_reweighting_13TeV/TotalSystCovMatrix_AllVarNorm_rebinnedA/ut/ut_dChi2.pdf has been created
+
+Clearing up contents of the current EFTFitter object...
+
+Chi2 values and corresponding keys cleared.
+
+All EFTFitter object content cleared.
+
+EFTFitter: fit on variable cP_nr in iteration 0 doesn't result in a constraint!
+EFTFitter: starting fit on variable cM_nr in iteration 0
+Adding input with key ut_0 of type all...
+
+Adding input with key ut_1 of type all...
+
+Adding input with key ut_-1 of type all...
+
+Preparing the base contents for all operators...
+Contribution of each operator at 1 (in xsec) is:
+[ [ ut :: linear ] :: 4.35133, 0 ]
+[ [ ut :: quadratic ] :: -4.16334e-17, 0 ]
+For reference: SM xsec is 0.598143, 0
+
+Assigning key ut_0 of type linear as data...
+Note: previous data is overwritten by this method!!
+
+Reading matrix TotalSystCovMatrix_AllVarNorm_rebinnedA from file /nfs/dust/cms/user/zimermma/EFTFitter/inputs/covariance_matrix/covMatSyst_purdue_full2016.root and assigning it as finalcov
+
+Drawing the requested covariance matrices...
+finalcov
+
+Info in <TCanvas::Print>: pdf file /nfs/dust/cms/user/zimermma/EFTFitter/fit_output/ttbareft_translationp_Breuther_dim6top_reweighting_13TeV/TotalSystCovMatrix_AllVarNorm_rebinnedA/ut/cov_finalcov.pdf has been created
+
+Drawing the requested key-sample templates ...
+[ ut_-1 :: all ]
+[ ut_1 :: all ]
+[ ut_0 :: all ]
+[ data :: all ]
+
+Info in <TCanvas::Print>: pdf file /nfs/dust/cms/user/zimermma/EFTFitter/fit_output/ttbareft_translationp_Breuther_dim6top_reweighting_13TeV/TotalSystCovMatrix_AllVarNorm_rebinnedA/ut/ut_var_cM_nr_iter_0_shape.pdf has been created
+
+Unpacking the grid of requested operator values into individual keys...
+
+Computing the chi2 for all requested keys...
+
+Drawing the 1D dChi2 graph for each operator...
+
+Minimum for op ut, sample linear found at -0.04 with chi2/nDoF 0/4, with p-value 1
+Requested fit range for operator ut is insufficient to define the 1 sigma bands! Skipping...
+Requested fit range for operator ut is insufficient to define the 2 sigma bands! Skipping...
+Best fit result ut, sample linear: -0.04 - 0 + 0 (1 sigma) - 0 + 0 (2 sigma)
+Best fit dChi2 ut, sample linear: 0 - 0 + 0 (1 sigma) - 0 + 0 (2 sigma)
+Info in <TCanvas::Print>: pdf file /nfs/dust/cms/user/zimermma/EFTFitter/fit_output/ttbareft_translationp_Breuther_dim6top_reweighting_13TeV/TotalSystCovMatrix_AllVarNorm_rebinnedA/ut/ut_dChi2.pdf has been created
+
+Clearing up contents of the current EFTFitter object...
+
+Chi2 values and corresponding keys cleared.
+
+All EFTFitter object content cleared.
+
+EFTFitter: fit on variable cM_nr in iteration 0 doesn't result in a constraint!
+EFTFitter: starting fit on variable cP_nk in iteration 0
+Adding input with key ut_0 of type all...
+
+Adding input with key ut_1 of type all...
+
+Adding input with key ut_-1 of type all...
+
+Preparing the base contents for all operators...
+Contribution of each operator at 1 (in xsec) is:
+[ [ ut :: linear ] :: 4.35133, 0 ]
+[ [ ut :: quadratic ] :: -4.16334e-17, 0 ]
+For reference: SM xsec is 0.598143, 0
+
+Assigning key ut_0 of type linear as data...
+Note: previous data is overwritten by this method!!
+
+Reading matrix TotalSystCovMatrix_AllVarNorm_rebinnedA from file /nfs/dust/cms/user/zimermma/EFTFitter/inputs/covariance_matrix/covMatSyst_purdue_full2016.root and assigning it as finalcov
+
+Drawing the requested covariance matrices...
+finalcov
+
+Info in <TCanvas::Print>: pdf file /nfs/dust/cms/user/zimermma/EFTFitter/fit_output/ttbareft_translationp_Breuther_dim6top_reweighting_13TeV/TotalSystCovMatrix_AllVarNorm_rebinnedA/ut/cov_finalcov.pdf has been created
+
+Drawing the requested key-sample templates ...
+[ ut_-1 :: all ]
+[ ut_1 :: all ]
+[ ut_0 :: all ]
+[ data :: all ]
+
+Info in <TCanvas::Print>: pdf file /nfs/dust/cms/user/zimermma/EFTFitter/fit_output/ttbareft_translationp_Breuther_dim6top_reweighting_13TeV/TotalSystCovMatrix_AllVarNorm_rebinnedA/ut/ut_var_cP_nk_iter_0_shape.pdf has been created
+
+Unpacking the grid of requested operator values into individual keys...
+
+Computing the chi2 for all requested keys...
+
+Drawing the 1D dChi2 graph for each operator...
+
+Minimum for op ut, sample linear found at -0.04 with chi2/nDoF 0/4, with p-value 1
+Requested fit range for operator ut is insufficient to define the 1 sigma bands! Skipping...
+Requested fit range for operator ut is insufficient to define the 2 sigma bands! Skipping...
+Best fit result ut, sample linear: -0.04 - 0 + 0 (1 sigma) - 0 + 0 (2 sigma)
+Best fit dChi2 ut, sample linear: 0 - 0 + 0 (1 sigma) - 0 + 0 (2 sigma)
+Info in <TCanvas::Print>: pdf file /nfs/dust/cms/user/zimermma/EFTFitter/fit_output/ttbareft_translationp_Breuther_dim6top_reweighting_13TeV/TotalSystCovMatrix_AllVarNorm_rebinnedA/ut/ut_dChi2.pdf has been created
+
+Clearing up contents of the current EFTFitter object...
+
+Chi2 values and corresponding keys cleared.
+
+All EFTFitter object content cleared.
+
+EFTFitter: fit on variable cP_nk in iteration 0 doesn't result in a constraint!
+EFTFitter: starting fit on variable cM_nk in iteration 0
+Adding input with key ut_0 of type all...
+
+Adding input with key ut_1 of type all...
+
+Adding input with key ut_-1 of type all...
+
+Preparing the base contents for all operators...
+Contribution of each operator at 1 (in xsec) is:
+[ [ ut :: linear ] :: 4.35133, 0 ]
+[ [ ut :: quadratic ] :: -4.16334e-17, 0 ]
+For reference: SM xsec is 0.598143, 0
+
+Assigning key ut_0 of type linear as data...
+Note: previous data is overwritten by this method!!
+
+Reading matrix TotalSystCovMatrix_AllVarNorm_rebinnedA from file /nfs/dust/cms/user/zimermma/EFTFitter/inputs/covariance_matrix/covMatSyst_purdue_full2016.root and assigning it as finalcov
+
+Drawing the requested covariance matrices...
+finalcov
+
+Info in <TCanvas::Print>: pdf file /nfs/dust/cms/user/zimermma/EFTFitter/fit_output/ttbareft_translationp_Breuther_dim6top_reweighting_13TeV/TotalSystCovMatrix_AllVarNorm_rebinnedA/ut/cov_finalcov.pdf has been created
+
+Drawing the requested key-sample templates ...
+[ ut_-1 :: all ]
+[ ut_1 :: all ]
+[ ut_0 :: all ]
+[ data :: all ]
+
+Info in <TCanvas::Print>: pdf file /nfs/dust/cms/user/zimermma/EFTFitter/fit_output/ttbareft_translationp_Breuther_dim6top_reweighting_13TeV/TotalSystCovMatrix_AllVarNorm_rebinnedA/ut/ut_var_cM_nk_iter_0_shape.pdf has been created
+
+Unpacking the grid of requested operator values into individual keys...
+
+Computing the chi2 for all requested keys...
+
+Drawing the 1D dChi2 graph for each operator...
+
+Minimum for op ut, sample linear found at -0.04 with chi2/nDoF 0/4, with p-value 1
+Requested fit range for operator ut is insufficient to define the 1 sigma bands! Skipping...
+Requested fit range for operator ut is insufficient to define the 2 sigma bands! Skipping...
+Best fit result ut, sample linear: -0.04 - 0 + 0 (1 sigma) - 0 + 0 (2 sigma)
+Best fit dChi2 ut, sample linear: 0 - 0 + 0 (1 sigma) - 0 + 0 (2 sigma)
+Info in <TCanvas::Print>: pdf file /nfs/dust/cms/user/zimermma/EFTFitter/fit_output/ttbareft_translationp_Breuther_dim6top_reweighting_13TeV/TotalSystCovMatrix_AllVarNorm_rebinnedA/ut/ut_dChi2.pdf has been created
+
+Clearing up contents of the current EFTFitter object...
+
+Chi2 values and corresponding keys cleared.
+
+All EFTFitter object content cleared.
+
+EFTFitter: fit on variable cM_nk in iteration 0 doesn't result in a constraint!
+EFTFitter: starting fit on variable cHel in iteration 0
+Adding input with key ut_0 of type all...
+
+Adding input with key ut_1 of type all...
+
+Adding input with key ut_-1 of type all...
+
+Preparing the base contents for all operators...
+Contribution of each operator at 1 (in xsec) is:
+[ [ ut :: linear ] :: 4.35133, 0 ]
+[ [ ut :: quadratic ] :: -4.16334e-17, 0 ]
+For reference: SM xsec is 0.598143, 0
+
+Assigning key ut_0 of type linear as data...
+Note: previous data is overwritten by this method!!
+
+Reading matrix TotalSystCovMatrix_AllVarNorm_rebinnedA from file /nfs/dust/cms/user/zimermma/EFTFitter/inputs/covariance_matrix/covMatSyst_purdue_full2016.root and assigning it as finalcov
+
+Drawing the requested covariance matrices...
+finalcov
+
+Info in <TCanvas::Print>: pdf file /nfs/dust/cms/user/zimermma/EFTFitter/fit_output/ttbareft_translationp_Breuther_dim6top_reweighting_13TeV/TotalSystCovMatrix_AllVarNorm_rebinnedA/ut/cov_finalcov.pdf has been created
+
+Drawing the requested key-sample templates ...
+[ ut_-1 :: all ]
+[ ut_1 :: all ]
+[ ut_0 :: all ]
+[ data :: all ]
+
+Info in <TCanvas::Print>: pdf file /nfs/dust/cms/user/zimermma/EFTFitter/fit_output/ttbareft_translationp_Breuther_dim6top_reweighting_13TeV/TotalSystCovMatrix_AllVarNorm_rebinnedA/ut/ut_var_cHel_iter_0_shape.pdf has been created
+
+Unpacking the grid of requested operator values into individual keys...
+
+Computing the chi2 for all requested keys...
+
+Drawing the 1D dChi2 graph for each operator...
+
+Minimum for op ut, sample linear found at 0 with chi2/nDoF 0/4, with p-value 1
+Best fit result ut, sample linear: 0 - 0.004196 + 0.004196 (1 sigma) - 0.008388 + 0.008388 (2 sigma)
+Best fit dChi2 ut, sample linear: 0 - 1.00164 + 1.00164 (1 sigma) - 4.00274 + 4.00274 (2 sigma)
+Info in <TCanvas::Print>: pdf file /nfs/dust/cms/user/zimermma/EFTFitter/fit_output/ttbareft_translationp_Breuther_dim6top_reweighting_13TeV/TotalSystCovMatrix_AllVarNorm_rebinnedA/ut/ut_dChi2.pdf has been created
+
+Clearing up contents of the current EFTFitter object...
+
+Chi2 values and corresponding keys cleared.
+
+All EFTFitter object content cleared.
+
+EFTFitter: fit on variable cHel in iteration 0 saved for evolution scan...
+EFTFitter: variable cnn with width 0.01592 is the best variable in iteration 0
+EFTFitter: iteration 0 completed!
+EFTFitter: iteration 1 starting...
+EFTFitter: starting fit on variable b1k in iteration 1
+Adding input with key ut_0 of type all...
+
+Adding input with key ut_1 of type all...
+
+Adding input with key ut_-1 of type all...
+
+Preparing the base contents for all operators...
+Contribution of each operator at 1 (in xsec) is:
+[ [ ut :: linear ] :: 4.35133, 0 ]
+[ [ ut :: quadratic ] :: -4.16334e-17, 0 ]
+For reference: SM xsec is 0.598143, 0
+
+Assigning key ut_0 of type linear as data...
+Note: previous data is overwritten by this method!!
+
+Reading matrix TotalSystCovMatrix_AllVarNorm_rebinnedA from file /nfs/dust/cms/user/zimermma/EFTFitter/inputs/covariance_matrix/covMatSyst_purdue_full2016.root and assigning it as finalcov
+
+Drawing the requested covariance matrices...
+finalcov
+
+Info in <TCanvas::Print>: pdf file /nfs/dust/cms/user/zimermma/EFTFitter/fit_output/ttbareft_translationp_Breuther_dim6top_reweighting_13TeV/TotalSystCovMatrix_AllVarNorm_rebinnedA/ut/cov_finalcov.pdf has been created
+
+Drawing the requested key-sample templates ...
+[ ut_-1 :: all ]
+[ ut_1 :: all ]
+[ ut_0 :: all ]
+[ data :: all ]
+
+Info in <TCanvas::Print>: pdf file /nfs/dust/cms/user/zimermma/EFTFitter/fit_output/ttbareft_translationp_Breuther_dim6top_reweighting_13TeV/TotalSystCovMatrix_AllVarNorm_rebinnedA/ut/ut_var_b1k_iter_1_shape.pdf has been created
+
+Unpacking the grid of requested operator values into individual keys...
+
+Computing the chi2 for all requested keys...
+
+Drawing the 1D dChi2 graph for each operator...
+
+Minimum for op ut, sample linear found at 0 with chi2/nDoF 0/9, with p-value 1
+Best fit result ut, sample linear: 0 - 0.002292 + 0.002292 (1 sigma) - 0.00458 + 0.00458 (2 sigma)
+Best fit dChi2 ut, sample linear: 0 - 1.00214 + 1.00214 (1 sigma) - 4.00156 + 4.00156 (2 sigma)
+Info in <TCanvas::Print>: pdf file /nfs/dust/cms/user/zimermma/EFTFitter/fit_output/ttbareft_translationp_Breuther_dim6top_reweighting_13TeV/TotalSystCovMatrix_AllVarNorm_rebinnedA/ut/ut_dChi2.pdf has been created
+
+Clearing up contents of the current EFTFitter object...
+
+Chi2 values and corresponding keys cleared.
+
+All EFTFitter object content cleared.
+
+EFTFitter: fit on variable b1k in iteration 1 saved for evolution scan...
+EFTFitter: starting fit on variable b2k in iteration 1
+Adding input with key ut_0 of type all...
+
+Adding input with key ut_1 of type all...
+
+Adding input with key ut_-1 of type all...
+
+Preparing the base contents for all operators...
+Contribution of each operator at 1 (in xsec) is:
+[ [ ut :: linear ] :: 4.35133, 0 ]
+[ [ ut :: quadratic ] :: -4.16334e-17, 0 ]
+For reference: SM xsec is 0.598143, 0
+
+Assigning key ut_0 of type linear as data...
+Note: previous data is overwritten by this method!!
+
+Reading matrix TotalSystCovMatrix_AllVarNorm_rebinnedA from file /nfs/dust/cms/user/zimermma/EFTFitter/inputs/covariance_matrix/covMatSyst_purdue_full2016.root and assigning it as finalcov
+
+Drawing the requested covariance matrices...
+finalcov
+
+Info in <TCanvas::Print>: pdf file /nfs/dust/cms/user/zimermma/EFTFitter/fit_output/ttbareft_translationp_Breuther_dim6top_reweighting_13TeV/TotalSystCovMatrix_AllVarNorm_rebinnedA/ut/cov_finalcov.pdf has been created
+
+Drawing the requested key-sample templates ...
+[ ut_-1 :: all ]
+[ ut_1 :: all ]
+[ ut_0 :: all ]
+[ data :: all ]
+
+Info in <TCanvas::Print>: pdf file /nfs/dust/cms/user/zimermma/EFTFitter/fit_output/ttbareft_translationp_Breuther_dim6top_reweighting_13TeV/TotalSystCovMatrix_AllVarNorm_rebinnedA/ut/ut_var_b2k_iter_1_shape.pdf has been created
+
+Unpacking the grid of requested operator values into individual keys...
+
+Computing the chi2 for all requested keys...
+
+Drawing the 1D dChi2 graph for each operator...
+
+Minimum for op ut, sample linear found at 0 with chi2/nDoF 0/9, with p-value 1
+Best fit result ut, sample linear: 0 - 0.002232 + 0.002232 (1 sigma) - 0.00446 + 0.00446 (2 sigma)
+Best fit dChi2 ut, sample linear: 0 - 1.0023 + 1.0023 (1 sigma) - 4.002 + 4.002 (2 sigma)
+Info in <TCanvas::Print>: pdf file /nfs/dust/cms/user/zimermma/EFTFitter/fit_output/ttbareft_translationp_Breuther_dim6top_reweighting_13TeV/TotalSystCovMatrix_AllVarNorm_rebinnedA/ut/ut_dChi2.pdf has been created
+
+Clearing up contents of the current EFTFitter object...
+
+Chi2 values and corresponding keys cleared.
+
+All EFTFitter object content cleared.
+
+EFTFitter: fit on variable b2k in iteration 1 saved for evolution scan...
+EFTFitter: starting fit on variable b1r in iteration 1
+Adding input with key ut_0 of type all...
+
+Adding input with key ut_1 of type all...
+
+Adding input with key ut_-1 of type all...
+
+Preparing the base contents for all operators...
+Contribution of each operator at 1 (in xsec) is:
+[ [ ut :: linear ] :: 4.35133, 0 ]
+[ [ ut :: quadratic ] :: -4.16334e-17, 0 ]
+For reference: SM xsec is 0.598143, 0
+
+Assigning key ut_0 of type linear as data...
+Note: previous data is overwritten by this method!!
+
+Reading matrix TotalSystCovMatrix_AllVarNorm_rebinnedA from file /nfs/dust/cms/user/zimermma/EFTFitter/inputs/covariance_matrix/covMatSyst_purdue_full2016.root and assigning it as finalcov
+
+Drawing the requested covariance matrices...
+finalcov
+
+Info in <TCanvas::Print>: pdf file /nfs/dust/cms/user/zimermma/EFTFitter/fit_output/ttbareft_translationp_Breuther_dim6top_reweighting_13TeV/TotalSystCovMatrix_AllVarNorm_rebinnedA/ut/cov_finalcov.pdf has been created
+
+Drawing the requested key-sample templates ...
+[ ut_-1 :: all ]
+[ ut_1 :: all ]
+[ ut_0 :: all ]
+[ data :: all ]
+
+Info in <TCanvas::Print>: pdf file /nfs/dust/cms/user/zimermma/EFTFitter/fit_output/ttbareft_translationp_Breuther_dim6top_reweighting_13TeV/TotalSystCovMatrix_AllVarNorm_rebinnedA/ut/ut_var_b1r_iter_1_shape.pdf has been created
+
+Unpacking the grid of requested operator values into individual keys...
+
+Computing the chi2 for all requested keys...
+
+Drawing the 1D dChi2 graph for each operator...
+
+Minimum for op ut, sample linear found at 0 with chi2/nDoF 0/9, with p-value 1
+Best fit result ut, sample linear: 0 - 0.001584 + 0.001584 (1 sigma) - 0.003168 + 0.003168 (2 sigma)
+Best fit dChi2 ut, sample linear: 0 - 1.00066 + 1.00066 (1 sigma) - 4.00262 + 4.00262 (2 sigma)
+Info in <TCanvas::Print>: pdf file /nfs/dust/cms/user/zimermma/EFTFitter/fit_output/ttbareft_translationp_Breuther_dim6top_reweighting_13TeV/TotalSystCovMatrix_AllVarNorm_rebinnedA/ut/ut_dChi2.pdf has been created
+
+Clearing up contents of the current EFTFitter object...
+
+Chi2 values and corresponding keys cleared.
+
+All EFTFitter object content cleared.
+
+EFTFitter: fit on variable b1r in iteration 1 saved for evolution scan...
+EFTFitter: starting fit on variable b2r in iteration 1
+Adding input with key ut_0 of type all...
+
+Adding input with key ut_1 of type all...
+
+Adding input with key ut_-1 of type all...
+
+Preparing the base contents for all operators...
+Contribution of each operator at 1 (in xsec) is:
+[ [ ut :: linear ] :: 4.35133, 0 ]
+[ [ ut :: quadratic ] :: -4.16334e-17, 0 ]
+For reference: SM xsec is 0.598143, 0
+
+Assigning key ut_0 of type linear as data...
+Note: previous data is overwritten by this method!!
+
+Reading matrix TotalSystCovMatrix_AllVarNorm_rebinnedA from file /nfs/dust/cms/user/zimermma/EFTFitter/inputs/covariance_matrix/covMatSyst_purdue_full2016.root and assigning it as finalcov
+
+Drawing the requested covariance matrices...
+finalcov
+
+Info in <TCanvas::Print>: pdf file /nfs/dust/cms/user/zimermma/EFTFitter/fit_output/ttbareft_translationp_Breuther_dim6top_reweighting_13TeV/TotalSystCovMatrix_AllVarNorm_rebinnedA/ut/cov_finalcov.pdf has been created
+
+Drawing the requested key-sample templates ...
+[ ut_-1 :: all ]
+[ ut_1 :: all ]
+[ ut_0 :: all ]
+[ data :: all ]
+
+Info in <TCanvas::Print>: pdf file /nfs/dust/cms/user/zimermma/EFTFitter/fit_output/ttbareft_translationp_Breuther_dim6top_reweighting_13TeV/TotalSystCovMatrix_AllVarNorm_rebinnedA/ut/ut_var_b2r_iter_1_shape.pdf has been created
+
+Unpacking the grid of requested operator values into individual keys...
+
+Computing the chi2 for all requested keys...
+
+Drawing the 1D dChi2 graph for each operator...
+
+Minimum for op ut, sample linear found at 0 with chi2/nDoF 0/9, with p-value 1
+Best fit result ut, sample linear: 0 - 0.002384 + 0.002384 (1 sigma) - 0.004764 + 0.004764 (2 sigma)
+Best fit dChi2 ut, sample linear: 0 - 1.00177 + 1.00177 (1 sigma) - 4.00034 + 4.00034 (2 sigma)
+Info in <TCanvas::Print>: pdf file /nfs/dust/cms/user/zimermma/EFTFitter/fit_output/ttbareft_translationp_Breuther_dim6top_reweighting_13TeV/TotalSystCovMatrix_AllVarNorm_rebinnedA/ut/ut_dChi2.pdf has been created
+
+Clearing up contents of the current EFTFitter object...
+
+Chi2 values and corresponding keys cleared.
+
+All EFTFitter object content cleared.
+
+EFTFitter: fit on variable b2r in iteration 1 saved for evolution scan...
+EFTFitter: starting fit on variable b1n in iteration 1
+Adding input with key ut_0 of type all...
+
+Adding input with key ut_1 of type all...
+
+Adding input with key ut_-1 of type all...
+
+Preparing the base contents for all operators...
+Contribution of each operator at 1 (in xsec) is:
+[ [ ut :: linear ] :: 4.35133, 0 ]
+[ [ ut :: quadratic ] :: -4.16334e-17, 0 ]
+For reference: SM xsec is 0.598143, 0
+
+Assigning key ut_0 of type linear as data...
+Note: previous data is overwritten by this method!!
+
+Reading matrix TotalSystCovMatrix_AllVarNorm_rebinnedA from file /nfs/dust/cms/user/zimermma/EFTFitter/inputs/covariance_matrix/covMatSyst_purdue_full2016.root and assigning it as finalcov
+
+Drawing the requested covariance matrices...
+finalcov
+
+Info in <TCanvas::Print>: pdf file /nfs/dust/cms/user/zimermma/EFTFitter/fit_output/ttbareft_translationp_Breuther_dim6top_reweighting_13TeV/TotalSystCovMatrix_AllVarNorm_rebinnedA/ut/cov_finalcov.pdf has been created
+
+Drawing the requested key-sample templates ...
+[ ut_-1 :: all ]
+[ ut_1 :: all ]
+[ ut_0 :: all ]
+[ data :: all ]
+
+Info in <TCanvas::Print>: pdf file /nfs/dust/cms/user/zimermma/EFTFitter/fit_output/ttbareft_translationp_Breuther_dim6top_reweighting_13TeV/TotalSystCovMatrix_AllVarNorm_rebinnedA/ut/ut_var_b1n_iter_1_shape.pdf has been created
+
+Unpacking the grid of requested operator values into individual keys...
+
+Computing the chi2 for all requested keys...
+
+Drawing the 1D dChi2 graph for each operator...
+
+Minimum for op ut, sample linear found at 0 with chi2/nDoF 0/9, with p-value 1
+Best fit result ut, sample linear: 0 - 0.002312 + 0.002312 (1 sigma) - 0.00462 + 0.00462 (2 sigma)
+Best fit dChi2 ut, sample linear: 0 - 1.00215 + 1.00215 (1 sigma) - 4.00166 + 4.00166 (2 sigma)
+Info in <TCanvas::Print>: pdf file /nfs/dust/cms/user/zimermma/EFTFitter/fit_output/ttbareft_translationp_Breuther_dim6top_reweighting_13TeV/TotalSystCovMatrix_AllVarNorm_rebinnedA/ut/ut_dChi2.pdf has been created
+
+Clearing up contents of the current EFTFitter object...
+
+Chi2 values and corresponding keys cleared.
+
+All EFTFitter object content cleared.
+
+EFTFitter: fit on variable b1n in iteration 1 saved for evolution scan...
+EFTFitter: starting fit on variable b2n in iteration 1
+Adding input with key ut_0 of type all...
+
+Adding input with key ut_1 of type all...
+
+Adding input with key ut_-1 of type all...
+
+Preparing the base contents for all operators...
+Contribution of each operator at 1 (in xsec) is:
+[ [ ut :: linear ] :: 4.35133, 0 ]
+[ [ ut :: quadratic ] :: -4.16334e-17, 0 ]
+For reference: SM xsec is 0.598143, 0
+
+Assigning key ut_0 of type linear as data...
+Note: previous data is overwritten by this method!!
+
+Reading matrix TotalSystCovMatrix_AllVarNorm_rebinnedA from file /nfs/dust/cms/user/zimermma/EFTFitter/inputs/covariance_matrix/covMatSyst_purdue_full2016.root and assigning it as finalcov
+
+Drawing the requested covariance matrices...
+finalcov
+
+Info in <TCanvas::Print>: pdf file /nfs/dust/cms/user/zimermma/EFTFitter/fit_output/ttbareft_translationp_Breuther_dim6top_reweighting_13TeV/TotalSystCovMatrix_AllVarNorm_rebinnedA/ut/cov_finalcov.pdf has been created
+
+Drawing the requested key-sample templates ...
+[ ut_-1 :: all ]
+[ ut_1 :: all ]
+[ ut_0 :: all ]
+[ data :: all ]
+
+Info in <TCanvas::Print>: pdf file /nfs/dust/cms/user/zimermma/EFTFitter/fit_output/ttbareft_translationp_Breuther_dim6top_reweighting_13TeV/TotalSystCovMatrix_AllVarNorm_rebinnedA/ut/ut_var_b2n_iter_1_shape.pdf has been created
+
+Unpacking the grid of requested operator values into individual keys...
+
+Computing the chi2 for all requested keys...
+
+Drawing the 1D dChi2 graph for each operator...
+
+Minimum for op ut, sample linear found at 0 with chi2/nDoF 0/9, with p-value 1
+Best fit result ut, sample linear: 0 - 0.002968 + 0.002968 (1 sigma) - 0.005936 + 0.005936 (2 sigma)
+Best fit dChi2 ut, sample linear: 0 - 1.00105 + 1.00105 (1 sigma) - 4.00421 + 4.00421 (2 sigma)
+Info in <TCanvas::Print>: pdf file /nfs/dust/cms/user/zimermma/EFTFitter/fit_output/ttbareft_translationp_Breuther_dim6top_reweighting_13TeV/TotalSystCovMatrix_AllVarNorm_rebinnedA/ut/ut_dChi2.pdf has been created
+
+Clearing up contents of the current EFTFitter object...
+
+Chi2 values and corresponding keys cleared.
+
+All EFTFitter object content cleared.
+
+EFTFitter: fit on variable b2n in iteration 1 saved for evolution scan...
+EFTFitter: starting fit on variable b1j in iteration 1
+Adding input with key ut_0 of type all...
+
+Adding input with key ut_1 of type all...
+
+Adding input with key ut_-1 of type all...
+
+Preparing the base contents for all operators...
+Contribution of each operator at 1 (in xsec) is:
+[ [ ut :: linear ] :: 4.35133, 0 ]
+[ [ ut :: quadratic ] :: -4.16334e-17, 0 ]
+For reference: SM xsec is 0.598143, 0
+
+Assigning key ut_0 of type linear as data...
+Note: previous data is overwritten by this method!!
+
+Reading matrix TotalSystCovMatrix_AllVarNorm_rebinnedA from file /nfs/dust/cms/user/zimermma/EFTFitter/inputs/covariance_matrix/covMatSyst_purdue_full2016.root and assigning it as finalcov
+
+Drawing the requested covariance matrices...
+finalcov
+
+Info in <TCanvas::Print>: pdf file /nfs/dust/cms/user/zimermma/EFTFitter/fit_output/ttbareft_translationp_Breuther_dim6top_reweighting_13TeV/TotalSystCovMatrix_AllVarNorm_rebinnedA/ut/cov_finalcov.pdf has been created
+
+Drawing the requested key-sample templates ...
+[ ut_-1 :: all ]
+[ ut_1 :: all ]
+[ ut_0 :: all ]
+[ data :: all ]
+
+Info in <TCanvas::Print>: pdf file /nfs/dust/cms/user/zimermma/EFTFitter/fit_output/ttbareft_translationp_Breuther_dim6top_reweighting_13TeV/TotalSystCovMatrix_AllVarNorm_rebinnedA/ut/ut_var_b1j_iter_1_shape.pdf has been created
+
+Unpacking the grid of requested operator values into individual keys...
+
+Computing the chi2 for all requested keys...
+
+Drawing the 1D dChi2 graph for each operator...
+
+Minimum for op ut, sample linear found at 0 with chi2/nDoF 0/9, with p-value 1
+Best fit result ut, sample linear: 0 - 0.002036 + 0.002036 (1 sigma) - 0.004072 + 0.004072 (2 sigma)
+Best fit dChi2 ut, sample linear: 0 - 1.00019 + 1.00019 (1 sigma) - 4.00074 + 4.00074 (2 sigma)
+Info in <TCanvas::Print>: pdf file /nfs/dust/cms/user/zimermma/EFTFitter/fit_output/ttbareft_translationp_Breuther_dim6top_reweighting_13TeV/TotalSystCovMatrix_AllVarNorm_rebinnedA/ut/ut_dChi2.pdf has been created
+
+Clearing up contents of the current EFTFitter object...
+
+Chi2 values and corresponding keys cleared.
+
+All EFTFitter object content cleared.
+
+EFTFitter: fit on variable b1j in iteration 1 saved for evolution scan...
+EFTFitter: starting fit on variable b2j in iteration 1
+Adding input with key ut_0 of type all...
+
+Adding input with key ut_1 of type all...
+
+Adding input with key ut_-1 of type all...
+
+Preparing the base contents for all operators...
+Contribution of each operator at 1 (in xsec) is:
+[ [ ut :: linear ] :: 4.35133, 0 ]
+[ [ ut :: quadratic ] :: -4.16334e-17, 0 ]
+For reference: SM xsec is 0.598143, 0
+
+Assigning key ut_0 of type linear as data...
+Note: previous data is overwritten by this method!!
+
+Reading matrix TotalSystCovMatrix_AllVarNorm_rebinnedA from file /nfs/dust/cms/user/zimermma/EFTFitter/inputs/covariance_matrix/covMatSyst_purdue_full2016.root and assigning it as finalcov
+
+Drawing the requested covariance matrices...
+finalcov
+
+Info in <TCanvas::Print>: pdf file /nfs/dust/cms/user/zimermma/EFTFitter/fit_output/ttbareft_translationp_Breuther_dim6top_reweighting_13TeV/TotalSystCovMatrix_AllVarNorm_rebinnedA/ut/cov_finalcov.pdf has been created
+
+Drawing the requested key-sample templates ...
+[ ut_-1 :: all ]
+[ ut_1 :: all ]
+[ ut_0 :: all ]
+[ data :: all ]
+
+Info in <TCanvas::Print>: pdf file /nfs/dust/cms/user/zimermma/EFTFitter/fit_output/ttbareft_translationp_Breuther_dim6top_reweighting_13TeV/TotalSystCovMatrix_AllVarNorm_rebinnedA/ut/ut_var_b2j_iter_1_shape.pdf has been created
+
+Unpacking the grid of requested operator values into individual keys...
+
+Computing the chi2 for all requested keys...
+
+Drawing the 1D dChi2 graph for each operator...
+
+Minimum for op ut, sample linear found at 0 with chi2/nDoF 0/9, with p-value 1
+Best fit result ut, sample linear: 0 - 0.002352 + 0.002352 (1 sigma) - 0.0047 + 0.0047 (2 sigma)
+Best fit dChi2 ut, sample linear: 0 - 1.00217 + 1.00217 (1 sigma) - 4.00188 + 4.00188 (2 sigma)
+Info in <TCanvas::Print>: pdf file /nfs/dust/cms/user/zimermma/EFTFitter/fit_output/ttbareft_translationp_Breuther_dim6top_reweighting_13TeV/TotalSystCovMatrix_AllVarNorm_rebinnedA/ut/ut_dChi2.pdf has been created
+
+Clearing up contents of the current EFTFitter object...
+
+Chi2 values and corresponding keys cleared.
+
+All EFTFitter object content cleared.
+
+EFTFitter: fit on variable b2j in iteration 1 saved for evolution scan...
+EFTFitter: starting fit on variable b1q in iteration 1
+Adding input with key ut_0 of type all...
+
+Adding input with key ut_1 of type all...
+
+Adding input with key ut_-1 of type all...
+
+Preparing the base contents for all operators...
+Contribution of each operator at 1 (in xsec) is:
+[ [ ut :: linear ] :: 4.35133, 0 ]
+[ [ ut :: quadratic ] :: -4.16334e-17, 0 ]
+For reference: SM xsec is 0.598143, 0
+
+Assigning key ut_0 of type linear as data...
+Note: previous data is overwritten by this method!!
+
+Reading matrix TotalSystCovMatrix_AllVarNorm_rebinnedA from file /nfs/dust/cms/user/zimermma/EFTFitter/inputs/covariance_matrix/covMatSyst_purdue_full2016.root and assigning it as finalcov
+
+Drawing the requested covariance matrices...
+finalcov
+
+Info in <TCanvas::Print>: pdf file /nfs/dust/cms/user/zimermma/EFTFitter/fit_output/ttbareft_translationp_Breuther_dim6top_reweighting_13TeV/TotalSystCovMatrix_AllVarNorm_rebinnedA/ut/cov_finalcov.pdf has been created
+
+Drawing the requested key-sample templates ...
+[ ut_-1 :: all ]
+[ ut_1 :: all ]
+[ ut_0 :: all ]
+[ data :: all ]
+
+Info in <TCanvas::Print>: pdf file /nfs/dust/cms/user/zimermma/EFTFitter/fit_output/ttbareft_translationp_Breuther_dim6top_reweighting_13TeV/TotalSystCovMatrix_AllVarNorm_rebinnedA/ut/ut_var_b1q_iter_1_shape.pdf has been created
+
+Unpacking the grid of requested operator values into individual keys...
+
+Computing the chi2 for all requested keys...
+
+Drawing the 1D dChi2 graph for each operator...
+
+Minimum for op ut, sample linear found at 0 with chi2/nDoF 0/9, with p-value 1
+Best fit result ut, sample linear: 0 - 0.00212 + 0.00212 (1 sigma) - 0.004236 + 0.004236 (2 sigma)
+Best fit dChi2 ut, sample linear: 0 - 1.00271 + 1.00271 (1 sigma) - 4.00326 + 4.00326 (2 sigma)
+Info in <TCanvas::Print>: pdf file /nfs/dust/cms/user/zimermma/EFTFitter/fit_output/ttbareft_translationp_Breuther_dim6top_reweighting_13TeV/TotalSystCovMatrix_AllVarNorm_rebinnedA/ut/ut_dChi2.pdf has been created
+
+Clearing up contents of the current EFTFitter object...
+
+Chi2 values and corresponding keys cleared.
+
+All EFTFitter object content cleared.
+
+EFTFitter: fit on variable b1q in iteration 1 saved for evolution scan...
+EFTFitter: starting fit on variable b2q in iteration 1
+Adding input with key ut_0 of type all...
+
+Adding input with key ut_1 of type all...
+
+Adding input with key ut_-1 of type all...
+
+Preparing the base contents for all operators...
+Contribution of each operator at 1 (in xsec) is:
+[ [ ut :: linear ] :: 4.35133, 0 ]
+[ [ ut :: quadratic ] :: -4.16334e-17, 0 ]
+For reference: SM xsec is 0.598143, 0
+
+Assigning key ut_0 of type linear as data...
+Note: previous data is overwritten by this method!!
+
+Reading matrix TotalSystCovMatrix_AllVarNorm_rebinnedA from file /nfs/dust/cms/user/zimermma/EFTFitter/inputs/covariance_matrix/covMatSyst_purdue_full2016.root and assigning it as finalcov
+
+Drawing the requested covariance matrices...
+finalcov
+
+Info in <TCanvas::Print>: pdf file /nfs/dust/cms/user/zimermma/EFTFitter/fit_output/ttbareft_translationp_Breuther_dim6top_reweighting_13TeV/TotalSystCovMatrix_AllVarNorm_rebinnedA/ut/cov_finalcov.pdf has been created
+
+Drawing the requested key-sample templates ...
+[ ut_-1 :: all ]
+[ ut_1 :: all ]
+[ ut_0 :: all ]
+[ data :: all ]
+
+Info in <TCanvas::Print>: pdf file /nfs/dust/cms/user/zimermma/EFTFitter/fit_output/ttbareft_translationp_Breuther_dim6top_reweighting_13TeV/TotalSystCovMatrix_AllVarNorm_rebinnedA/ut/ut_var_b2q_iter_1_shape.pdf has been created
+
+Unpacking the grid of requested operator values into individual keys...
+
+Computing the chi2 for all requested keys...
+
+Drawing the 1D dChi2 graph for each operator...
+
+Minimum for op ut, sample linear found at 0 with chi2/nDoF 0/9, with p-value 1
+Best fit result ut, sample linear: 0 - 0.002052 + 0.002052 (1 sigma) - 0.0041 + 0.0041 (2 sigma)
+Best fit dChi2 ut, sample linear: 0 - 1.0035 + 1.0035 (1 sigma) - 4.0062 + 4.0062 (2 sigma)
+Info in <TCanvas::Print>: pdf file /nfs/dust/cms/user/zimermma/EFTFitter/fit_output/ttbareft_translationp_Breuther_dim6top_reweighting_13TeV/TotalSystCovMatrix_AllVarNorm_rebinnedA/ut/ut_dChi2.pdf has been created
+
+Clearing up contents of the current EFTFitter object...
+
+Chi2 values and corresponding keys cleared.
+
+All EFTFitter object content cleared.
+
+EFTFitter: fit on variable b2q in iteration 1 saved for evolution scan...
+EFTFitter: starting fit on variable ckk in iteration 1
+Adding input with key ut_0 of type all...
+
+Adding input with key ut_1 of type all...
+
+Adding input with key ut_-1 of type all...
+
+Preparing the base contents for all operators...
+Contribution of each operator at 1 (in xsec) is:
+[ [ ut :: linear ] :: 4.35133, 0 ]
+[ [ ut :: quadratic ] :: -4.16334e-17, 0 ]
+For reference: SM xsec is 0.598143, 0
+
+Assigning key ut_0 of type linear as data...
+Note: previous data is overwritten by this method!!
+
+Reading matrix TotalSystCovMatrix_AllVarNorm_rebinnedA from file /nfs/dust/cms/user/zimermma/EFTFitter/inputs/covariance_matrix/covMatSyst_purdue_full2016.root and assigning it as finalcov
+
+Drawing the requested covariance matrices...
+finalcov
+
+Info in <TCanvas::Print>: pdf file /nfs/dust/cms/user/zimermma/EFTFitter/fit_output/ttbareft_translationp_Breuther_dim6top_reweighting_13TeV/TotalSystCovMatrix_AllVarNorm_rebinnedA/ut/cov_finalcov.pdf has been created
+
+Drawing the requested key-sample templates ...
+[ ut_-1 :: all ]
+[ ut_1 :: all ]
+[ ut_0 :: all ]
+[ data :: all ]
+
+Info in <TCanvas::Print>: pdf file /nfs/dust/cms/user/zimermma/EFTFitter/fit_output/ttbareft_translationp_Breuther_dim6top_reweighting_13TeV/TotalSystCovMatrix_AllVarNorm_rebinnedA/ut/ut_var_ckk_iter_1_shape.pdf has been created
+
+Unpacking the grid of requested operator values into individual keys...
+
+Computing the chi2 for all requested keys...
+
+Drawing the 1D dChi2 graph for each operator...
+
+Minimum for op ut, sample linear found at 0 with chi2/nDoF 0/9, with p-value 1
+Best fit result ut, sample linear: 0 - 0.001652 + 0.001652 (1 sigma) - 0.0033 + 0.0033 (2 sigma)
+Best fit dChi2 ut, sample linear: 0 - 1.00465 + 1.00465 (1 sigma) - 4.00886 + 4.00886 (2 sigma)
+Info in <TCanvas::Print>: pdf file /nfs/dust/cms/user/zimermma/EFTFitter/fit_output/ttbareft_translationp_Breuther_dim6top_reweighting_13TeV/TotalSystCovMatrix_AllVarNorm_rebinnedA/ut/ut_dChi2.pdf has been created
+
+Clearing up contents of the current EFTFitter object...
+
+Chi2 values and corresponding keys cleared.
+
+All EFTFitter object content cleared.
+
+EFTFitter: fit on variable ckk in iteration 1 saved for evolution scan...
+EFTFitter: starting fit on variable crr in iteration 1
+Adding input with key ut_0 of type all...
+
+Adding input with key ut_1 of type all...
+
+Adding input with key ut_-1 of type all...
+
+Preparing the base contents for all operators...
+Contribution of each operator at 1 (in xsec) is:
+[ [ ut :: linear ] :: 4.35133, 0 ]
+[ [ ut :: quadratic ] :: -4.16334e-17, 0 ]
+For reference: SM xsec is 0.598143, 0
+
+Assigning key ut_0 of type linear as data...
+Note: previous data is overwritten by this method!!
+
+Reading matrix TotalSystCovMatrix_AllVarNorm_rebinnedA from file /nfs/dust/cms/user/zimermma/EFTFitter/inputs/covariance_matrix/covMatSyst_purdue_full2016.root and assigning it as finalcov
+
+Drawing the requested covariance matrices...
+finalcov
+
+Info in <TCanvas::Print>: pdf file /nfs/dust/cms/user/zimermma/EFTFitter/fit_output/ttbareft_translationp_Breuther_dim6top_reweighting_13TeV/TotalSystCovMatrix_AllVarNorm_rebinnedA/ut/cov_finalcov.pdf has been created
+
+Drawing the requested key-sample templates ...
+[ ut_-1 :: all ]
+[ ut_1 :: all ]
+[ ut_0 :: all ]
+[ data :: all ]
+
+Info in <TCanvas::Print>: pdf file /nfs/dust/cms/user/zimermma/EFTFitter/fit_output/ttbareft_translationp_Breuther_dim6top_reweighting_13TeV/TotalSystCovMatrix_AllVarNorm_rebinnedA/ut/ut_var_crr_iter_1_shape.pdf has been created
+
+Unpacking the grid of requested operator values into individual keys...
+
+Computing the chi2 for all requested keys...
+
+Drawing the 1D dChi2 graph for each operator...
+
+Minimum for op ut, sample linear found at 0 with chi2/nDoF 0/9, with p-value 1
+Best fit result ut, sample linear: 0 - 0.001968 + 0.001968 (1 sigma) - 0.003936 + 0.003936 (2 sigma)
+Best fit dChi2 ut, sample linear: 0 - 1.00065 + 1.00065 (1 sigma) - 4.00258 + 4.00258 (2 sigma)
+Info in <TCanvas::Print>: pdf file /nfs/dust/cms/user/zimermma/EFTFitter/fit_output/ttbareft_translationp_Breuther_dim6top_reweighting_13TeV/TotalSystCovMatrix_AllVarNorm_rebinnedA/ut/ut_dChi2.pdf has been created
+
+Clearing up contents of the current EFTFitter object...
+
+Chi2 values and corresponding keys cleared.
+
+All EFTFitter object content cleared.
+
+EFTFitter: fit on variable crr in iteration 1 saved for evolution scan...
+Entering the IF 
+  iVar12
+EFTFitter: starting fit on variable cP_rk in iteration 1
+Adding input with key ut_0 of type all...
+
+Adding input with key ut_1 of type all...
+
+Adding input with key ut_-1 of type all...
+
+Preparing the base contents for all operators...
+Contribution of each operator at 1 (in xsec) is:
+[ [ ut :: linear ] :: 4.35133, 0 ]
+[ [ ut :: quadratic ] :: -4.16334e-17, 0 ]
+For reference: SM xsec is 0.598143, 0
+
+Assigning key ut_0 of type linear as data...
+Note: previous data is overwritten by this method!!
+
+Reading matrix TotalSystCovMatrix_AllVarNorm_rebinnedA from file /nfs/dust/cms/user/zimermma/EFTFitter/inputs/covariance_matrix/covMatSyst_purdue_full2016.root and assigning it as finalcov
+
+Drawing the requested covariance matrices...
+finalcov
+
+Info in <TCanvas::Print>: pdf file /nfs/dust/cms/user/zimermma/EFTFitter/fit_output/ttbareft_translationp_Breuther_dim6top_reweighting_13TeV/TotalSystCovMatrix_AllVarNorm_rebinnedA/ut/cov_finalcov.pdf has been created
+
+Drawing the requested key-sample templates ...
+[ ut_-1 :: all ]
+[ ut_1 :: all ]
+[ ut_0 :: all ]
+[ data :: all ]
+
+Info in <TCanvas::Print>: pdf file /nfs/dust/cms/user/zimermma/EFTFitter/fit_output/ttbareft_translationp_Breuther_dim6top_reweighting_13TeV/TotalSystCovMatrix_AllVarNorm_rebinnedA/ut/ut_var_cP_rk_iter_1_shape.pdf has been created
+
+Unpacking the grid of requested operator values into individual keys...
+
+Computing the chi2 for all requested keys...
+
+Drawing the 1D dChi2 graph for each operator...
+
+Minimum for op ut, sample linear found at 0 with chi2/nDoF 0/9, with p-value 1
+Best fit result ut, sample linear: 0 - 0.002528 + 0.002528 (1 sigma) - 0.005056 + 0.005056 (2 sigma)
+Best fit dChi2 ut, sample linear: 0 - 1.00061 + 1.00061 (1 sigma) - 4.00245 + 4.00245 (2 sigma)
+Info in <TCanvas::Print>: pdf file /nfs/dust/cms/user/zimermma/EFTFitter/fit_output/ttbareft_translationp_Breuther_dim6top_reweighting_13TeV/TotalSystCovMatrix_AllVarNorm_rebinnedA/ut/ut_dChi2.pdf has been created
+
+Clearing up contents of the current EFTFitter object...
+
+Chi2 values and corresponding keys cleared.
+
+All EFTFitter object content cleared.
+
+EFTFitter: fit on variable cP_rk in iteration 1 saved for evolution scan...
+EFTFitter: starting fit on variable cM_rk in iteration 1
+Adding input with key ut_0 of type all...
+
+Adding input with key ut_1 of type all...
+
+Adding input with key ut_-1 of type all...
+
+Preparing the base contents for all operators...
+Contribution of each operator at 1 (in xsec) is:
+[ [ ut :: linear ] :: 4.35133, 0 ]
+[ [ ut :: quadratic ] :: -4.16334e-17, 0 ]
+For reference: SM xsec is 0.598143, 0
+
+Assigning key ut_0 of type linear as data...
+Note: previous data is overwritten by this method!!
+
+Reading matrix TotalSystCovMatrix_AllVarNorm_rebinnedA from file /nfs/dust/cms/user/zimermma/EFTFitter/inputs/covariance_matrix/covMatSyst_purdue_full2016.root and assigning it as finalcov
+
+Drawing the requested covariance matrices...
+finalcov
+
+Info in <TCanvas::Print>: pdf file /nfs/dust/cms/user/zimermma/EFTFitter/fit_output/ttbareft_translationp_Breuther_dim6top_reweighting_13TeV/TotalSystCovMatrix_AllVarNorm_rebinnedA/ut/cov_finalcov.pdf has been created
+
+Drawing the requested key-sample templates ...
+[ ut_-1 :: all ]
+[ ut_1 :: all ]
+[ ut_0 :: all ]
+[ data :: all ]
+
+Info in <TCanvas::Print>: pdf file /nfs/dust/cms/user/zimermma/EFTFitter/fit_output/ttbareft_translationp_Breuther_dim6top_reweighting_13TeV/TotalSystCovMatrix_AllVarNorm_rebinnedA/ut/ut_var_cM_rk_iter_1_shape.pdf has been created
+
+Unpacking the grid of requested operator values into individual keys...
+
+Computing the chi2 for all requested keys...
+
+Drawing the 1D dChi2 graph for each operator...
+
+Minimum for op ut, sample linear found at 0 with chi2/nDoF 0/9, with p-value 1
+Best fit result ut, sample linear: 0 - 0.002332 + 0.002332 (1 sigma) - 0.004664 + 0.004664 (2 sigma)
+Best fit dChi2 ut, sample linear: 0 - 1.00075 + 1.00075 (1 sigma) - 4.003 + 4.003 (2 sigma)
+Info in <TCanvas::Print>: pdf file /nfs/dust/cms/user/zimermma/EFTFitter/fit_output/ttbareft_translationp_Breuther_dim6top_reweighting_13TeV/TotalSystCovMatrix_AllVarNorm_rebinnedA/ut/ut_dChi2.pdf has been created
+
+Clearing up contents of the current EFTFitter object...
+
+Chi2 values and corresponding keys cleared.
+
+All EFTFitter object content cleared.
+
+EFTFitter: fit on variable cM_rk in iteration 1 saved for evolution scan...
+EFTFitter: starting fit on variable cP_nr in iteration 1
+Adding input with key ut_0 of type all...
+
+Adding input with key ut_1 of type all...
+
+Adding input with key ut_-1 of type all...
+
+Preparing the base contents for all operators...
+Contribution of each operator at 1 (in xsec) is:
+[ [ ut :: linear ] :: 4.35133, 0 ]
+[ [ ut :: quadratic ] :: -4.16334e-17, 0 ]
+For reference: SM xsec is 0.598143, 0
+
+Assigning key ut_0 of type linear as data...
+Note: previous data is overwritten by this method!!
+
+Reading matrix TotalSystCovMatrix_AllVarNorm_rebinnedA from file /nfs/dust/cms/user/zimermma/EFTFitter/inputs/covariance_matrix/covMatSyst_purdue_full2016.root and assigning it as finalcov
+
+Drawing the requested covariance matrices...
+finalcov
+
+Info in <TCanvas::Print>: pdf file /nfs/dust/cms/user/zimermma/EFTFitter/fit_output/ttbareft_translationp_Breuther_dim6top_reweighting_13TeV/TotalSystCovMatrix_AllVarNorm_rebinnedA/ut/cov_finalcov.pdf has been created
+
+Drawing the requested key-sample templates ...
+[ ut_-1 :: all ]
+[ ut_1 :: all ]
+[ ut_0 :: all ]
+[ data :: all ]
+
+Info in <TCanvas::Print>: pdf file /nfs/dust/cms/user/zimermma/EFTFitter/fit_output/ttbareft_translationp_Breuther_dim6top_reweighting_13TeV/TotalSystCovMatrix_AllVarNorm_rebinnedA/ut/ut_var_cP_nr_iter_1_shape.pdf has been created
+
+Unpacking the grid of requested operator values into individual keys...
+
+Computing the chi2 for all requested keys...
+
+Drawing the 1D dChi2 graph for each operator...
+
+Minimum for op ut, sample linear found at 0 with chi2/nDoF 0/9, with p-value 1
+Best fit result ut, sample linear: 0 - 0.001888 + 0.001888 (1 sigma) - 0.003776 + 0.003776 (2 sigma)
+Best fit dChi2 ut, sample linear: 0 - 1.00032 + 1.00032 (1 sigma) - 4.00128 + 4.00128 (2 sigma)
+Info in <TCanvas::Print>: pdf file /nfs/dust/cms/user/zimermma/EFTFitter/fit_output/ttbareft_translationp_Breuther_dim6top_reweighting_13TeV/TotalSystCovMatrix_AllVarNorm_rebinnedA/ut/ut_dChi2.pdf has been created
+
+Clearing up contents of the current EFTFitter object...
+
+Chi2 values and corresponding keys cleared.
+
+All EFTFitter object content cleared.
+
+EFTFitter: fit on variable cP_nr in iteration 1 saved for evolution scan...
+EFTFitter: starting fit on variable cM_nr in iteration 1
+Adding input with key ut_0 of type all...
+
+Adding input with key ut_1 of type all...
+
+Adding input with key ut_-1 of type all...
+
+Preparing the base contents for all operators...
+Contribution of each operator at 1 (in xsec) is:
+[ [ ut :: linear ] :: 4.35133, 0 ]
+[ [ ut :: quadratic ] :: -4.16334e-17, 0 ]
+For reference: SM xsec is 0.598143, 0
+
+Assigning key ut_0 of type linear as data...
+Note: previous data is overwritten by this method!!
+
+Reading matrix TotalSystCovMatrix_AllVarNorm_rebinnedA from file /nfs/dust/cms/user/zimermma/EFTFitter/inputs/covariance_matrix/covMatSyst_purdue_full2016.root and assigning it as finalcov
+
+Drawing the requested covariance matrices...
+finalcov
+
+Info in <TCanvas::Print>: pdf file /nfs/dust/cms/user/zimermma/EFTFitter/fit_output/ttbareft_translationp_Breuther_dim6top_reweighting_13TeV/TotalSystCovMatrix_AllVarNorm_rebinnedA/ut/cov_finalcov.pdf has been created
+
+Drawing the requested key-sample templates ...
+[ ut_-1 :: all ]
+[ ut_1 :: all ]
+[ ut_0 :: all ]
+[ data :: all ]
+
+Info in <TCanvas::Print>: pdf file /nfs/dust/cms/user/zimermma/EFTFitter/fit_output/ttbareft_translationp_Breuther_dim6top_reweighting_13TeV/TotalSystCovMatrix_AllVarNorm_rebinnedA/ut/ut_var_cM_nr_iter_1_shape.pdf has been created
+
+Unpacking the grid of requested operator values into individual keys...
+
+Computing the chi2 for all requested keys...
+
+Drawing the 1D dChi2 graph for each operator...
+
+Minimum for op ut, sample linear found at 0 with chi2/nDoF 0/9, with p-value 1
+Best fit result ut, sample linear: 0 - 0.001792 + 0.001792 (1 sigma) - 0.003584 + 0.003584 (2 sigma)
+Best fit dChi2 ut, sample linear: 0 - 1.00198 + 1.00198 (1 sigma) - 4.0079 + 4.0079 (2 sigma)
+Info in <TCanvas::Print>: pdf file /nfs/dust/cms/user/zimermma/EFTFitter/fit_output/ttbareft_translationp_Breuther_dim6top_reweighting_13TeV/TotalSystCovMatrix_AllVarNorm_rebinnedA/ut/ut_dChi2.pdf has been created
+
+Clearing up contents of the current EFTFitter object...
+
+Chi2 values and corresponding keys cleared.
+
+All EFTFitter object content cleared.
+
+EFTFitter: fit on variable cM_nr in iteration 1 saved for evolution scan...
+EFTFitter: starting fit on variable cP_nk in iteration 1
+Adding input with key ut_0 of type all...
+
+Adding input with key ut_1 of type all...
+
+Adding input with key ut_-1 of type all...
+
+Preparing the base contents for all operators...
+Contribution of each operator at 1 (in xsec) is:
+[ [ ut :: linear ] :: 4.35133, 0 ]
+[ [ ut :: quadratic ] :: -4.16334e-17, 0 ]
+For reference: SM xsec is 0.598143, 0
+
+Assigning key ut_0 of type linear as data...
+Note: previous data is overwritten by this method!!
+
+Reading matrix TotalSystCovMatrix_AllVarNorm_rebinnedA from file /nfs/dust/cms/user/zimermma/EFTFitter/inputs/covariance_matrix/covMatSyst_purdue_full2016.root and assigning it as finalcov
+
+Drawing the requested covariance matrices...
+finalcov
+
+Info in <TCanvas::Print>: pdf file /nfs/dust/cms/user/zimermma/EFTFitter/fit_output/ttbareft_translationp_Breuther_dim6top_reweighting_13TeV/TotalSystCovMatrix_AllVarNorm_rebinnedA/ut/cov_finalcov.pdf has been created
+
+Drawing the requested key-sample templates ...
+[ ut_-1 :: all ]
+[ ut_1 :: all ]
+[ ut_0 :: all ]
+[ data :: all ]
+
+Info in <TCanvas::Print>: pdf file /nfs/dust/cms/user/zimermma/EFTFitter/fit_output/ttbareft_translationp_Breuther_dim6top_reweighting_13TeV/TotalSystCovMatrix_AllVarNorm_rebinnedA/ut/ut_var_cP_nk_iter_1_shape.pdf has been created
+
+Unpacking the grid of requested operator values into individual keys...
+
+Computing the chi2 for all requested keys...
+
+Drawing the 1D dChi2 graph for each operator...
+
+Minimum for op ut, sample linear found at 0 with chi2/nDoF 0/9, with p-value 1
+Best fit result ut, sample linear: 0 - 0.002028 + 0.002028 (1 sigma) - 0.004052 + 0.004052 (2 sigma)
+Best fit dChi2 ut, sample linear: 0 - 1.00269 + 1.00269 (1 sigma) - 4.00285 + 4.00285 (2 sigma)
+Info in <TCanvas::Print>: pdf file /nfs/dust/cms/user/zimermma/EFTFitter/fit_output/ttbareft_translationp_Breuther_dim6top_reweighting_13TeV/TotalSystCovMatrix_AllVarNorm_rebinnedA/ut/ut_dChi2.pdf has been created
+
+Clearing up contents of the current EFTFitter object...
+
+Chi2 values and corresponding keys cleared.
+
+All EFTFitter object content cleared.
+
+EFTFitter: fit on variable cP_nk in iteration 1 saved for evolution scan...
+EFTFitter: starting fit on variable cM_nk in iteration 1
+Adding input with key ut_0 of type all...
+
+Adding input with key ut_1 of type all...
+
+Adding input with key ut_-1 of type all...
+
+Preparing the base contents for all operators...
+Contribution of each operator at 1 (in xsec) is:
+[ [ ut :: linear ] :: 4.35133, 0 ]
+[ [ ut :: quadratic ] :: -4.16334e-17, 0 ]
+For reference: SM xsec is 0.598143, 0
+
+Assigning key ut_0 of type linear as data...
+Note: previous data is overwritten by this method!!
+
+Reading matrix TotalSystCovMatrix_AllVarNorm_rebinnedA from file /nfs/dust/cms/user/zimermma/EFTFitter/inputs/covariance_matrix/covMatSyst_purdue_full2016.root and assigning it as finalcov
+
+Drawing the requested covariance matrices...
+finalcov
+
+Info in <TCanvas::Print>: pdf file /nfs/dust/cms/user/zimermma/EFTFitter/fit_output/ttbareft_translationp_Breuther_dim6top_reweighting_13TeV/TotalSystCovMatrix_AllVarNorm_rebinnedA/ut/cov_finalcov.pdf has been created
+
+Drawing the requested key-sample templates ...
+[ ut_-1 :: all ]
+[ ut_1 :: all ]
+[ ut_0 :: all ]
+[ data :: all ]
+
+Info in <TCanvas::Print>: pdf file /nfs/dust/cms/user/zimermma/EFTFitter/fit_output/ttbareft_translationp_Breuther_dim6top_reweighting_13TeV/TotalSystCovMatrix_AllVarNorm_rebinnedA/ut/ut_var_cM_nk_iter_1_shape.pdf has been created
+
+Unpacking the grid of requested operator values into individual keys...
+
+Computing the chi2 for all requested keys...
+
+Drawing the 1D dChi2 graph for each operator...
+
+Minimum for op ut, sample linear found at 0 with chi2/nDoF 0/9, with p-value 1
+Best fit result ut, sample linear: 0 - 0.00226 + 0.00226 (1 sigma) - 0.004516 + 0.004516 (2 sigma)
+Best fit dChi2 ut, sample linear: 0 - 1.00238 + 1.00238 (1 sigma) - 4.00241 + 4.00241 (2 sigma)
+Info in <TCanvas::Print>: pdf file /nfs/dust/cms/user/zimermma/EFTFitter/fit_output/ttbareft_translationp_Breuther_dim6top_reweighting_13TeV/TotalSystCovMatrix_AllVarNorm_rebinnedA/ut/ut_dChi2.pdf has been created
+
+Clearing up contents of the current EFTFitter object...
+
+Chi2 values and corresponding keys cleared.
+
+All EFTFitter object content cleared.
+
+EFTFitter: fit on variable cM_nk in iteration 1 saved for evolution scan...
+EFTFitter: starting fit on variable cHel in iteration 1
+Adding input with key ut_0 of type all...
+
+Adding input with key ut_1 of type all...
+
+Adding input with key ut_-1 of type all...
+
+Preparing the base contents for all operators...
+Contribution of each operator at 1 (in xsec) is:
+[ [ ut :: linear ] :: 4.35133, 0 ]
+[ [ ut :: quadratic ] :: -4.16334e-17, 0 ]
+For reference: SM xsec is 0.598143, 0
+
+Assigning key ut_0 of type linear as data...
+Note: previous data is overwritten by this method!!
+
+Reading matrix TotalSystCovMatrix_AllVarNorm_rebinnedA from file /nfs/dust/cms/user/zimermma/EFTFitter/inputs/covariance_matrix/covMatSyst_purdue_full2016.root and assigning it as finalcov
+
+Drawing the requested covariance matrices...
+finalcov
+
+Info in <TCanvas::Print>: pdf file /nfs/dust/cms/user/zimermma/EFTFitter/fit_output/ttbareft_translationp_Breuther_dim6top_reweighting_13TeV/TotalSystCovMatrix_AllVarNorm_rebinnedA/ut/cov_finalcov.pdf has been created
+
+Drawing the requested key-sample templates ...
+[ ut_-1 :: all ]
+[ ut_1 :: all ]
+[ ut_0 :: all ]
+[ data :: all ]
+
+Info in <TCanvas::Print>: pdf file /nfs/dust/cms/user/zimermma/EFTFitter/fit_output/ttbareft_translationp_Breuther_dim6top_reweighting_13TeV/TotalSystCovMatrix_AllVarNorm_rebinnedA/ut/ut_var_cHel_iter_1_shape.pdf has been created
+
+Unpacking the grid of requested operator values into individual keys...
+
+Computing the chi2 for all requested keys...
+
+Drawing the 1D dChi2 graph for each operator...
+
+Minimum for op ut, sample linear found at 0 with chi2/nDoF 0/9, with p-value 1
+Best fit result ut, sample linear: 0 - 0.003112 + 0.003112 (1 sigma) - 0.00622 + 0.00622 (2 sigma)
+Best fit dChi2 ut, sample linear: 0 - 1.00188 + 1.00188 (1 sigma) - 4.00236 + 4.00236 (2 sigma)
+Info in <TCanvas::Print>: pdf file /nfs/dust/cms/user/zimermma/EFTFitter/fit_output/ttbareft_translationp_Breuther_dim6top_reweighting_13TeV/TotalSystCovMatrix_AllVarNorm_rebinnedA/ut/ut_dChi2.pdf has been created
+
+Clearing up contents of the current EFTFitter object...
+
+Chi2 values and corresponding keys cleared.
+
+All EFTFitter object content cleared.
+
+EFTFitter: fit on variable cHel in iteration 1 saved for evolution scan...
+EFTFitter: variable b1r with width 0.006336 is the best variable in iteration 1
+EFTFitter: iteration 1 completed!
+EFTFitter: iteration 2 starting...
+EFTFitter: starting fit on variable b1k in iteration 2
+Adding input with key ut_0 of type all...
+
+Adding input with key ut_1 of type all...
+
+Adding input with key ut_-1 of type all...
+
+Preparing the base contents for all operators...
+Contribution of each operator at 1 (in xsec) is:
+[ [ ut :: linear ] :: 4.35133, 0 ]
+[ [ ut :: quadratic ] :: -4.16334e-17, 0 ]
+For reference: SM xsec is 0.598143, 0
+
+Assigning key ut_0 of type linear as data...
+Note: previous data is overwritten by this method!!
+
+Reading matrix TotalSystCovMatrix_AllVarNorm_rebinnedA from file /nfs/dust/cms/user/zimermma/EFTFitter/inputs/covariance_matrix/covMatSyst_purdue_full2016.root and assigning it as finalcov
+
+Drawing the requested covariance matrices...
+finalcov
+
+Info in <TCanvas::Print>: pdf file /nfs/dust/cms/user/zimermma/EFTFitter/fit_output/ttbareft_translationp_Breuther_dim6top_reweighting_13TeV/TotalSystCovMatrix_AllVarNorm_rebinnedA/ut/cov_finalcov.pdf has been created
+
+Drawing the requested key-sample templates ...
+[ ut_-1 :: all ]
+[ ut_1 :: all ]
+[ ut_0 :: all ]
+[ data :: all ]
+
+Info in <TCanvas::Print>: pdf file /nfs/dust/cms/user/zimermma/EFTFitter/fit_output/ttbareft_translationp_Breuther_dim6top_reweighting_13TeV/TotalSystCovMatrix_AllVarNorm_rebinnedA/ut/ut_var_b1k_iter_2_shape.pdf has been created
+
+Unpacking the grid of requested operator values into individual keys...
+
+Computing the chi2 for all requested keys...
+
+Drawing the 1D dChi2 graph for each operator...
+
+Minimum for op ut, sample linear found at 0 with chi2/nDoF 0/14, with p-value 1
+Best fit result ut, sample linear: 0 - 0.001516 + 0.001516 (1 sigma) - 0.003032 + 0.003032 (2 sigma)
+Best fit dChi2 ut, sample linear: 0 - 1.00141 + 1.00141 (1 sigma) - 4.00564 + 4.00564 (2 sigma)
+Info in <TCanvas::Print>: pdf file /nfs/dust/cms/user/zimermma/EFTFitter/fit_output/ttbareft_translationp_Breuther_dim6top_reweighting_13TeV/TotalSystCovMatrix_AllVarNorm_rebinnedA/ut/ut_dChi2.pdf has been created
+
+Clearing up contents of the current EFTFitter object...
+
+Chi2 values and corresponding keys cleared.
+
+All EFTFitter object content cleared.
+
+EFTFitter: fit on variable b1k in iteration 2 saved for evolution scan...
+EFTFitter: starting fit on variable b2k in iteration 2
+Adding input with key ut_0 of type all...
+
+Adding input with key ut_1 of type all...
+
+Adding input with key ut_-1 of type all...
+
+Preparing the base contents for all operators...
+Contribution of each operator at 1 (in xsec) is:
+[ [ ut :: linear ] :: 4.35133, 0 ]
+[ [ ut :: quadratic ] :: -4.16334e-17, 0 ]
+For reference: SM xsec is 0.598143, 0
+
+Assigning key ut_0 of type linear as data...
+Note: previous data is overwritten by this method!!
+
+Reading matrix TotalSystCovMatrix_AllVarNorm_rebinnedA from file /nfs/dust/cms/user/zimermma/EFTFitter/inputs/covariance_matrix/covMatSyst_purdue_full2016.root and assigning it as finalcov
+
+Drawing the requested covariance matrices...
+finalcov
+
+Info in <TCanvas::Print>: pdf file /nfs/dust/cms/user/zimermma/EFTFitter/fit_output/ttbareft_translationp_Breuther_dim6top_reweighting_13TeV/TotalSystCovMatrix_AllVarNorm_rebinnedA/ut/cov_finalcov.pdf has been created
+
+Drawing the requested key-sample templates ...
+[ ut_-1 :: all ]
+[ ut_1 :: all ]
+[ ut_0 :: all ]
+[ data :: all ]
+
+Info in <TCanvas::Print>: pdf file /nfs/dust/cms/user/zimermma/EFTFitter/fit_output/ttbareft_translationp_Breuther_dim6top_reweighting_13TeV/TotalSystCovMatrix_AllVarNorm_rebinnedA/ut/ut_var_b2k_iter_2_shape.pdf has been created
+
+Unpacking the grid of requested operator values into individual keys...
+
+Computing the chi2 for all requested keys...
+
+Drawing the 1D dChi2 graph for each operator...
+
+Minimum for op ut, sample linear found at 0 with chi2/nDoF 0/14, with p-value 1
+Best fit result ut, sample linear: 0 - 0.001388 + 0.001388 (1 sigma) - 0.002776 + 0.002776 (2 sigma)
+Best fit dChi2 ut, sample linear: 0 - 1.00196 + 1.00196 (1 sigma) - 4.00785 + 4.00785 (2 sigma)
+Info in <TCanvas::Print>: pdf file /nfs/dust/cms/user/zimermma/EFTFitter/fit_output/ttbareft_translationp_Breuther_dim6top_reweighting_13TeV/TotalSystCovMatrix_AllVarNorm_rebinnedA/ut/ut_dChi2.pdf has been created
+
+Clearing up contents of the current EFTFitter object...
+
+Chi2 values and corresponding keys cleared.
+
+All EFTFitter object content cleared.
+
+EFTFitter: fit on variable b2k in iteration 2 saved for evolution scan...
+Entering the IF 
+  iVar2
+EFTFitter: starting fit on variable b2r in iteration 2
+Adding input with key ut_0 of type all...
+
+Adding input with key ut_1 of type all...
+
+Adding input with key ut_-1 of type all...
+
+Preparing the base contents for all operators...
+Contribution of each operator at 1 (in xsec) is:
+[ [ ut :: linear ] :: 4.35133, 0 ]
+[ [ ut :: quadratic ] :: -4.16334e-17, 0 ]
+For reference: SM xsec is 0.598143, 0
+
+Assigning key ut_0 of type linear as data...
+Note: previous data is overwritten by this method!!
+
+Reading matrix TotalSystCovMatrix_AllVarNorm_rebinnedA from file /nfs/dust/cms/user/zimermma/EFTFitter/inputs/covariance_matrix/covMatSyst_purdue_full2016.root and assigning it as finalcov
+
+Drawing the requested covariance matrices...
+finalcov
+
+Info in <TCanvas::Print>: pdf file /nfs/dust/cms/user/zimermma/EFTFitter/fit_output/ttbareft_translationp_Breuther_dim6top_reweighting_13TeV/TotalSystCovMatrix_AllVarNorm_rebinnedA/ut/cov_finalcov.pdf has been created
+
+Drawing the requested key-sample templates ...
+[ ut_-1 :: all ]
+[ ut_1 :: all ]
+[ ut_0 :: all ]
+[ data :: all ]
+
+Info in <TCanvas::Print>: pdf file /nfs/dust/cms/user/zimermma/EFTFitter/fit_output/ttbareft_translationp_Breuther_dim6top_reweighting_13TeV/TotalSystCovMatrix_AllVarNorm_rebinnedA/ut/ut_var_b2r_iter_2_shape.pdf has been created
+
+Unpacking the grid of requested operator values into individual keys...
+
+Computing the chi2 for all requested keys...
+
+Drawing the 1D dChi2 graph for each operator...
+
+Minimum for op ut, sample linear found at 0 with chi2/nDoF 0/14, with p-value 1
+Best fit result ut, sample linear: 0 - 0.001364 + 0.001364 (1 sigma) - 0.002724 + 0.002724 (2 sigma)
+Best fit dChi2 ut, sample linear: 0 - 1.00473 + 1.00473 (1 sigma) - 4.00714 + 4.00714 (2 sigma)
+Info in <TCanvas::Print>: pdf file /nfs/dust/cms/user/zimermma/EFTFitter/fit_output/ttbareft_translationp_Breuther_dim6top_reweighting_13TeV/TotalSystCovMatrix_AllVarNorm_rebinnedA/ut/ut_dChi2.pdf has been created
+
+Clearing up contents of the current EFTFitter object...
+
+Chi2 values and corresponding keys cleared.
+
+All EFTFitter object content cleared.
+
+EFTFitter: fit on variable b2r in iteration 2 saved for evolution scan...
+EFTFitter: starting fit on variable b1n in iteration 2
+Adding input with key ut_0 of type all...
+
+Adding input with key ut_1 of type all...
+
+Adding input with key ut_-1 of type all...
+
+Preparing the base contents for all operators...
+Contribution of each operator at 1 (in xsec) is:
+[ [ ut :: linear ] :: 4.35133, 0 ]
+[ [ ut :: quadratic ] :: -4.16334e-17, 0 ]
+For reference: SM xsec is 0.598143, 0
+
+Assigning key ut_0 of type linear as data...
+Note: previous data is overwritten by this method!!
+
+Reading matrix TotalSystCovMatrix_AllVarNorm_rebinnedA from file /nfs/dust/cms/user/zimermma/EFTFitter/inputs/covariance_matrix/covMatSyst_purdue_full2016.root and assigning it as finalcov
+
+Drawing the requested covariance matrices...
+finalcov
+
+Info in <TCanvas::Print>: pdf file /nfs/dust/cms/user/zimermma/EFTFitter/fit_output/ttbareft_translationp_Breuther_dim6top_reweighting_13TeV/TotalSystCovMatrix_AllVarNorm_rebinnedA/ut/cov_finalcov.pdf has been created
+
+Drawing the requested key-sample templates ...
+[ ut_-1 :: all ]
+[ ut_1 :: all ]
+[ ut_0 :: all ]
+[ data :: all ]
+
+Info in <TCanvas::Print>: pdf file /nfs/dust/cms/user/zimermma/EFTFitter/fit_output/ttbareft_translationp_Breuther_dim6top_reweighting_13TeV/TotalSystCovMatrix_AllVarNorm_rebinnedA/ut/ut_var_b1n_iter_2_shape.pdf has been created
+
+Unpacking the grid of requested operator values into individual keys...
+
+Computing the chi2 for all requested keys...
+
+Drawing the 1D dChi2 graph for each operator...
+
+Minimum for op ut, sample linear found at 0 with chi2/nDoF 0/14, with p-value 1
+Best fit result ut, sample linear: 0 - 0.001492 + 0.001492 (1 sigma) - 0.002984 + 0.002984 (2 sigma)
+Best fit dChi2 ut, sample linear: 0 - 1.00153 + 1.00153 (1 sigma) - 4.00613 + 4.00613 (2 sigma)
+Info in <TCanvas::Print>: pdf file /nfs/dust/cms/user/zimermma/EFTFitter/fit_output/ttbareft_translationp_Breuther_dim6top_reweighting_13TeV/TotalSystCovMatrix_AllVarNorm_rebinnedA/ut/ut_dChi2.pdf has been created
+
+Clearing up contents of the current EFTFitter object...
+
+Chi2 values and corresponding keys cleared.
+
+All EFTFitter object content cleared.
+
+EFTFitter: fit on variable b1n in iteration 2 saved for evolution scan...
+EFTFitter: starting fit on variable b2n in iteration 2
+Adding input with key ut_0 of type all...
+
+Adding input with key ut_1 of type all...
+
+Adding input with key ut_-1 of type all...
+
+Preparing the base contents for all operators...
+Contribution of each operator at 1 (in xsec) is:
+[ [ ut :: linear ] :: 4.35133, 0 ]
+[ [ ut :: quadratic ] :: -4.16334e-17, 0 ]
+For reference: SM xsec is 0.598143, 0
+
+Assigning key ut_0 of type linear as data...
+Note: previous data is overwritten by this method!!
+
+Reading matrix TotalSystCovMatrix_AllVarNorm_rebinnedA from file /nfs/dust/cms/user/zimermma/EFTFitter/inputs/covariance_matrix/covMatSyst_purdue_full2016.root and assigning it as finalcov
+
+Drawing the requested covariance matrices...
+finalcov
+
+Info in <TCanvas::Print>: pdf file /nfs/dust/cms/user/zimermma/EFTFitter/fit_output/ttbareft_translationp_Breuther_dim6top_reweighting_13TeV/TotalSystCovMatrix_AllVarNorm_rebinnedA/ut/cov_finalcov.pdf has been created
+
+Drawing the requested key-sample templates ...
+[ ut_-1 :: all ]
+[ ut_1 :: all ]
+[ ut_0 :: all ]
+[ data :: all ]
+
+Info in <TCanvas::Print>: pdf file /nfs/dust/cms/user/zimermma/EFTFitter/fit_output/ttbareft_translationp_Breuther_dim6top_reweighting_13TeV/TotalSystCovMatrix_AllVarNorm_rebinnedA/ut/ut_var_b2n_iter_2_shape.pdf has been created
+
+Unpacking the grid of requested operator values into individual keys...
+
+Computing the chi2 for all requested keys...
+
+Drawing the 1D dChi2 graph for each operator...
+
+Minimum for op ut, sample linear found at 0 with chi2/nDoF 0/14, with p-value 1
+Best fit result ut, sample linear: 0 - 0.00132 + 0.00132 (1 sigma) - 0.00264 + 0.00264 (2 sigma)
+Best fit dChi2 ut, sample linear: 0 - 1.00214 + 1.00214 (1 sigma) - 4.00855 + 4.00855 (2 sigma)
+Info in <TCanvas::Print>: pdf file /nfs/dust/cms/user/zimermma/EFTFitter/fit_output/ttbareft_translationp_Breuther_dim6top_reweighting_13TeV/TotalSystCovMatrix_AllVarNorm_rebinnedA/ut/ut_dChi2.pdf has been created
+
+Clearing up contents of the current EFTFitter object...
+
+Chi2 values and corresponding keys cleared.
+
+All EFTFitter object content cleared.
+
+EFTFitter: fit on variable b2n in iteration 2 saved for evolution scan...
+EFTFitter: starting fit on variable b1j in iteration 2
+Adding input with key ut_0 of type all...
+
+Adding input with key ut_1 of type all...
+
+Adding input with key ut_-1 of type all...
+
+Preparing the base contents for all operators...
+Contribution of each operator at 1 (in xsec) is:
+[ [ ut :: linear ] :: 4.35133, 0 ]
+[ [ ut :: quadratic ] :: -4.16334e-17, 0 ]
+For reference: SM xsec is 0.598143, 0
+
+Assigning key ut_0 of type linear as data...
+Note: previous data is overwritten by this method!!
+
+Reading matrix TotalSystCovMatrix_AllVarNorm_rebinnedA from file /nfs/dust/cms/user/zimermma/EFTFitter/inputs/covariance_matrix/covMatSyst_purdue_full2016.root and assigning it as finalcov
+
+Drawing the requested covariance matrices...
+finalcov
+
+Info in <TCanvas::Print>: pdf file /nfs/dust/cms/user/zimermma/EFTFitter/fit_output/ttbareft_translationp_Breuther_dim6top_reweighting_13TeV/TotalSystCovMatrix_AllVarNorm_rebinnedA/ut/cov_finalcov.pdf has been created
+
+Drawing the requested key-sample templates ...
+[ ut_-1 :: all ]
+[ ut_1 :: all ]
+[ ut_0 :: all ]
+[ data :: all ]
+
+Info in <TCanvas::Print>: pdf file /nfs/dust/cms/user/zimermma/EFTFitter/fit_output/ttbareft_translationp_Breuther_dim6top_reweighting_13TeV/TotalSystCovMatrix_AllVarNorm_rebinnedA/ut/ut_var_b1j_iter_2_shape.pdf has been created
+
+Unpacking the grid of requested operator values into individual keys...
+
+Computing the chi2 for all requested keys...
+
+Drawing the 1D dChi2 graph for each operator...
+
+Minimum for op ut, sample linear found at 0 with chi2/nDoF 0/14, with p-value 1
+Best fit result ut, sample linear: 0 - 0.001136 + 0.001136 (1 sigma) - 0.002268 + 0.002268 (2 sigma)
+Best fit dChi2 ut, sample linear: 0 - 1.00639 + 1.00639 (1 sigma) - 4.0114 + 4.0114 (2 sigma)
+Info in <TCanvas::Print>: pdf file /nfs/dust/cms/user/zimermma/EFTFitter/fit_output/ttbareft_translationp_Breuther_dim6top_reweighting_13TeV/TotalSystCovMatrix_AllVarNorm_rebinnedA/ut/ut_dChi2.pdf has been created
+
+Clearing up contents of the current EFTFitter object...
+
+Chi2 values and corresponding keys cleared.
+
+All EFTFitter object content cleared.
+
+EFTFitter: fit on variable b1j in iteration 2 saved for evolution scan...
+EFTFitter: starting fit on variable b2j in iteration 2
+Adding input with key ut_0 of type all...
+
+Adding input with key ut_1 of type all...
+
+Adding input with key ut_-1 of type all...
+
+Preparing the base contents for all operators...
+Contribution of each operator at 1 (in xsec) is:
+[ [ ut :: linear ] :: 4.35133, 0 ]
+[ [ ut :: quadratic ] :: -4.16334e-17, 0 ]
+For reference: SM xsec is 0.598143, 0
+
+Assigning key ut_0 of type linear as data...
+Note: previous data is overwritten by this method!!
+
+Reading matrix TotalSystCovMatrix_AllVarNorm_rebinnedA from file /nfs/dust/cms/user/zimermma/EFTFitter/inputs/covariance_matrix/covMatSyst_purdue_full2016.root and assigning it as finalcov
+
+Drawing the requested covariance matrices...
+finalcov
+
+Info in <TCanvas::Print>: pdf file /nfs/dust/cms/user/zimermma/EFTFitter/fit_output/ttbareft_translationp_Breuther_dim6top_reweighting_13TeV/TotalSystCovMatrix_AllVarNorm_rebinnedA/ut/cov_finalcov.pdf has been created
+
+Drawing the requested key-sample templates ...
+[ ut_-1 :: all ]
+[ ut_1 :: all ]
+[ ut_0 :: all ]
+[ data :: all ]
+
+Info in <TCanvas::Print>: pdf file /nfs/dust/cms/user/zimermma/EFTFitter/fit_output/ttbareft_translationp_Breuther_dim6top_reweighting_13TeV/TotalSystCovMatrix_AllVarNorm_rebinnedA/ut/ut_var_b2j_iter_2_shape.pdf has been created
+
+Unpacking the grid of requested operator values into individual keys...
+
+Computing the chi2 for all requested keys...
+
+Drawing the 1D dChi2 graph for each operator...
+
+Minimum for op ut, sample linear found at 0 with chi2/nDoF 0/14, with p-value 1
+Best fit result ut, sample linear: 0 - 0.001348 + 0.001348 (1 sigma) - 0.002696 + 0.002696 (2 sigma)
+Best fit dChi2 ut, sample linear: 0 - 1.00272 + 1.00272 (1 sigma) - 4.01088 + 4.01088 (2 sigma)
+Info in <TCanvas::Print>: pdf file /nfs/dust/cms/user/zimermma/EFTFitter/fit_output/ttbareft_translationp_Breuther_dim6top_reweighting_13TeV/TotalSystCovMatrix_AllVarNorm_rebinnedA/ut/ut_dChi2.pdf has been created
+
+Clearing up contents of the current EFTFitter object...
+
+Chi2 values and corresponding keys cleared.
+
+All EFTFitter object content cleared.
+
+EFTFitter: fit on variable b2j in iteration 2 saved for evolution scan...
+Entering the IF 
+  iVar8
+EFTFitter: starting fit on variable b2q in iteration 2
+Adding input with key ut_0 of type all...
+
+Adding input with key ut_1 of type all...
+
+Adding input with key ut_-1 of type all...
+
+Preparing the base contents for all operators...
+Contribution of each operator at 1 (in xsec) is:
+[ [ ut :: linear ] :: 4.35133, 0 ]
+[ [ ut :: quadratic ] :: -4.16334e-17, 0 ]
+For reference: SM xsec is 0.598143, 0
+
+Assigning key ut_0 of type linear as data...
+Note: previous data is overwritten by this method!!
+
+Reading matrix TotalSystCovMatrix_AllVarNorm_rebinnedA from file /nfs/dust/cms/user/zimermma/EFTFitter/inputs/covariance_matrix/covMatSyst_purdue_full2016.root and assigning it as finalcov
+
+Drawing the requested covariance matrices...
+finalcov
+
+Info in <TCanvas::Print>: pdf file /nfs/dust/cms/user/zimermma/EFTFitter/fit_output/ttbareft_translationp_Breuther_dim6top_reweighting_13TeV/TotalSystCovMatrix_AllVarNorm_rebinnedA/ut/cov_finalcov.pdf has been created
+
+Drawing the requested key-sample templates ...
+[ ut_-1 :: all ]
+[ ut_1 :: all ]
+[ ut_0 :: all ]
+[ data :: all ]
+
+Info in <TCanvas::Print>: pdf file /nfs/dust/cms/user/zimermma/EFTFitter/fit_output/ttbareft_translationp_Breuther_dim6top_reweighting_13TeV/TotalSystCovMatrix_AllVarNorm_rebinnedA/ut/ut_var_b2q_iter_2_shape.pdf has been created
+
+Unpacking the grid of requested operator values into individual keys...
+
+Computing the chi2 for all requested keys...
+
+Drawing the 1D dChi2 graph for each operator...
+
+Minimum for op ut, sample linear found at 0 with chi2/nDoF 0/14, with p-value 1
+Best fit result ut, sample linear: 0 - 0.00148 + 0.00148 (1 sigma) - 0.00296 + 0.00296 (2 sigma)
+Best fit dChi2 ut, sample linear: 0 - 1.00233 + 1.00233 (1 sigma) - 4.00931 + 4.00931 (2 sigma)
+Info in <TCanvas::Print>: pdf file /nfs/dust/cms/user/zimermma/EFTFitter/fit_output/ttbareft_translationp_Breuther_dim6top_reweighting_13TeV/TotalSystCovMatrix_AllVarNorm_rebinnedA/ut/ut_dChi2.pdf has been created
+
+Clearing up contents of the current EFTFitter object...
+
+Chi2 values and corresponding keys cleared.
+
+All EFTFitter object content cleared.
+
+EFTFitter: fit on variable b2q in iteration 2 saved for evolution scan...
+EFTFitter: starting fit on variable ckk in iteration 2
+Adding input with key ut_0 of type all...
+
+Adding input with key ut_1 of type all...
+
+Adding input with key ut_-1 of type all...
+
+Preparing the base contents for all operators...
+Contribution of each operator at 1 (in xsec) is:
+[ [ ut :: linear ] :: 4.35133, 0 ]
+[ [ ut :: quadratic ] :: -4.16334e-17, 0 ]
+For reference: SM xsec is 0.598143, 0
+
+Assigning key ut_0 of type linear as data...
+Note: previous data is overwritten by this method!!
+
+Reading matrix TotalSystCovMatrix_AllVarNorm_rebinnedA from file /nfs/dust/cms/user/zimermma/EFTFitter/inputs/covariance_matrix/covMatSyst_purdue_full2016.root and assigning it as finalcov
+
+Drawing the requested covariance matrices...
+finalcov
+
+Info in <TCanvas::Print>: pdf file /nfs/dust/cms/user/zimermma/EFTFitter/fit_output/ttbareft_translationp_Breuther_dim6top_reweighting_13TeV/TotalSystCovMatrix_AllVarNorm_rebinnedA/ut/cov_finalcov.pdf has been created
+
+Drawing the requested key-sample templates ...
+[ ut_-1 :: all ]
+[ ut_1 :: all ]
+[ ut_0 :: all ]
+[ data :: all ]
+
+Info in <TCanvas::Print>: pdf file /nfs/dust/cms/user/zimermma/EFTFitter/fit_output/ttbareft_translationp_Breuther_dim6top_reweighting_13TeV/TotalSystCovMatrix_AllVarNorm_rebinnedA/ut/ut_var_ckk_iter_2_shape.pdf has been created
+
+Unpacking the grid of requested operator values into individual keys...
+
+Computing the chi2 for all requested keys...
+
+Drawing the 1D dChi2 graph for each operator...
+
+Minimum for op ut, sample linear found at 0 with chi2/nDoF 0/14, with p-value 1
+Best fit result ut, sample linear: 0 - 0.001164 + 0.001164 (1 sigma) - 0.002324 + 0.002324 (2 sigma)
+Best fit dChi2 ut, sample linear: 0 - 1.00538 + 1.00538 (1 sigma) - 4.00771 + 4.00771 (2 sigma)
+Info in <TCanvas::Print>: pdf file /nfs/dust/cms/user/zimermma/EFTFitter/fit_output/ttbareft_translationp_Breuther_dim6top_reweighting_13TeV/TotalSystCovMatrix_AllVarNorm_rebinnedA/ut/ut_dChi2.pdf has been created
+
+Clearing up contents of the current EFTFitter object...
+
+Chi2 values and corresponding keys cleared.
+
+All EFTFitter object content cleared.
+
+EFTFitter: fit on variable ckk in iteration 2 saved for evolution scan...
+EFTFitter: starting fit on variable crr in iteration 2
+Adding input with key ut_0 of type all...
+
+Adding input with key ut_1 of type all...
+
+Adding input with key ut_-1 of type all...
+
+Preparing the base contents for all operators...
+Contribution of each operator at 1 (in xsec) is:
+[ [ ut :: linear ] :: 4.35133, 0 ]
+[ [ ut :: quadratic ] :: -4.16334e-17, 0 ]
+For reference: SM xsec is 0.598143, 0
+
+Assigning key ut_0 of type linear as data...
+Note: previous data is overwritten by this method!!
+
+Reading matrix TotalSystCovMatrix_AllVarNorm_rebinnedA from file /nfs/dust/cms/user/zimermma/EFTFitter/inputs/covariance_matrix/covMatSyst_purdue_full2016.root and assigning it as finalcov
+
+Drawing the requested covariance matrices...
+finalcov
+
+Info in <TCanvas::Print>: pdf file /nfs/dust/cms/user/zimermma/EFTFitter/fit_output/ttbareft_translationp_Breuther_dim6top_reweighting_13TeV/TotalSystCovMatrix_AllVarNorm_rebinnedA/ut/cov_finalcov.pdf has been created
+
+Drawing the requested key-sample templates ...
+[ ut_-1 :: all ]
+[ ut_1 :: all ]
+[ ut_0 :: all ]
+[ data :: all ]
+
+Info in <TCanvas::Print>: pdf file /nfs/dust/cms/user/zimermma/EFTFitter/fit_output/ttbareft_translationp_Breuther_dim6top_reweighting_13TeV/TotalSystCovMatrix_AllVarNorm_rebinnedA/ut/ut_var_crr_iter_2_shape.pdf has been created
+
+Unpacking the grid of requested operator values into individual keys...
+
+Computing the chi2 for all requested keys...
+
+Drawing the 1D dChi2 graph for each operator...
+
+Minimum for op ut, sample linear found at 0 with chi2/nDoF 0/14, with p-value 1
+Best fit result ut, sample linear: 0 - 0.001332 + 0.001332 (1 sigma) - 0.002664 + 0.002664 (2 sigma)
+Best fit dChi2 ut, sample linear: 0 - 1.00226 + 1.00226 (1 sigma) - 4.00903 + 4.00903 (2 sigma)
+Info in <TCanvas::Print>: pdf file /nfs/dust/cms/user/zimermma/EFTFitter/fit_output/ttbareft_translationp_Breuther_dim6top_reweighting_13TeV/TotalSystCovMatrix_AllVarNorm_rebinnedA/ut/ut_dChi2.pdf has been created
+
+Clearing up contents of the current EFTFitter object...
+
+Chi2 values and corresponding keys cleared.
+
+All EFTFitter object content cleared.
+
+EFTFitter: fit on variable crr in iteration 2 saved for evolution scan...
+Entering the IF 
+  iVar12
+EFTFitter: starting fit on variable cP_rk in iteration 2
+Adding input with key ut_0 of type all...
+
+Adding input with key ut_1 of type all...
+
+Adding input with key ut_-1 of type all...
+
+Preparing the base contents for all operators...
+Contribution of each operator at 1 (in xsec) is:
+[ [ ut :: linear ] :: 4.35133, 0 ]
+[ [ ut :: quadratic ] :: -4.16334e-17, 0 ]
+For reference: SM xsec is 0.598143, 0
+
+Assigning key ut_0 of type linear as data...
+Note: previous data is overwritten by this method!!
+
+Reading matrix TotalSystCovMatrix_AllVarNorm_rebinnedA from file /nfs/dust/cms/user/zimermma/EFTFitter/inputs/covariance_matrix/covMatSyst_purdue_full2016.root and assigning it as finalcov
+
+Drawing the requested covariance matrices...
+finalcov
+
+Info in <TCanvas::Print>: pdf file /nfs/dust/cms/user/zimermma/EFTFitter/fit_output/ttbareft_translationp_Breuther_dim6top_reweighting_13TeV/TotalSystCovMatrix_AllVarNorm_rebinnedA/ut/cov_finalcov.pdf has been created
+
+Drawing the requested key-sample templates ...
+[ ut_-1 :: all ]
+[ ut_1 :: all ]
+[ ut_0 :: all ]
+[ data :: all ]
+
+Info in <TCanvas::Print>: pdf file /nfs/dust/cms/user/zimermma/EFTFitter/fit_output/ttbareft_translationp_Breuther_dim6top_reweighting_13TeV/TotalSystCovMatrix_AllVarNorm_rebinnedA/ut/ut_var_cP_rk_iter_2_shape.pdf has been created
+
+Unpacking the grid of requested operator values into individual keys...
+
+Computing the chi2 for all requested keys...
+
+Drawing the 1D dChi2 graph for each operator...
+
+Minimum for op ut, sample linear found at 0 with chi2/nDoF 0/14, with p-value 1
+Best fit result ut, sample linear: 0 - 0.001468 + 0.001468 (1 sigma) - 0.002936 + 0.002936 (2 sigma)
+Best fit dChi2 ut, sample linear: 0 - 1.00009 + 1.00009 (1 sigma) - 4.00035 + 4.00035 (2 sigma)
+Info in <TCanvas::Print>: pdf file /nfs/dust/cms/user/zimermma/EFTFitter/fit_output/ttbareft_translationp_Breuther_dim6top_reweighting_13TeV/TotalSystCovMatrix_AllVarNorm_rebinnedA/ut/ut_dChi2.pdf has been created
+
+Clearing up contents of the current EFTFitter object...
+
+Chi2 values and corresponding keys cleared.
+
+All EFTFitter object content cleared.
+
+EFTFitter: fit on variable cP_rk in iteration 2 saved for evolution scan...
+EFTFitter: starting fit on variable cM_rk in iteration 2
+Adding input with key ut_0 of type all...
+
+Adding input with key ut_1 of type all...
+
+Adding input with key ut_-1 of type all...
+
+Preparing the base contents for all operators...
+Contribution of each operator at 1 (in xsec) is:
+[ [ ut :: linear ] :: 4.35133, 0 ]
+[ [ ut :: quadratic ] :: -4.16334e-17, 0 ]
+For reference: SM xsec is 0.598143, 0
+
+Assigning key ut_0 of type linear as data...
+Note: previous data is overwritten by this method!!
+
+Reading matrix TotalSystCovMatrix_AllVarNorm_rebinnedA from file /nfs/dust/cms/user/zimermma/EFTFitter/inputs/covariance_matrix/covMatSyst_purdue_full2016.root and assigning it as finalcov
+
+Drawing the requested covariance matrices...
+finalcov
+
+Info in <TCanvas::Print>: pdf file /nfs/dust/cms/user/zimermma/EFTFitter/fit_output/ttbareft_translationp_Breuther_dim6top_reweighting_13TeV/TotalSystCovMatrix_AllVarNorm_rebinnedA/ut/cov_finalcov.pdf has been created
+
+Drawing the requested key-sample templates ...
+[ ut_-1 :: all ]
+[ ut_1 :: all ]
+[ ut_0 :: all ]
+[ data :: all ]
+
+Info in <TCanvas::Print>: pdf file /nfs/dust/cms/user/zimermma/EFTFitter/fit_output/ttbareft_translationp_Breuther_dim6top_reweighting_13TeV/TotalSystCovMatrix_AllVarNorm_rebinnedA/ut/ut_var_cM_rk_iter_2_shape.pdf has been created
+
+Unpacking the grid of requested operator values into individual keys...
+
+Computing the chi2 for all requested keys...
+
+Drawing the 1D dChi2 graph for each operator...
+
+Minimum for op ut, sample linear found at 0 with chi2/nDoF 0/14, with p-value 1
+Best fit result ut, sample linear: 0 - 0.00116 + 0.00116 (1 sigma) - 0.00232 + 0.00232 (2 sigma)
+Best fit dChi2 ut, sample linear: 0 - 1.00018 + 1.00018 (1 sigma) - 4.00073 + 4.00073 (2 sigma)
+Info in <TCanvas::Print>: pdf file /nfs/dust/cms/user/zimermma/EFTFitter/fit_output/ttbareft_translationp_Breuther_dim6top_reweighting_13TeV/TotalSystCovMatrix_AllVarNorm_rebinnedA/ut/ut_dChi2.pdf has been created
+
+Clearing up contents of the current EFTFitter object...
+
+Chi2 values and corresponding keys cleared.
+
+All EFTFitter object content cleared.
+
+EFTFitter: fit on variable cM_rk in iteration 2 saved for evolution scan...
+EFTFitter: starting fit on variable cP_nr in iteration 2
+Adding input with key ut_0 of type all...
+
+Adding input with key ut_1 of type all...
+
+Adding input with key ut_-1 of type all...
+
+Preparing the base contents for all operators...
+Contribution of each operator at 1 (in xsec) is:
+[ [ ut :: linear ] :: 4.35133, 0 ]
+[ [ ut :: quadratic ] :: -4.16334e-17, 0 ]
+For reference: SM xsec is 0.598143, 0
+
+Assigning key ut_0 of type linear as data...
+Note: previous data is overwritten by this method!!
+
+Reading matrix TotalSystCovMatrix_AllVarNorm_rebinnedA from file /nfs/dust/cms/user/zimermma/EFTFitter/inputs/covariance_matrix/covMatSyst_purdue_full2016.root and assigning it as finalcov
+
+Drawing the requested covariance matrices...
+finalcov
+
+Info in <TCanvas::Print>: pdf file /nfs/dust/cms/user/zimermma/EFTFitter/fit_output/ttbareft_translationp_Breuther_dim6top_reweighting_13TeV/TotalSystCovMatrix_AllVarNorm_rebinnedA/ut/cov_finalcov.pdf has been created
+
+Drawing the requested key-sample templates ...
+[ ut_-1 :: all ]
+[ ut_1 :: all ]
+[ ut_0 :: all ]
+[ data :: all ]
+
+Info in <TCanvas::Print>: pdf file /nfs/dust/cms/user/zimermma/EFTFitter/fit_output/ttbareft_translationp_Breuther_dim6top_reweighting_13TeV/TotalSystCovMatrix_AllVarNorm_rebinnedA/ut/ut_var_cP_nr_iter_2_shape.pdf has been created
+
+Unpacking the grid of requested operator values into individual keys...
+
+Computing the chi2 for all requested keys...
+
+Drawing the 1D dChi2 graph for each operator...
+
+Minimum for op ut, sample linear found at 0 with chi2/nDoF 0/14, with p-value 1
+Best fit result ut, sample linear: 0 - 0.001184 + 0.001184 (1 sigma) - 0.002368 + 0.002368 (2 sigma)
+Best fit dChi2 ut, sample linear: 0 - 1.00016 + 1.00016 (1 sigma) - 4.00062 + 4.00062 (2 sigma)
+Info in <TCanvas::Print>: pdf file /nfs/dust/cms/user/zimermma/EFTFitter/fit_output/ttbareft_translationp_Breuther_dim6top_reweighting_13TeV/TotalSystCovMatrix_AllVarNorm_rebinnedA/ut/ut_dChi2.pdf has been created
+
+Clearing up contents of the current EFTFitter object...
+
+Chi2 values and corresponding keys cleared.
+
+All EFTFitter object content cleared.
+
+EFTFitter: fit on variable cP_nr in iteration 2 saved for evolution scan...
+EFTFitter: starting fit on variable cM_nr in iteration 2
+Adding input with key ut_0 of type all...
+
+Adding input with key ut_1 of type all...
+
+Adding input with key ut_-1 of type all...
+
+Preparing the base contents for all operators...
+Contribution of each operator at 1 (in xsec) is:
+[ [ ut :: linear ] :: 4.35133, 0 ]
+[ [ ut :: quadratic ] :: -4.16334e-17, 0 ]
+For reference: SM xsec is 0.598143, 0
+
+Assigning key ut_0 of type linear as data...
+Note: previous data is overwritten by this method!!
+
+Reading matrix TotalSystCovMatrix_AllVarNorm_rebinnedA from file /nfs/dust/cms/user/zimermma/EFTFitter/inputs/covariance_matrix/covMatSyst_purdue_full2016.root and assigning it as finalcov
+
+Drawing the requested covariance matrices...
+finalcov
+
+Info in <TCanvas::Print>: pdf file /nfs/dust/cms/user/zimermma/EFTFitter/fit_output/ttbareft_translationp_Breuther_dim6top_reweighting_13TeV/TotalSystCovMatrix_AllVarNorm_rebinnedA/ut/cov_finalcov.pdf has been created
+
+Drawing the requested key-sample templates ...
+[ ut_-1 :: all ]
+[ ut_1 :: all ]
+[ ut_0 :: all ]
+[ data :: all ]
+
+Info in <TCanvas::Print>: pdf file /nfs/dust/cms/user/zimermma/EFTFitter/fit_output/ttbareft_translationp_Breuther_dim6top_reweighting_13TeV/TotalSystCovMatrix_AllVarNorm_rebinnedA/ut/ut_var_cM_nr_iter_2_shape.pdf has been created
+
+Unpacking the grid of requested operator values into individual keys...
+
+Computing the chi2 for all requested keys...
+
+Drawing the 1D dChi2 graph for each operator...
+
+Minimum for op ut, sample linear found at 0 with chi2/nDoF 0/14, with p-value 1
+Best fit result ut, sample linear: 0 - 0.001428 + 0.001428 (1 sigma) - 0.002852 + 0.002852 (2 sigma)
+Best fit dChi2 ut, sample linear: 0 - 1.00349 + 1.00349 (1 sigma) - 4.00271 + 4.00271 (2 sigma)
+Info in <TCanvas::Print>: pdf file /nfs/dust/cms/user/zimermma/EFTFitter/fit_output/ttbareft_translationp_Breuther_dim6top_reweighting_13TeV/TotalSystCovMatrix_AllVarNorm_rebinnedA/ut/ut_dChi2.pdf has been created
+
+Clearing up contents of the current EFTFitter object...
+
+Chi2 values and corresponding keys cleared.
+
+All EFTFitter object content cleared.
+
+EFTFitter: fit on variable cM_nr in iteration 2 saved for evolution scan...
+EFTFitter: starting fit on variable cP_nk in iteration 2
+Adding input with key ut_0 of type all...
+
+Adding input with key ut_1 of type all...
+
+Adding input with key ut_-1 of type all...
+
+Preparing the base contents for all operators...
+Contribution of each operator at 1 (in xsec) is:
+[ [ ut :: linear ] :: 4.35133, 0 ]
+[ [ ut :: quadratic ] :: -4.16334e-17, 0 ]
+For reference: SM xsec is 0.598143, 0
+
+Assigning key ut_0 of type linear as data...
+Note: previous data is overwritten by this method!!
+
+Reading matrix TotalSystCovMatrix_AllVarNorm_rebinnedA from file /nfs/dust/cms/user/zimermma/EFTFitter/inputs/covariance_matrix/covMatSyst_purdue_full2016.root and assigning it as finalcov
+
+Drawing the requested covariance matrices...
+finalcov
+
+Info in <TCanvas::Print>: pdf file /nfs/dust/cms/user/zimermma/EFTFitter/fit_output/ttbareft_translationp_Breuther_dim6top_reweighting_13TeV/TotalSystCovMatrix_AllVarNorm_rebinnedA/ut/cov_finalcov.pdf has been created
+
+Drawing the requested key-sample templates ...
+[ ut_-1 :: all ]
+[ ut_1 :: all ]
+[ ut_0 :: all ]
+[ data :: all ]
+
+Info in <TCanvas::Print>: pdf file /nfs/dust/cms/user/zimermma/EFTFitter/fit_output/ttbareft_translationp_Breuther_dim6top_reweighting_13TeV/TotalSystCovMatrix_AllVarNorm_rebinnedA/ut/ut_var_cP_nk_iter_2_shape.pdf has been created
+
+Unpacking the grid of requested operator values into individual keys...
+
+Computing the chi2 for all requested keys...
+
+Drawing the 1D dChi2 graph for each operator...
+
+Minimum for op ut, sample linear found at 0 with chi2/nDoF 0/14, with p-value 1
+Best fit result ut, sample linear: 0 - 0.00144 + 0.00144 (1 sigma) - 0.00288 + 0.00288 (2 sigma)
+Best fit dChi2 ut, sample linear: 0 - 1.00006 + 1.00006 (1 sigma) - 4.00025 + 4.00025 (2 sigma)
+Info in <TCanvas::Print>: pdf file /nfs/dust/cms/user/zimermma/EFTFitter/fit_output/ttbareft_translationp_Breuther_dim6top_reweighting_13TeV/TotalSystCovMatrix_AllVarNorm_rebinnedA/ut/ut_dChi2.pdf has been created
+
+Clearing up contents of the current EFTFitter object...
+
+Chi2 values and corresponding keys cleared.
+
+All EFTFitter object content cleared.
+
+EFTFitter: fit on variable cP_nk in iteration 2 saved for evolution scan...
+EFTFitter: starting fit on variable cM_nk in iteration 2
+Adding input with key ut_0 of type all...
+
+Adding input with key ut_1 of type all...
+
+Adding input with key ut_-1 of type all...
+
+Preparing the base contents for all operators...
+Contribution of each operator at 1 (in xsec) is:
+[ [ ut :: linear ] :: 4.35133, 0 ]
+[ [ ut :: quadratic ] :: -4.16334e-17, 0 ]
+For reference: SM xsec is 0.598143, 0
+
+Assigning key ut_0 of type linear as data...
+Note: previous data is overwritten by this method!!
+
+Reading matrix TotalSystCovMatrix_AllVarNorm_rebinnedA from file /nfs/dust/cms/user/zimermma/EFTFitter/inputs/covariance_matrix/covMatSyst_purdue_full2016.root and assigning it as finalcov
+
+Drawing the requested covariance matrices...
+finalcov
+
+Info in <TCanvas::Print>: pdf file /nfs/dust/cms/user/zimermma/EFTFitter/fit_output/ttbareft_translationp_Breuther_dim6top_reweighting_13TeV/TotalSystCovMatrix_AllVarNorm_rebinnedA/ut/cov_finalcov.pdf has been created
+
+Drawing the requested key-sample templates ...
+[ ut_-1 :: all ]
+[ ut_1 :: all ]
+[ ut_0 :: all ]
+[ data :: all ]
+
+Info in <TCanvas::Print>: pdf file /nfs/dust/cms/user/zimermma/EFTFitter/fit_output/ttbareft_translationp_Breuther_dim6top_reweighting_13TeV/TotalSystCovMatrix_AllVarNorm_rebinnedA/ut/ut_var_cM_nk_iter_2_shape.pdf has been created
+
+Unpacking the grid of requested operator values into individual keys...
+
+Computing the chi2 for all requested keys...
+
+Drawing the 1D dChi2 graph for each operator...
+
+Minimum for op ut, sample linear found at 0 with chi2/nDoF 0/14, with p-value 1
+Best fit result ut, sample linear: 0 - 0.001264 + 0.001264 (1 sigma) - 0.002524 + 0.002524 (2 sigma)
+Best fit dChi2 ut, sample linear: 0 - 1.00497 + 1.00497 (1 sigma) - 4.00716 + 4.00716 (2 sigma)
+Info in <TCanvas::Print>: pdf file /nfs/dust/cms/user/zimermma/EFTFitter/fit_output/ttbareft_translationp_Breuther_dim6top_reweighting_13TeV/TotalSystCovMatrix_AllVarNorm_rebinnedA/ut/ut_dChi2.pdf has been created
+
+Clearing up contents of the current EFTFitter object...
+
+Chi2 values and corresponding keys cleared.
+
+All EFTFitter object content cleared.
+
+EFTFitter: fit on variable cM_nk in iteration 2 saved for evolution scan...
+EFTFitter: starting fit on variable cHel in iteration 2
+Adding input with key ut_0 of type all...
+
+Adding input with key ut_1 of type all...
+
+Adding input with key ut_-1 of type all...
+
+Preparing the base contents for all operators...
+Contribution of each operator at 1 (in xsec) is:
+[ [ ut :: linear ] :: 4.35133, 0 ]
+[ [ ut :: quadratic ] :: -4.16334e-17, 0 ]
+For reference: SM xsec is 0.598143, 0
+
+Assigning key ut_0 of type linear as data...
+Note: previous data is overwritten by this method!!
+
+Reading matrix TotalSystCovMatrix_AllVarNorm_rebinnedA from file /nfs/dust/cms/user/zimermma/EFTFitter/inputs/covariance_matrix/covMatSyst_purdue_full2016.root and assigning it as finalcov
+
+Drawing the requested covariance matrices...
+finalcov
+
+Info in <TCanvas::Print>: pdf file /nfs/dust/cms/user/zimermma/EFTFitter/fit_output/ttbareft_translationp_Breuther_dim6top_reweighting_13TeV/TotalSystCovMatrix_AllVarNorm_rebinnedA/ut/cov_finalcov.pdf has been created
+
+Drawing the requested key-sample templates ...
+[ ut_-1 :: all ]
+[ ut_1 :: all ]
+[ ut_0 :: all ]
+[ data :: all ]
+
+Info in <TCanvas::Print>: pdf file /nfs/dust/cms/user/zimermma/EFTFitter/fit_output/ttbareft_translationp_Breuther_dim6top_reweighting_13TeV/TotalSystCovMatrix_AllVarNorm_rebinnedA/ut/ut_var_cHel_iter_2_shape.pdf has been created
+
+Unpacking the grid of requested operator values into individual keys...
+
+Computing the chi2 for all requested keys...
+
+Drawing the 1D dChi2 graph for each operator...
+
+Minimum for op ut, sample linear found at 0 with chi2/nDoF 0/14, with p-value 1
+Best fit result ut, sample linear: 0 - 0.001296 + 0.001296 (1 sigma) - 0.002588 + 0.002588 (2 sigma)
+Best fit dChi2 ut, sample linear: 0 - 1.00548 + 1.00548 (1 sigma) - 4.00951 + 4.00951 (2 sigma)
+Info in <TCanvas::Print>: pdf file /nfs/dust/cms/user/zimermma/EFTFitter/fit_output/ttbareft_translationp_Breuther_dim6top_reweighting_13TeV/TotalSystCovMatrix_AllVarNorm_rebinnedA/ut/ut_dChi2.pdf has been created
+
+Clearing up contents of the current EFTFitter object...
+
+Chi2 values and corresponding keys cleared.
+
+All EFTFitter object content cleared.
+
+EFTFitter: fit on variable cHel in iteration 2 saved for evolution scan...
+EFTFitter: variable b1j with width 0.004536 is the best variable in iteration 2
+EFTFitter: iteration 2 completed!
+EFTFitter: iteration 3 starting...
+Entering the IF 
+  iVar0
+EFTFitter: starting fit on variable b2k in iteration 3
+Adding input with key ut_0 of type all...
+
+Adding input with key ut_1 of type all...
+
+Adding input with key ut_-1 of type all...
+
+Preparing the base contents for all operators...
+Contribution of each operator at 1 (in xsec) is:
+[ [ ut :: linear ] :: 4.35133, 0 ]
+[ [ ut :: quadratic ] :: -4.16334e-17, 0 ]
+For reference: SM xsec is 0.598143, 0
+
+Assigning key ut_0 of type linear as data...
+Note: previous data is overwritten by this method!!
+
+Reading matrix TotalSystCovMatrix_AllVarNorm_rebinnedA from file /nfs/dust/cms/user/zimermma/EFTFitter/inputs/covariance_matrix/covMatSyst_purdue_full2016.root and assigning it as finalcov
+
+Drawing the requested covariance matrices...
+finalcov
+
+Info in <TCanvas::Print>: pdf file /nfs/dust/cms/user/zimermma/EFTFitter/fit_output/ttbareft_translationp_Breuther_dim6top_reweighting_13TeV/TotalSystCovMatrix_AllVarNorm_rebinnedA/ut/cov_finalcov.pdf has been created
+
+Drawing the requested key-sample templates ...
+[ ut_-1 :: all ]
+[ ut_1 :: all ]
+[ ut_0 :: all ]
+[ data :: all ]
+
+Info in <TCanvas::Print>: pdf file /nfs/dust/cms/user/zimermma/EFTFitter/fit_output/ttbareft_translationp_Breuther_dim6top_reweighting_13TeV/TotalSystCovMatrix_AllVarNorm_rebinnedA/ut/ut_var_b2k_iter_3_shape.pdf has been created
+
+Unpacking the grid of requested operator values into individual keys...
+
+Computing the chi2 for all requested keys...
+
+Drawing the 1D dChi2 graph for each operator...
+
+Minimum for op ut, sample linear found at 0 with chi2/nDoF 0/19, with p-value 1
+Best fit result ut, sample linear: 0 - 0.001004 + 0.001004 (1 sigma) - 0.002008 + 0.002008 (2 sigma)
+Best fit dChi2 ut, sample linear: 0 - 1.00066 + 1.00066 (1 sigma) - 4.00266 + 4.00266 (2 sigma)
+Info in <TCanvas::Print>: pdf file /nfs/dust/cms/user/zimermma/EFTFitter/fit_output/ttbareft_translationp_Breuther_dim6top_reweighting_13TeV/TotalSystCovMatrix_AllVarNorm_rebinnedA/ut/ut_dChi2.pdf has been created
+
+Clearing up contents of the current EFTFitter object...
+
+Chi2 values and corresponding keys cleared.
+
+All EFTFitter object content cleared.
+
+EFTFitter: fit on variable b2k in iteration 3 saved for evolution scan...
+Entering the IF 
+  iVar2
+EFTFitter: starting fit on variable b2r in iteration 3
+Adding input with key ut_0 of type all...
+
+Adding input with key ut_1 of type all...
+
+Adding input with key ut_-1 of type all...
+
+Preparing the base contents for all operators...
+Contribution of each operator at 1 (in xsec) is:
+[ [ ut :: linear ] :: 4.35133, 0 ]
+[ [ ut :: quadratic ] :: -4.16334e-17, 0 ]
+For reference: SM xsec is 0.598143, 0
+
+Assigning key ut_0 of type linear as data...
+Note: previous data is overwritten by this method!!
+
+Reading matrix TotalSystCovMatrix_AllVarNorm_rebinnedA from file /nfs/dust/cms/user/zimermma/EFTFitter/inputs/covariance_matrix/covMatSyst_purdue_full2016.root and assigning it as finalcov
+
+Drawing the requested covariance matrices...
+finalcov
+
+Info in <TCanvas::Print>: pdf file /nfs/dust/cms/user/zimermma/EFTFitter/fit_output/ttbareft_translationp_Breuther_dim6top_reweighting_13TeV/TotalSystCovMatrix_AllVarNorm_rebinnedA/ut/cov_finalcov.pdf has been created
+
+Drawing the requested key-sample templates ...
+[ ut_-1 :: all ]
+[ ut_1 :: all ]
+[ ut_0 :: all ]
+[ data :: all ]
+
+Info in <TCanvas::Print>: pdf file /nfs/dust/cms/user/zimermma/EFTFitter/fit_output/ttbareft_translationp_Breuther_dim6top_reweighting_13TeV/TotalSystCovMatrix_AllVarNorm_rebinnedA/ut/ut_var_b2r_iter_3_shape.pdf has been created
+
+Unpacking the grid of requested operator values into individual keys...
+
+Computing the chi2 for all requested keys...
+
+Drawing the 1D dChi2 graph for each operator...
+
+Minimum for op ut, sample linear found at 0 with chi2/nDoF 0/19, with p-value 1
+Best fit result ut, sample linear: 0 - 0.000936 + 0.000936 (1 sigma) - 0.001872 + 0.001872 (2 sigma)
+Best fit dChi2 ut, sample linear: 0 - 1.00103 + 1.00103 (1 sigma) - 4.00411 + 4.00411 (2 sigma)
+Info in <TCanvas::Print>: pdf file /nfs/dust/cms/user/zimermma/EFTFitter/fit_output/ttbareft_translationp_Breuther_dim6top_reweighting_13TeV/TotalSystCovMatrix_AllVarNorm_rebinnedA/ut/ut_dChi2.pdf has been created
+
+Clearing up contents of the current EFTFitter object...
+
+Chi2 values and corresponding keys cleared.
+
+All EFTFitter object content cleared.
+
+EFTFitter: fit on variable b2r in iteration 3 saved for evolution scan...
+Entering the IF 
+  iVar4
+EFTFitter: starting fit on variable b2n in iteration 3
+Adding input with key ut_0 of type all...
+
+Adding input with key ut_1 of type all...
+
+Adding input with key ut_-1 of type all...
+
+Preparing the base contents for all operators...
+Contribution of each operator at 1 (in xsec) is:
+[ [ ut :: linear ] :: 4.35133, 0 ]
+[ [ ut :: quadratic ] :: -4.16334e-17, 0 ]
+For reference: SM xsec is 0.598143, 0
+
+Assigning key ut_0 of type linear as data...
+Note: previous data is overwritten by this method!!
+
+Reading matrix TotalSystCovMatrix_AllVarNorm_rebinnedA from file /nfs/dust/cms/user/zimermma/EFTFitter/inputs/covariance_matrix/covMatSyst_purdue_full2016.root and assigning it as finalcov
+
+Drawing the requested covariance matrices...
+finalcov
+
+Info in <TCanvas::Print>: pdf file /nfs/dust/cms/user/zimermma/EFTFitter/fit_output/ttbareft_translationp_Breuther_dim6top_reweighting_13TeV/TotalSystCovMatrix_AllVarNorm_rebinnedA/ut/cov_finalcov.pdf has been created
+
+Drawing the requested key-sample templates ...
+[ ut_-1 :: all ]
+[ ut_1 :: all ]
+[ ut_0 :: all ]
+[ data :: all ]
+
+Info in <TCanvas::Print>: pdf file /nfs/dust/cms/user/zimermma/EFTFitter/fit_output/ttbareft_translationp_Breuther_dim6top_reweighting_13TeV/TotalSystCovMatrix_AllVarNorm_rebinnedA/ut/ut_var_b2n_iter_3_shape.pdf has been created
+
+Unpacking the grid of requested operator values into individual keys...
+
+Computing the chi2 for all requested keys...
+
+Drawing the 1D dChi2 graph for each operator...
+
+Minimum for op ut, sample linear found at 0 with chi2/nDoF 0/19, with p-value 1
+Best fit result ut, sample linear: 0 - 0.0009 + 0.0009 (1 sigma) - 0.0018 + 0.0018 (2 sigma)
+Best fit dChi2 ut, sample linear: 0 - 1.00091 + 1.00091 (1 sigma) - 4.00365 + 4.00365 (2 sigma)
+Info in <TCanvas::Print>: pdf file /nfs/dust/cms/user/zimermma/EFTFitter/fit_output/ttbareft_translationp_Breuther_dim6top_reweighting_13TeV/TotalSystCovMatrix_AllVarNorm_rebinnedA/ut/ut_dChi2.pdf has been created
+
+Clearing up contents of the current EFTFitter object...
+
+Chi2 values and corresponding keys cleared.
+
+All EFTFitter object content cleared.
+
+EFTFitter: fit on variable b2n in iteration 3 saved for evolution scan...
+Entering the IF 
+  iVar6
+EFTFitter: starting fit on variable b2j in iteration 3
+Adding input with key ut_0 of type all...
+
+Adding input with key ut_1 of type all...
+
+Adding input with key ut_-1 of type all...
+
+Preparing the base contents for all operators...
+Contribution of each operator at 1 (in xsec) is:
+[ [ ut :: linear ] :: 4.35133, 0 ]
+[ [ ut :: quadratic ] :: -4.16334e-17, 0 ]
+For reference: SM xsec is 0.598143, 0
+
+Assigning key ut_0 of type linear as data...
+Note: previous data is overwritten by this method!!
+
+Reading matrix TotalSystCovMatrix_AllVarNorm_rebinnedA from file /nfs/dust/cms/user/zimermma/EFTFitter/inputs/covariance_matrix/covMatSyst_purdue_full2016.root and assigning it as finalcov
+
+Drawing the requested covariance matrices...
+finalcov
+
+Info in <TCanvas::Print>: pdf file /nfs/dust/cms/user/zimermma/EFTFitter/fit_output/ttbareft_translationp_Breuther_dim6top_reweighting_13TeV/TotalSystCovMatrix_AllVarNorm_rebinnedA/ut/cov_finalcov.pdf has been created
+
+Drawing the requested key-sample templates ...
+[ ut_-1 :: all ]
+[ ut_1 :: all ]
+[ ut_0 :: all ]
+[ data :: all ]
+
+Info in <TCanvas::Print>: pdf file /nfs/dust/cms/user/zimermma/EFTFitter/fit_output/ttbareft_translationp_Breuther_dim6top_reweighting_13TeV/TotalSystCovMatrix_AllVarNorm_rebinnedA/ut/ut_var_b2j_iter_3_shape.pdf has been created
+
+Unpacking the grid of requested operator values into individual keys...
+
+Computing the chi2 for all requested keys...
+
+Drawing the 1D dChi2 graph for each operator...
+
+Minimum for op ut, sample linear found at 0 with chi2/nDoF 0/19, with p-value 1
+Best fit result ut, sample linear: 0 - 0.000832 + 0.000832 (1 sigma) - 0.00166 + 0.00166 (2 sigma)
+Best fit dChi2 ut, sample linear: 0 - 1.00858 + 1.00858 (1 sigma) - 4.01497 + 4.01497 (2 sigma)
+Info in <TCanvas::Print>: pdf file /nfs/dust/cms/user/zimermma/EFTFitter/fit_output/ttbareft_translationp_Breuther_dim6top_reweighting_13TeV/TotalSystCovMatrix_AllVarNorm_rebinnedA/ut/ut_dChi2.pdf has been created
+
+Clearing up contents of the current EFTFitter object...
+
+Chi2 values and corresponding keys cleared.
+
+All EFTFitter object content cleared.
+
+EFTFitter: fit on variable b2j in iteration 3 saved for evolution scan...
+Entering the IF 
+  iVar8
+EFTFitter: starting fit on variable b2q in iteration 3
+Adding input with key ut_0 of type all...
+
+Adding input with key ut_1 of type all...
+
+Adding input with key ut_-1 of type all...
+
+Preparing the base contents for all operators...
+Contribution of each operator at 1 (in xsec) is:
+[ [ ut :: linear ] :: 4.35133, 0 ]
+[ [ ut :: quadratic ] :: -4.16334e-17, 0 ]
+For reference: SM xsec is 0.598143, 0
+
+Assigning key ut_0 of type linear as data...
+Note: previous data is overwritten by this method!!
+
+Reading matrix TotalSystCovMatrix_AllVarNorm_rebinnedA from file /nfs/dust/cms/user/zimermma/EFTFitter/inputs/covariance_matrix/covMatSyst_purdue_full2016.root and assigning it as finalcov
+
+Drawing the requested covariance matrices...
+finalcov
+
+Info in <TCanvas::Print>: pdf file /nfs/dust/cms/user/zimermma/EFTFitter/fit_output/ttbareft_translationp_Breuther_dim6top_reweighting_13TeV/TotalSystCovMatrix_AllVarNorm_rebinnedA/ut/cov_finalcov.pdf has been created
+
+Drawing the requested key-sample templates ...
+[ ut_-1 :: all ]
+[ ut_1 :: all ]
+[ ut_0 :: all ]
+[ data :: all ]
+
+Info in <TCanvas::Print>: pdf file /nfs/dust/cms/user/zimermma/EFTFitter/fit_output/ttbareft_translationp_Breuther_dim6top_reweighting_13TeV/TotalSystCovMatrix_AllVarNorm_rebinnedA/ut/ut_var_b2q_iter_3_shape.pdf has been created
+
+Unpacking the grid of requested operator values into individual keys...
+
+Computing the chi2 for all requested keys...
+
+Drawing the 1D dChi2 graph for each operator...
+
+Minimum for op ut, sample linear found at 0 with chi2/nDoF 0/19, with p-value 1
+Best fit result ut, sample linear: 0 - 0.000968 + 0.000968 (1 sigma) - 0.001936 + 0.001936 (2 sigma)
+Best fit dChi2 ut, sample linear: 0 - 1.00128 + 1.00128 (1 sigma) - 4.00512 + 4.00512 (2 sigma)
+Info in <TCanvas::Print>: pdf file /nfs/dust/cms/user/zimermma/EFTFitter/fit_output/ttbareft_translationp_Breuther_dim6top_reweighting_13TeV/TotalSystCovMatrix_AllVarNorm_rebinnedA/ut/ut_dChi2.pdf has been created
+
+Clearing up contents of the current EFTFitter object...
+
+Chi2 values and corresponding keys cleared.
+
+All EFTFitter object content cleared.
+
+EFTFitter: fit on variable b2q in iteration 3 saved for evolution scan...
+EFTFitter: starting fit on variable ckk in iteration 3
+Adding input with key ut_0 of type all...
+
+Adding input with key ut_1 of type all...
+
+Adding input with key ut_-1 of type all...
+
+Preparing the base contents for all operators...
+Contribution of each operator at 1 (in xsec) is:
+[ [ ut :: linear ] :: 4.35133, 0 ]
+[ [ ut :: quadratic ] :: -4.16334e-17, 0 ]
+For reference: SM xsec is 0.598143, 0
+
+Assigning key ut_0 of type linear as data...
+Note: previous data is overwritten by this method!!
+
+Reading matrix TotalSystCovMatrix_AllVarNorm_rebinnedA from file /nfs/dust/cms/user/zimermma/EFTFitter/inputs/covariance_matrix/covMatSyst_purdue_full2016.root and assigning it as finalcov
+
+Drawing the requested covariance matrices...
+finalcov
+
+Info in <TCanvas::Print>: pdf file /nfs/dust/cms/user/zimermma/EFTFitter/fit_output/ttbareft_translationp_Breuther_dim6top_reweighting_13TeV/TotalSystCovMatrix_AllVarNorm_rebinnedA/ut/cov_finalcov.pdf has been created
+
+Drawing the requested key-sample templates ...
+[ ut_-1 :: all ]
+[ ut_1 :: all ]
+[ ut_0 :: all ]
+[ data :: all ]
+
+Info in <TCanvas::Print>: pdf file /nfs/dust/cms/user/zimermma/EFTFitter/fit_output/ttbareft_translationp_Breuther_dim6top_reweighting_13TeV/TotalSystCovMatrix_AllVarNorm_rebinnedA/ut/ut_var_ckk_iter_3_shape.pdf has been created
+
+Unpacking the grid of requested operator values into individual keys...
+
+Computing the chi2 for all requested keys...
+
+Drawing the 1D dChi2 graph for each operator...
+
+Minimum for op ut, sample linear found at 0 with chi2/nDoF 0/19, with p-value 1
+Best fit result ut, sample linear: 0 - 0.000788 + 0.000788 (1 sigma) - 0.001572 + 0.001572 (2 sigma)
+Best fit dChi2 ut, sample linear: 0 - 1.0102 + 1.0102 (1 sigma) - 4.02033 + 4.02033 (2 sigma)
+Info in <TCanvas::Print>: pdf file /nfs/dust/cms/user/zimermma/EFTFitter/fit_output/ttbareft_translationp_Breuther_dim6top_reweighting_13TeV/TotalSystCovMatrix_AllVarNorm_rebinnedA/ut/ut_dChi2.pdf has been created
+
+Clearing up contents of the current EFTFitter object...
+
+Chi2 values and corresponding keys cleared.
+
+All EFTFitter object content cleared.
+
+EFTFitter: fit on variable ckk in iteration 3 saved for evolution scan...
+EFTFitter: starting fit on variable crr in iteration 3
+Adding input with key ut_0 of type all...
+
+Adding input with key ut_1 of type all...
+
+Adding input with key ut_-1 of type all...
+
+Preparing the base contents for all operators...
+Contribution of each operator at 1 (in xsec) is:
+[ [ ut :: linear ] :: 4.35133, 0 ]
+[ [ ut :: quadratic ] :: -4.16334e-17, 0 ]
+For reference: SM xsec is 0.598143, 0
+
+Assigning key ut_0 of type linear as data...
+Note: previous data is overwritten by this method!!
+
+Reading matrix TotalSystCovMatrix_AllVarNorm_rebinnedA from file /nfs/dust/cms/user/zimermma/EFTFitter/inputs/covariance_matrix/covMatSyst_purdue_full2016.root and assigning it as finalcov
+
+Drawing the requested covariance matrices...
+finalcov
+
+Info in <TCanvas::Print>: pdf file /nfs/dust/cms/user/zimermma/EFTFitter/fit_output/ttbareft_translationp_Breuther_dim6top_reweighting_13TeV/TotalSystCovMatrix_AllVarNorm_rebinnedA/ut/cov_finalcov.pdf has been created
+
+Drawing the requested key-sample templates ...
+[ ut_-1 :: all ]
+[ ut_1 :: all ]
+[ ut_0 :: all ]
+[ data :: all ]
+
+Info in <TCanvas::Print>: pdf file /nfs/dust/cms/user/zimermma/EFTFitter/fit_output/ttbareft_translationp_Breuther_dim6top_reweighting_13TeV/TotalSystCovMatrix_AllVarNorm_rebinnedA/ut/ut_var_crr_iter_3_shape.pdf has been created
+
+Unpacking the grid of requested operator values into individual keys...
+
+Computing the chi2 for all requested keys...
+
+Drawing the 1D dChi2 graph for each operator...
+
+Minimum for op ut, sample linear found at 0 with chi2/nDoF 0/19, with p-value 1
+Best fit result ut, sample linear: 0 - 0.00078 + 0.00078 (1 sigma) - 0.001556 + 0.001556 (2 sigma)
+Best fit dChi2 ut, sample linear: 0 - 1.00984 + 1.00984 (1 sigma) - 4.01865 + 4.01865 (2 sigma)
+Info in <TCanvas::Print>: pdf file /nfs/dust/cms/user/zimermma/EFTFitter/fit_output/ttbareft_translationp_Breuther_dim6top_reweighting_13TeV/TotalSystCovMatrix_AllVarNorm_rebinnedA/ut/ut_dChi2.pdf has been created
+
+Clearing up contents of the current EFTFitter object...
+
+Chi2 values and corresponding keys cleared.
+
+All EFTFitter object content cleared.
+
+EFTFitter: fit on variable crr in iteration 3 saved for evolution scan...
+Entering the IF 
+  iVar12
+EFTFitter: starting fit on variable cP_rk in iteration 3
+Adding input with key ut_0 of type all...
+
+Adding input with key ut_1 of type all...
+
+Adding input with key ut_-1 of type all...
+
+Preparing the base contents for all operators...
+Contribution of each operator at 1 (in xsec) is:
+[ [ ut :: linear ] :: 4.35133, 0 ]
+[ [ ut :: quadratic ] :: -4.16334e-17, 0 ]
+For reference: SM xsec is 0.598143, 0
+
+Assigning key ut_0 of type linear as data...
+Note: previous data is overwritten by this method!!
+
+Reading matrix TotalSystCovMatrix_AllVarNorm_rebinnedA from file /nfs/dust/cms/user/zimermma/EFTFitter/inputs/covariance_matrix/covMatSyst_purdue_full2016.root and assigning it as finalcov
+
+Drawing the requested covariance matrices...
+finalcov
+
+Info in <TCanvas::Print>: pdf file /nfs/dust/cms/user/zimermma/EFTFitter/fit_output/ttbareft_translationp_Breuther_dim6top_reweighting_13TeV/TotalSystCovMatrix_AllVarNorm_rebinnedA/ut/cov_finalcov.pdf has been created
+
+Drawing the requested key-sample templates ...
+[ ut_-1 :: all ]
+[ ut_1 :: all ]
+[ ut_0 :: all ]
+[ data :: all ]
+
+Info in <TCanvas::Print>: pdf file /nfs/dust/cms/user/zimermma/EFTFitter/fit_output/ttbareft_translationp_Breuther_dim6top_reweighting_13TeV/TotalSystCovMatrix_AllVarNorm_rebinnedA/ut/ut_var_cP_rk_iter_3_shape.pdf has been created
+
+Unpacking the grid of requested operator values into individual keys...
+
+Computing the chi2 for all requested keys...
+
+                                                                                                                                                         Drawing the 1D dChi2 graph for each operator...
+
+Minimum for op ut, sample linear found at 0 with chi2/nDoF 0/19, with p-value 1
+Best fit result ut, sample linear: 0 - 0.000916 + 0.000916 (1 sigma) - 0.001828 + 0.001828 (2 sigma)
+Best fit dChi2 ut, sample linear: 0 - 1.00836 + 1.00836 (1 sigma) - 4.01585 + 4.01585 (2 sigma)
+Info in <TCanvas::Print>: pdf file /nfs/dust/cms/user/zimermma/EFTFitter/fit_output/ttbareft_translationp_Breuther_dim6top_reweighting_13TeV/TotalSystCovMatrix_AllVarNorm_rebinnedA/ut/ut_dChi2.pdf has been created
+
+Clearing up contents of the current EFTFitter object...
+
+Chi2 values and corresponding keys cleared.
+
+All EFTFitter object content cleared.
+
+EFTFitter: fit on variable cP_rk in iteration 3 saved for evolution scan...
+EFTFitter: starting fit on variable cM_rk in iteration 3
+Adding input with key ut_0 of type all...
+
+Adding input with key ut_1 of type all...
+
+Adding input with key ut_-1 of type all...
+
+Preparing the base contents for all operators...
+Contribution of each operator at 1 (in xsec) is:
+[ [ ut :: linear ] :: 4.35133, 0 ]
+[ [ ut :: quadratic ] :: -4.16334e-17, 0 ]
+For reference: SM xsec is 0.598143, 0
+
+Assigning key ut_0 of type linear as data...
+Note: previous data is overwritten by this method!!
+
+Reading matrix TotalSystCovMatrix_AllVarNorm_rebinnedA from file /nfs/dust/cms/user/zimermma/EFTFitter/inputs/covariance_matrix/covMatSyst_purdue_full2016.root and assigning it as finalcov
+
+Drawing the requested covariance matrices...
+finalcov
+
+Info in <TCanvas::Print>: pdf file /nfs/dust/cms/user/zimermma/EFTFitter/fit_output/ttbareft_translationp_Breuther_dim6top_reweighting_13TeV/TotalSystCovMatrix_AllVarNorm_rebinnedA/ut/cov_finalcov.pdf has been created
+
+Drawing the requested key-sample templates ...
+[ ut_-1 :: all ]
+[ ut_1 :: all ]
+[ ut_0 :: all ]
+[ data :: all ]
+
+Info in <TCanvas::Print>: pdf file /nfs/dust/cms/user/zimermma/EFTFitter/fit_output/ttbareft_translationp_Breuther_dim6top_reweighting_13TeV/TotalSystCovMatrix_AllVarNorm_rebinnedA/ut/ut_var_cM_rk_iter_3_shape.pdf has been created
+
+Unpacking the grid of requested operator values into individual keys...
+
+Computing the chi2 for all requested keys...
+
+Drawing the 1D dChi2 graph for each operator...
+
+Minimum for op ut, sample linear found at 0 with chi2/nDoF 0/19, with p-value 1
+Best fit result ut, sample linear: 0 - 0.000784 + 0.000784 (1 sigma) - 0.001568 + 0.001568 (2 sigma)
+Best fit dChi2 ut, sample linear: 0 - 1.00195 + 1.00195 (1 sigma) - 4.00779 + 4.00779 (2 sigma)
+Info in <TCanvas::Print>: pdf file /nfs/dust/cms/user/zimermma/EFTFitter/fit_output/ttbareft_translationp_Breuther_dim6top_reweighting_13TeV/TotalSystCovMatrix_AllVarNorm_rebinnedA/ut/ut_dChi2.pdf has been created
+
+Clearing up contents of the current EFTFitter object...
+
+Chi2 values and corresponding keys cleared.
+
+All EFTFitter object content cleared.
+
+EFTFitter: fit on variable cM_rk in iteration 3 saved for evolution scan...
+EFTFitter: starting fit on variable cP_nr in iteration 3
+Adding input with key ut_0 of type all...
+
+Adding input with key ut_1 of type all...
+
+Adding input with key ut_-1 of type all...
+
+Preparing the base contents for all operators...
+Contribution of each operator at 1 (in xsec) is:
+[ [ ut :: linear ] :: 4.35133, 0 ]
+[ [ ut :: quadratic ] :: -4.16334e-17, 0 ]
+For reference: SM xsec is 0.598143, 0
+
+Assigning key ut_0 of type linear as data...
+Note: previous data is overwritten by this method!!
+
+Reading matrix TotalSystCovMatrix_AllVarNorm_rebinnedA from file /nfs/dust/cms/user/zimermma/EFTFitter/inputs/covariance_matrix/covMatSyst_purdue_full2016.root and assigning it as finalcov
+
+Drawing the requested covariance matrices...
+finalcov
+
+Info in <TCanvas::Print>: pdf file /nfs/dust/cms/user/zimermma/EFTFitter/fit_output/ttbareft_translationp_Breuther_dim6top_reweighting_13TeV/TotalSystCovMatrix_AllVarNorm_rebinnedA/ut/cov_finalcov.pdf has been created
+
+Drawing the requested key-sample templates ...
+[ ut_-1 :: all ]
+[ ut_1 :: all ]
+[ ut_0 :: all ]
+[ data :: all ]
+
+Info in <TCanvas::Print>: pdf file /nfs/dust/cms/user/zimermma/EFTFitter/fit_output/ttbareft_translationp_Breuther_dim6top_reweighting_13TeV/TotalSystCovMatrix_AllVarNorm_rebinnedA/ut/ut_var_cP_nr_iter_3_shape.pdf has been created
+
+Unpacking the grid of requested operator values into individual keys...
+
+Computing the chi2 for all requested keys...
+
+Drawing the 1D dChi2 graph for each operator...
+
+Minimum for op ut, sample linear found at 0 with chi2/nDoF 0/19, with p-value 1
+Best fit result ut, sample linear: 0 - 0.0008 + 0.0008 (1 sigma) - 0.001596 + 0.001596 (2 sigma)
+Best fit dChi2 ut, sample linear: 0 - 1.00948 + 1.00948 (1 sigma) - 4.01776 + 4.01776 (2 sigma)
+Info in <TCanvas::Print>: pdf file /nfs/dust/cms/user/zimermma/EFTFitter/fit_output/ttbareft_translationp_Breuther_dim6top_reweighting_13TeV/TotalSystCovMatrix_AllVarNorm_rebinnedA/ut/ut_dChi2.pdf has been created
+
+Clearing up contents of the current EFTFitter object...
+
+Chi2 values and corresponding keys cleared.
+
+All EFTFitter object content cleared.
+
+EFTFitter: fit on variable cP_nr in iteration 3 saved for evolution scan...
+EFTFitter: starting fit on variable cM_nr in iteration 3
+Adding input with key ut_0 of type all...
+
+Adding input with key ut_1 of type all...
+
+Adding input with key ut_-1 of type all...
+
+Preparing the base contents for all operators...
+Contribution of each operator at 1 (in xsec) is:
+[ [ ut :: linear ] :: 4.35133, 0 ]
+[ [ ut :: quadratic ] :: -4.16334e-17, 0 ]
+For reference: SM xsec is 0.598143, 0
+
+Assigning key ut_0 of type linear as data...
+Note: previous data is overwritten by this method!!
+
+Reading matrix TotalSystCovMatrix_AllVarNorm_rebinnedA from file /nfs/dust/cms/user/zimermma/EFTFitter/inputs/covariance_matrix/covMatSyst_purdue_full2016.root and assigning it as finalcov
+
+Drawing the requested covariance matrices...
+finalcov
+
+Info in <TCanvas::Print>: pdf file /nfs/dust/cms/user/zimermma/EFTFitter/fit_output/ttbareft_translationp_Breuther_dim6top_reweighting_13TeV/TotalSystCovMatrix_AllVarNorm_rebinnedA/ut/cov_finalcov.pdf has been created
+
+Drawing the requested key-sample templates ...
+[ ut_-1 :: all ]
+[ ut_1 :: all ]
+[ ut_0 :: all ]
+[ data :: all ]
+
+Info in <TCanvas::Print>: pdf file /nfs/dust/cms/user/zimermma/EFTFitter/fit_output/ttbareft_translationp_Breuther_dim6top_reweighting_13TeV/TotalSystCovMatrix_AllVarNorm_rebinnedA/ut/ut_var_cM_nr_iter_3_shape.pdf has been created
+
+Unpacking the grid of requested operator values into individual keys...
+
+Computing the chi2 for all requested keys...
+
+Drawing the 1D dChi2 graph for each operator...
+
+Minimum for op ut, sample linear found at 0 with chi2/nDoF 0/19, with p-value 1
+Best fit result ut, sample linear: 0 - 0.00102 + 0.00102 (1 sigma) - 0.002036 + 0.002036 (2 sigma)
+Best fit dChi2 ut, sample linear: 0 - 1.00648 + 1.00648 (1 sigma) - 4.01014 + 4.01014 (2 sigma)
+Info in <TCanvas::Print>: pdf file /nfs/dust/cms/user/zimermma/EFTFitter/fit_output/ttbareft_translationp_Breuther_dim6top_reweighting_13TeV/TotalSystCovMatrix_AllVarNorm_rebinnedA/ut/ut_dChi2.pdf has been created
+
+Clearing up contents of the current EFTFitter object...
+
+Chi2 values and corresponding keys cleared.
+
+All EFTFitter object content cleared.
+
+EFTFitter: fit on variable cM_nr in iteration 3 saved for evolution scan...
+EFTFitter: starting fit on variable cP_nk in iteration 3
+Adding input with key ut_0 of type all...
+
+Adding input with key ut_1 of type all...
+
+Adding input with key ut_-1 of type all...
+
+Preparing the base contents for all operators...
+Contribution of each operator at 1 (in xsec) is:
+[ [ ut :: linear ] :: 4.35133, 0 ]
+[ [ ut :: quadratic ] :: -4.16334e-17, 0 ]
+For reference: SM xsec is 0.598143, 0
+
+Assigning key ut_0 of type linear as data...
+Note: previous data is overwritten by this method!!
+
+Reading matrix TotalSystCovMatrix_AllVarNorm_rebinnedA from file /nfs/dust/cms/user/zimermma/EFTFitter/inputs/covariance_matrix/covMatSyst_purdue_full2016.root and assigning it as finalcov
+
+Drawing the requested covariance matrices...
+finalcov
+
+Info in <TCanvas::Print>: pdf file /nfs/dust/cms/user/zimermma/EFTFitter/fit_output/ttbareft_translationp_Breuther_dim6top_reweighting_13TeV/TotalSystCovMatrix_AllVarNorm_rebinnedA/ut/cov_finalcov.pdf has been created
+
+Drawing the requested key-sample templates ...
+[ ut_-1 :: all ]
+[ ut_1 :: all ]
+[ ut_0 :: all ]
+[ data :: all ]
+
+Info in <TCanvas::Print>: pdf file /nfs/dust/cms/user/zimermma/EFTFitter/fit_output/ttbareft_translationp_Breuther_dim6top_reweighting_13TeV/TotalSystCovMatrix_AllVarNorm_rebinnedA/ut/ut_var_cP_nk_iter_3_shape.pdf has been created
+
+Unpacking the grid of requested operator values into individual keys...
+
+Computing the chi2 for all requested keys...
+
+Drawing the 1D dChi2 graph for each operator...
+
+Minimum for op ut, sample linear found at 0 with chi2/nDoF 0/19, with p-value 1
+Best fit result ut, sample linear: 0 - 0.000948 + 0.000948 (1 sigma) - 0.001892 + 0.001892 (2 sigma)
+Best fit dChi2 ut, sample linear: 0 - 1.00626 + 1.00626 (1 sigma) - 4.00807 + 4.00807 (2 sigma)
+Info in <TCanvas::Print>: pdf file /nfs/dust/cms/user/zimermma/EFTFitter/fit_output/ttbareft_translationp_Breuther_dim6top_reweighting_13TeV/TotalSystCovMatrix_AllVarNorm_rebinnedA/ut/ut_dChi2.pdf has been created
+
+Clearing up contents of the current EFTFitter object...
+
+Chi2 values and corresponding keys cleared.
+
+All EFTFitter object content cleared.
+
+EFTFitter: fit on variable cP_nk in iteration 3 saved for evolution scan...
+EFTFitter: starting fit on variable cM_nk in iteration 3
+Adding input with key ut_0 of type all...
+
+Adding input with key ut_1 of type all...
+
+Adding input with key ut_-1 of type all...
+
+Preparing the base contents for all operators...
+Contribution of each operator at 1 (in xsec) is:
+[ [ ut :: linear ] :: 4.35133, 0 ]
+[ [ ut :: quadratic ] :: -4.16334e-17, 0 ]
+For reference: SM xsec is 0.598143, 0
+
+Assigning key ut_0 of type linear as data...
+Note: previous data is overwritten by this method!!
+
+Reading matrix TotalSystCovMatrix_AllVarNorm_rebinnedA from file /nfs/dust/cms/user/zimermma/EFTFitter/inputs/covariance_matrix/covMatSyst_purdue_full2016.root and assigning it as finalcov
+
+Drawing the requested covariance matrices...
+finalcov
+
+Info in <TCanvas::Print>: pdf file /nfs/dust/cms/user/zimermma/EFTFitter/fit_output/ttbareft_translationp_Breuther_dim6top_reweighting_13TeV/TotalSystCovMatrix_AllVarNorm_rebinnedA/ut/cov_finalcov.pdf has been created
+
+Drawing the requested key-sample templates ...
+[ ut_-1 :: all ]
+[ ut_1 :: all ]
+[ ut_0 :: all ]
+[ data :: all ]
+
+Info in <TCanvas::Print>: pdf file /nfs/dust/cms/user/zimermma/EFTFitter/fit_output/ttbareft_translationp_Breuther_dim6top_reweighting_13TeV/TotalSystCovMatrix_AllVarNorm_rebinnedA/ut/ut_var_cM_nk_iter_3_shape.pdf has been created
+
+Unpacking the grid of requested operator values into individual keys...
+
+Computing the chi2 for all requested keys...
+
+Drawing the 1D dChi2 graph for each operator...
+
+Minimum for op ut, sample linear found at 0 with chi2/nDoF 0/19, with p-value 1
+Best fit result ut, sample linear: 0 - 0.001 + 0.001 (1 sigma) - 0.002 + 0.002 (2 sigma)
+Best fit dChi2 ut, sample linear: 0 - 1.00154 + 1.00154 (1 sigma) - 4.00617 + 4.00617 (2 sigma)
+Info in <TCanvas::Print>: pdf file /nfs/dust/cms/user/zimermma/EFTFitter/fit_output/ttbareft_translationp_Breuther_dim6top_reweighting_13TeV/TotalSystCovMatrix_AllVarNorm_rebinnedA/ut/ut_dChi2.pdf has been created
+
+Clearing up contents of the current EFTFitter object...
+
+Chi2 values and corresponding keys cleared.
+
+All EFTFitter object content cleared.
+
+EFTFitter: fit on variable cM_nk in iteration 3 saved for evolution scan...
+EFTFitter: starting fit on variable cHel in iteration 3
+Adding input with key ut_0 of type all...
+
+Adding input with key ut_1 of type all...
+
+Adding input with key ut_-1 of type all...
+
+Preparing the base contents for all operators...
+Contribution of each operator at 1 (in xsec) is:
+[ [ ut :: linear ] :: 4.35133, 0 ]
+[ [ ut :: quadratic ] :: -4.16334e-17, 0 ]
+For reference: SM xsec is 0.598143, 0
+
+Assigning key ut_0 of type linear as data...
+Note: previous data is overwritten by this method!!
+
+Reading matrix TotalSystCovMatrix_AllVarNorm_rebinnedA from file /nfs/dust/cms/user/zimermma/EFTFitter/inputs/covariance_matrix/covMatSyst_purdue_full2016.root and assigning it as finalcov
+
+Drawing the requested covariance matrices...
+finalcov
+
+Info in <TCanvas::Print>: pdf file /nfs/dust/cms/user/zimermma/EFTFitter/fit_output/ttbareft_translationp_Breuther_dim6top_reweighting_13TeV/TotalSystCovMatrix_AllVarNorm_rebinnedA/ut/cov_finalcov.pdf has been created
+
+Drawing the requested key-sample templates ...
+[ ut_-1 :: all ]
+[ ut_1 :: all ]
+[ ut_0 :: all ]
+[ data :: all ]
+
+Info in <TCanvas::Print>: pdf file /nfs/dust/cms/user/zimermma/EFTFitter/fit_output/ttbareft_translationp_Breuther_dim6top_reweighting_13TeV/TotalSystCovMatrix_AllVarNorm_rebinnedA/ut/ut_var_cHel_iter_3_shape.pdf has been created
+
+Unpacking the grid of requested operator values into individual keys...
+
+Computing the chi2 for all requested keys...
+
+Drawing the 1D dChi2 graph for each operator...
+
+Minimum for op ut, sample linear found at 0 with chi2/nDoF 0/19, with p-value 1
+Best fit result ut, sample linear: 0 - 0.00096 + 0.00096 (1 sigma) - 0.00192 + 0.00192 (2 sigma)
+Best fit dChi2 ut, sample linear: 0 - 1.00348 + 1.00348 (1 sigma) - 4.01391 + 4.01391 (2 sigma)
+Info in <TCanvas::Print>: pdf file /nfs/dust/cms/user/zimermma/EFTFitter/fit_output/ttbareft_translationp_Breuther_dim6top_reweighting_13TeV/TotalSystCovMatrix_AllVarNorm_rebinnedA/ut/ut_dChi2.pdf has been created
+
+Clearing up contents of the current EFTFitter object...
+
+Chi2 values and corresponding keys cleared.
+
+All EFTFitter object content cleared.
+
+EFTFitter: fit on variable cHel in iteration 3 saved for evolution scan...
+EFTFitter: variable crr with width 0.003112 is the best variable in iteration 3
+EFTFitter: iteration 3 completed!
+EFTFitter: iteration 4 starting...
+Entering the IF 
+  iVar0
+EFTFitter: starting fit on variable b2k in iteration 4
+Adding input with key ut_0 of type all...
+
+Adding input with key ut_1 of type all...
+
+Adding input with key ut_-1 of type all...
+
+Preparing the base contents for all operators...
+Contribution of each operator at 1 (in xsec) is:
+[ [ ut :: linear ] :: 4.35133, 0 ]
+[ [ ut :: quadratic ] :: -4.16334e-17, 0 ]
+For reference: SM xsec is 0.598143, 0
+
+Assigning key ut_0 of type linear as data...
+Note: previous data is overwritten by this method!!
+
+Reading matrix TotalSystCovMatrix_AllVarNorm_rebinnedA from file /nfs/dust/cms/user/zimermma/EFTFitter/inputs/covariance_matrix/covMatSyst_purdue_full2016.root and assigning it as finalcov
+
+Drawing the requested covariance matrices...
+finalcov
+
+Info in <TCanvas::Print>: pdf file /nfs/dust/cms/user/zimermma/EFTFitter/fit_output/ttbareft_translationp_Breuther_dim6top_reweighting_13TeV/TotalSystCovMatrix_AllVarNorm_rebinnedA/ut/cov_finalcov.pdf has been created
+
+Drawing the requested key-sample templates ...
+[ ut_-1 :: all ]
+[ ut_1 :: all ]
+[ ut_0 :: all ]
+[ data :: all ]
+
+Info in <TCanvas::Print>: pdf file /nfs/dust/cms/user/zimermma/EFTFitter/fit_output/ttbareft_translationp_Breuther_dim6top_reweighting_13TeV/TotalSystCovMatrix_AllVarNorm_rebinnedA/ut/ut_var_b2k_iter_4_shape.pdf has been created
+
+Unpacking the grid of requested operator values into individual keys...
+
+Computing the chi2 for all requested keys...
+
+Drawing the 1D dChi2 graph for each operator...
+
+Minimum for op ut, sample linear found at 0 with chi2/nDoF 0/24, with p-value 1
+Best fit result ut, sample linear: 0 - 0.000468 + 0.000468 (1 sigma) - 0.000932 + 0.000932 (2 sigma)
+Best fit dChi2 ut, sample linear: 0 - 1.01618 + 1.01618 (1 sigma) - 4.03003 + 4.03003 (2 sigma)
+Info in <TCanvas::Print>: pdf file /nfs/dust/cms/user/zimermma/EFTFitter/fit_output/ttbareft_translationp_Breuther_dim6top_reweighting_13TeV/TotalSystCovMatrix_AllVarNorm_rebinnedA/ut/ut_dChi2.pdf has been created
+
+Clearing up contents of the current EFTFitter object...
+
+Chi2 values and corresponding keys cleared.
+
+All EFTFitter object content cleared.
+
+EFTFitter: fit on variable b2k in iteration 4 saved for evolution scan...
+Entering the IF 
+  iVar2
+Entering the IF 
+  iVar3
+Entering the IF 
+  iVar4
+EFTFitter: starting fit on variable b2n in iteration 4
+Adding input with key ut_0 of type all...
+
+Adding input with key ut_1 of type all...
+
+Adding input with key ut_-1 of type all...
+
+Preparing the base contents for all operators...
+Contribution of each operator at 1 (in xsec) is:
+[ [ ut :: linear ] :: 4.35133, 0 ]
+[ [ ut :: quadratic ] :: -4.16334e-17, 0 ]
+For reference: SM xsec is 0.598143, 0
+
+Assigning key ut_0 of type linear as data...
+Note: previous data is overwritten by this method!!
+
+Reading matrix TotalSystCovMatrix_AllVarNorm_rebinnedA from file /nfs/dust/cms/user/zimermma/EFTFitter/inputs/covariance_matrix/covMatSyst_purdue_full2016.root and assigning it as finalcov
+
+Drawing the requested covariance matrices...
+finalcov
+
+Info in <TCanvas::Print>: pdf file /nfs/dust/cms/user/zimermma/EFTFitter/fit_output/ttbareft_translationp_Breuther_dim6top_reweighting_13TeV/TotalSystCovMatrix_AllVarNorm_rebinnedA/ut/cov_finalcov.pdf has been created
+
+Drawing the requested key-sample templates ...
+[ ut_-1 :: all ]
+[ ut_1 :: all ]
+[ ut_0 :: all ]
+[ data :: all ]
+
+Info in <TCanvas::Print>: pdf file /nfs/dust/cms/user/zimermma/EFTFitter/fit_output/ttbareft_translationp_Breuther_dim6top_reweighting_13TeV/TotalSystCovMatrix_AllVarNorm_rebinnedA/ut/ut_var_b2n_iter_4_shape.pdf has been created
+
+Unpacking the grid of requested operator values into individual keys...
+
+Computing the chi2 for all requested keys...
+
+Drawing the 1D dChi2 graph for each operator...
+
+Minimum for op ut, sample linear found at 0 with chi2/nDoF 0/24, with p-value 1
+Best fit result ut, sample linear: 0 - 0.00062 + 0.00062 (1 sigma) - 0.00124 + 0.00124 (2 sigma)
+Best fit dChi2 ut, sample linear: 0 - 1.004 + 1.004 (1 sigma) - 4.016 + 4.016 (2 sigma)
+Info in <TCanvas::Print>: pdf file /nfs/dust/cms/user/zimermma/EFTFitter/fit_output/ttbareft_translationp_Breuther_dim6top_reweighting_13TeV/TotalSystCovMatrix_AllVarNorm_rebinnedA/ut/ut_dChi2.pdf has been created
+
+Clearing up contents of the current EFTFitter object...
+
+Chi2 values and corresponding keys cleared.
+
+All EFTFitter object content cleared.
+
+EFTFitter: fit on variable b2n in iteration 4 saved for evolution scan...
+Entering the IF 
+  iVar6
+EFTFitter: starting fit on variable b2j in iteration 4
+Adding input with key ut_0 of type all...
+
+Adding input with key ut_1 of type all...
+
+Adding input with key ut_-1 of type all...
+
+Preparing the base contents for all operators...
+Contribution of each operator at 1 (in xsec) is:
+[ [ ut :: linear ] :: 4.35133, 0 ]
+[ [ ut :: quadratic ] :: -4.16334e-17, 0 ]
+For reference: SM xsec is 0.598143, 0
+
+Assigning key ut_0 of type linear as data...
+Note: previous data is overwritten by this method!!
+
+Reading matrix TotalSystCovMatrix_AllVarNorm_rebinnedA from file /nfs/dust/cms/user/zimermma/EFTFitter/inputs/covariance_matrix/covMatSyst_purdue_full2016.root and assigning it as finalcov
+
+Drawing the requested covariance matrices...
+finalcov
+
+Info in <TCanvas::Print>: pdf file /nfs/dust/cms/user/zimermma/EFTFitter/fit_output/ttbareft_translationp_Breuther_dim6top_reweighting_13TeV/TotalSystCovMatrix_AllVarNorm_rebinnedA/ut/cov_finalcov.pdf has been created
+
+Drawing the requested key-sample templates ...
+[ ut_-1 :: all ]
+[ ut_1 :: all ]
+[ ut_0 :: all ]
+[ data :: all ]
+
+Info in <TCanvas::Print>: pdf file /nfs/dust/cms/user/zimermma/EFTFitter/fit_output/ttbareft_translationp_Breuther_dim6top_reweighting_13TeV/TotalSystCovMatrix_AllVarNorm_rebinnedA/ut/ut_var_b2j_iter_4_shape.pdf has been created
+
+Unpacking the grid of requested operator values into individual keys...
+
+Computing the chi2 for all requested keys...
+
+Drawing the 1D dChi2 graph for each operator...
+
+Minimum for op ut, sample linear found at 0 with chi2/nDoF 0/24, with p-value 1
+Best fit result ut, sample linear: 0 - 0.000432 + 0.000432 (1 sigma) - 0.00086 + 0.00086 (2 sigma)
+Best fit dChi2 ut, sample linear: 0 - 1.01542 + 1.01542 (1 sigma) - 4.02415 + 4.02415 (2 sigma)
+Info in <TCanvas::Print>: pdf file /nfs/dust/cms/user/zimermma/EFTFitter/fit_output/ttbareft_translationp_Breuther_dim6top_reweighting_13TeV/TotalSystCovMatrix_AllVarNorm_rebinnedA/ut/ut_dChi2.pdf has been created
+
+Clearing up contents of the current EFTFitter object...
+
+Chi2 values and corresponding keys cleared.
+
+All EFTFitter object content cleared.
+
+EFTFitter: fit on variable b2j in iteration 4 saved for evolution scan...
+Entering the IF 
+  iVar8
+Entering the IF 
+  iVar9
+EFTFitter: starting fit on variable ckk in iteration 4
+Adding input with key ut_0 of type all...
+
+Adding input with key ut_1 of type all...
+
+Adding input with key ut_-1 of type all...
+
+Preparing the base contents for all operators...
+Contribution of each operator at 1 (in xsec) is:
+[ [ ut :: linear ] :: 4.35133, 0 ]
+[ [ ut :: quadratic ] :: -4.16334e-17, 0 ]
+For reference: SM xsec is 0.598143, 0
+
+Assigning key ut_0 of type linear as data...
+Note: previous data is overwritten by this method!!
+
+Reading matrix TotalSystCovMatrix_AllVarNorm_rebinnedA from file /nfs/dust/cms/user/zimermma/EFTFitter/inputs/covariance_matrix/covMatSyst_purdue_full2016.root and assigning it as finalcov
+
+Drawing the requested covariance matrices...
+finalcov
+
+Info in <TCanvas::Print>: pdf file /nfs/dust/cms/user/zimermma/EFTFitter/fit_output/ttbareft_translationp_Breuther_dim6top_reweighting_13TeV/TotalSystCovMatrix_AllVarNorm_rebinnedA/ut/cov_finalcov.pdf has been created
+
+Drawing the requested key-sample templates ...
+[ ut_-1 :: all ]
+[ ut_1 :: all ]
+[ ut_0 :: all ]
+[ data :: all ]
+
+Info in <TCanvas::Print>: pdf file /nfs/dust/cms/user/zimermma/EFTFitter/fit_output/ttbareft_translationp_Breuther_dim6top_reweighting_13TeV/TotalSystCovMatrix_AllVarNorm_rebinnedA/ut/ut_var_ckk_iter_4_shape.pdf has been created
+
+Unpacking the grid of requested operator values into individual keys...
+
+Computing the chi2 for all requested keys...
+
+Drawing the 1D dChi2 graph for each operator...
+
+Minimum for op ut, sample linear found at 0 with chi2/nDoF 0/24, with p-value 1
+Best fit result ut, sample linear: 0 - 0.000512 + 0.000512 (1 sigma) - 0.001024 + 0.001024 (2 sigma)
+Best fit dChi2 ut, sample linear: 0 - 1.00718 + 1.00718 (1 sigma) - 4.02871 + 4.02871 (2 sigma)
+Info in <TCanvas::Print>: pdf file /nfs/dust/cms/user/zimermma/EFTFitter/fit_output/ttbareft_translationp_Breuther_dim6top_reweighting_13TeV/TotalSystCovMatrix_AllVarNorm_rebinnedA/ut/ut_dChi2.pdf has been created
+
+Clearing up contents of the current EFTFitter object...
+
+Chi2 values and corresponding keys cleared.
+
+All EFTFitter object content cleared.
+
+EFTFitter: fit on variable ckk in iteration 4 saved for evolution scan...
+Entering the IF 
+  iVar11
+Entering the IF 
+  iVar12
+EFTFitter: starting fit on variable cP_rk in iteration 4
+Adding input with key ut_0 of type all...
+
+Adding input with key ut_1 of type all...
+
+Adding input with key ut_-1 of type all...
+
+Preparing the base contents for all operators...
+Contribution of each operator at 1 (in xsec) is:
+[ [ ut :: linear ] :: 4.35133, 0 ]
+[ [ ut :: quadratic ] :: -4.16334e-17, 0 ]
+For reference: SM xsec is 0.598143, 0
+
+Assigning key ut_0 of type linear as data...
+Note: previous data is overwritten by this method!!
+
+Reading matrix TotalSystCovMatrix_AllVarNorm_rebinnedA from file /nfs/dust/cms/user/zimermma/EFTFitter/inputs/covariance_matrix/covMatSyst_purdue_full2016.root and assigning it as finalcov
+
+Drawing the requested covariance matrices...
+finalcov
+
+Info in <TCanvas::Print>: pdf file /nfs/dust/cms/user/zimermma/EFTFitter/fit_output/ttbareft_translationp_Breuther_dim6top_reweighting_13TeV/TotalSystCovMatrix_AllVarNorm_rebinnedA/ut/cov_finalcov.pdf has been created
+
+Drawing the requested key-sample templates ...
+[ ut_-1 :: all ]
+[ ut_1 :: all ]
+[ ut_0 :: all ]
+[ data :: all ]
+
+Info in <TCanvas::Print>: pdf file /nfs/dust/cms/user/zimermma/EFTFitter/fit_output/ttbareft_translationp_Breuther_dim6top_reweighting_13TeV/TotalSystCovMatrix_AllVarNorm_rebinnedA/ut/ut_var_cP_rk_iter_4_shape.pdf has been created
+
+Unpacking the grid of requested operator values into individual keys...
+
+Computing the chi2 for all requested keys...
+
+Drawing the 1D dChi2 graph for each operator...
+
+Minimum for op ut, sample linear found at 0 with chi2/nDoF 0/24, with p-value 1
+Best fit result ut, sample linear: 0 - 0.000616 + 0.000616 (1 sigma) - 0.001228 + 0.001228 (2 sigma)
+Best fit dChi2 ut, sample linear: 0 - 1.00947 + 1.00947 (1 sigma) - 4.01172 + 4.01172 (2 sigma)
+Info in <TCanvas::Print>: pdf file /nfs/dust/cms/user/zimermma/EFTFitter/fit_output/ttbareft_translationp_Breuther_dim6top_reweighting_13TeV/TotalSystCovMatrix_AllVarNorm_rebinnedA/ut/ut_dChi2.pdf has been created
+
+Clearing up contents of the current EFTFitter object...
+
+Chi2 values and corresponding keys cleared.
+
+All EFTFitter object content cleared.
+
+EFTFitter: fit on variable cP_rk in iteration 4 saved for evolution scan...
+EFTFitter: starting fit on variable cM_rk in iteration 4
+Adding input with key ut_0 of type all...
+
+Adding input with key ut_1 of type all...
+
+Adding input with key ut_-1 of type all...
+
+Preparing the base contents for all operators...
+Contribution of each operator at 1 (in xsec) is:
+[ [ ut :: linear ] :: 4.35133, 0 ]
+[ [ ut :: quadratic ] :: -4.16334e-17, 0 ]
+For reference: SM xsec is 0.598143, 0
+
+Assigning key ut_0 of type linear as data...
+Note: previous data is overwritten by this method!!
+
+Reading matrix TotalSystCovMatrix_AllVarNorm_rebinnedA from file /nfs/dust/cms/user/zimermma/EFTFitter/inputs/covariance_matrix/covMatSyst_purdue_full2016.root and assigning it as finalcov
+
+Drawing the requested covariance matrices...
+finalcov
+
+Info in <TCanvas::Print>: pdf file /nfs/dust/cms/user/zimermma/EFTFitter/fit_output/ttbareft_translationp_Breuther_dim6top_reweighting_13TeV/TotalSystCovMatrix_AllVarNorm_rebinnedA/ut/cov_finalcov.pdf has been created
+
+Drawing the requested key-sample templates ...
+[ ut_-1 :: all ]
+[ ut_1 :: all ]
+[ ut_0 :: all ]
+[ data :: all ]
+
+Info in <TCanvas::Print>: pdf file /nfs/dust/cms/user/zimermma/EFTFitter/fit_output/ttbareft_translationp_Breuther_dim6top_reweighting_13TeV/TotalSystCovMatrix_AllVarNorm_rebinnedA/ut/ut_var_cM_rk_iter_4_shape.pdf has been created
+
+Unpacking the grid of requested operator values into individual keys...
+
+Computing the chi2 for all requested keys...
+
+Drawing the 1D dChi2 graph for each operator...
+
+Minimum for op ut, sample linear found at 0 with chi2/nDoF 0/24, with p-value 1
+Best fit result ut, sample linear: 0 - 0.000504 + 0.000504 (1 sigma) - 0.001008 + 0.001008 (2 sigma)
+Best fit dChi2 ut, sample linear: 0 - 1.00319 + 1.00319 (1 sigma) - 4.01277 + 4.01277 (2 sigma)
+Info in <TCanvas::Print>: pdf file /nfs/dust/cms/user/zimermma/EFTFitter/fit_output/ttbareft_translationp_Breuther_dim6top_reweighting_13TeV/TotalSystCovMatrix_AllVarNorm_rebinnedA/ut/ut_dChi2.pdf has been created
+
+Clearing up contents of the current EFTFitter object...
+
+Chi2 values and corresponding keys cleared.
+
+All EFTFitter object content cleared.
+
+EFTFitter: fit on variable cM_rk in iteration 4 saved for evolution scan...
+Entering the IF 
+  iVar15
+Entering the IF 
+  iVar16
+EFTFitter: starting fit on variable cP_nk in iteration 4
+Adding input with key ut_0 of type all...
+
+Adding input with key ut_1 of type all...
+
+Adding input with key ut_-1 of type all...
+
+Preparing the base contents for all operators...
+Contribution of each operator at 1 (in xsec) is:
+[ [ ut :: linear ] :: 4.35133, 0 ]
+[ [ ut :: quadratic ] :: -4.16334e-17, 0 ]
+For reference: SM xsec is 0.598143, 0
+
+Assigning key ut_0 of type linear as data...
+Note: previous data is overwritten by this method!!
+
+Reading matrix TotalSystCovMatrix_AllVarNorm_rebinnedA from file /nfs/dust/cms/user/zimermma/EFTFitter/inputs/covariance_matrix/covMatSyst_purdue_full2016.root and assigning it as finalcov
+
+Drawing the requested covariance matrices...
+finalcov
+
+Info in <TCanvas::Print>: pdf file /nfs/dust/cms/user/zimermma/EFTFitter/fit_output/ttbareft_translationp_Breuther_dim6top_reweighting_13TeV/TotalSystCovMatrix_AllVarNorm_rebinnedA/ut/cov_finalcov.pdf has been created
+
+Drawing the requested key-sample templates ...
+[ ut_-1 :: all ]
+[ ut_1 :: all ]
+[ ut_0 :: all ]
+[ data :: all ]
+
+Info in <TCanvas::Print>: pdf file /nfs/dust/cms/user/zimermma/EFTFitter/fit_output/ttbareft_translationp_Breuther_dim6top_reweighting_13TeV/TotalSystCovMatrix_AllVarNorm_rebinnedA/ut/ut_var_cP_nk_iter_4_shape.pdf has been created
+
+Unpacking the grid of requested operator values into individual keys...
+
+Computing the chi2 for all requested keys...
+
+Drawing the 1D dChi2 graph for each operator...
+
+Minimum for op ut, sample linear found at 0 with chi2/nDoF 0/24, with p-value 1
+Best fit result ut, sample linear: 0 - 0.000568 + 0.000568 (1 sigma) - 0.001136 + 0.001136 (2 sigma)
+Best fit dChi2 ut, sample linear: 0 - 1.00412 + 1.00412 (1 sigma) - 4.01649 + 4.01649 (2 sigma)
+Info in <TCanvas::Print>: pdf file /nfs/dust/cms/user/zimermma/EFTFitter/fit_output/ttbareft_translationp_Breuther_dim6top_reweighting_13TeV/TotalSystCovMatrix_AllVarNorm_rebinnedA/ut/ut_dChi2.pdf has been created
+
+Clearing up contents of the current EFTFitter object...
+
+Chi2 values and corresponding keys cleared.
+
+All EFTFitter object content cleared.
+
+EFTFitter: fit on variable cP_nk in iteration 4 saved for evolution scan...
+EFTFitter: starting fit on variable cM_nk in iteration 4
+Adding input with key ut_0 of type all...
+
+Adding input with key ut_1 of type all...
+
+Adding input with key ut_-1 of type all...
+
+Preparing the base contents for all operators...
+Contribution of each operator at 1 (in xsec) is:
+[ [ ut :: linear ] :: 4.35133, 0 ]
+[ [ ut :: quadratic ] :: -4.16334e-17, 0 ]
+For reference: SM xsec is 0.598143, 0
+
+Assigning key ut_0 of type linear as data...
+Note: previous data is overwritten by this method!!
+
+Reading matrix TotalSystCovMatrix_AllVarNorm_rebinnedA from file /nfs/dust/cms/user/zimermma/EFTFitter/inputs/covariance_matrix/covMatSyst_purdue_full2016.root and assigning it as finalcov
+
+Drawing the requested covariance matrices...
+finalcov
+
+Info in <TCanvas::Print>: pdf file /nfs/dust/cms/user/zimermma/EFTFitter/fit_output/ttbareft_translationp_Breuther_dim6top_reweighting_13TeV/TotalSystCovMatrix_AllVarNorm_rebinnedA/ut/cov_finalcov.pdf has been created
+
+Drawing the requested key-sample templates ...
+[ ut_-1 :: all ]
+[ ut_1 :: all ]
+[ ut_0 :: all ]
+[ data :: all ]
+
+Info in <TCanvas::Print>: pdf file /nfs/dust/cms/user/zimermma/EFTFitter/fit_output/ttbareft_translationp_Breuther_dim6top_reweighting_13TeV/TotalSystCovMatrix_AllVarNorm_rebinnedA/ut/ut_var_cM_nk_iter_4_shape.pdf has been created
+
+Unpacking the grid of requested operator values into individual keys...
+
+Computing the chi2 for all requested keys...
+
+Drawing the 1D dChi2 graph for each operator...
+
+Minimum for op ut, sample linear found at 0 with chi2/nDoF 0/24, with p-value 1
+Best fit result ut, sample linear: 0 - 0.000384 + 0.000384 (1 sigma) - 0.000764 + 0.000764 (2 sigma)
+Best fit dChi2 ut, sample linear: 0 - 1.02067 + 1.02067 (1 sigma) - 4.04028 + 4.04028 (2 sigma)
+Info in <TCanvas::Print>: pdf file /nfs/dust/cms/user/zimermma/EFTFitter/fit_output/ttbareft_translationp_Breuther_dim6top_reweighting_13TeV/TotalSystCovMatrix_AllVarNorm_rebinnedA/ut/ut_dChi2.pdf has been created
+
+Clearing up contents of the current EFTFitter object...
+
+Chi2 values and corresponding keys cleared.
+
+All EFTFitter object content cleared.
+
+EFTFitter: fit on variable cM_nk in iteration 4 saved for evolution scan...
+EFTFitter: starting fit on variable cHel in iteration 4
+Adding input with key ut_0 of type all...
+
+Adding input with key ut_1 of type all...
+
+Adding input with key ut_-1 of type all...
+
+Preparing the base contents for all operators...
+Contribution of each operator at 1 (in xsec) is:
+[ [ ut :: linear ] :: 4.35133, 0 ]
+[ [ ut :: quadratic ] :: -4.16334e-17, 0 ]
+For reference: SM xsec is 0.598143, 0
+
+Assigning key ut_0 of type linear as data...
+Note: previous data is overwritten by this method!!
+
+Reading matrix TotalSystCovMatrix_AllVarNorm_rebinnedA from file /nfs/dust/cms/user/zimermma/EFTFitter/inputs/covariance_matrix/covMatSyst_purdue_full2016.root and assigning it as finalcov
+
+Drawing the requested covariance matrices...
+finalcov
+
+Info in <TCanvas::Print>: pdf file /nfs/dust/cms/user/zimermma/EFTFitter/fit_output/ttbareft_translationp_Breuther_dim6top_reweighting_13TeV/TotalSystCovMatrix_AllVarNorm_rebinnedA/ut/cov_finalcov.pdf has been created
+
+Drawing the requested key-sample templates ...
+[ ut_-1 :: all ]
+[ ut_1 :: all ]
+[ ut_0 :: all ]
+[ data :: all ]
+
+Info in <TCanvas::Print>: pdf file /nfs/dust/cms/user/zimermma/EFTFitter/fit_output/ttbareft_translationp_Breuther_dim6top_reweighting_13TeV/TotalSystCovMatrix_AllVarNorm_rebinnedA/ut/ut_var_cHel_iter_4_shape.pdf has been created
+
+Unpacking the grid of requested operator values into individual keys...
+
+Computing the chi2 for all requested keys...
+
+Drawing the 1D dChi2 graph for each operator...
+
+Minimum for op ut, sample linear found at 0 with chi2/nDoF 0/24, with p-value 1
+Best fit result ut, sample linear: 0 - 0.000616 + 0.000616 (1 sigma) - 0.001228 + 0.001228 (2 sigma)
+Best fit dChi2 ut, sample linear: 0 - 1.00964 + 1.00964 (1 sigma) - 4.01236 + 4.01236 (2 sigma)
+Info in <TCanvas::Print>: pdf file /nfs/dust/cms/user/zimermma/EFTFitter/fit_output/ttbareft_translationp_Breuther_dim6top_reweighting_13TeV/TotalSystCovMatrix_AllVarNorm_rebinnedA/ut/ut_dChi2.pdf has been created
+
+Clearing up contents of the current EFTFitter object...
+
+Chi2 values and corresponding keys cleared.
+
+All EFTFitter object content cleared.
+
+EFTFitter: fit on variable cHel in iteration 4 saved for evolution scan...
+EFTFitter: variable cM_nk with width 0.001528 is the best variable in iteration 4
+EFTFitter: iteration 4 completed!
+EFTFitter: iteration 5 starting...
+Entering the IF 
+  iVar0
+Entering the IF 
+  iVar1
+Entering the IF 
+  iVar2
+Entering the IF 
+  iVar3
+Entering the IF 
+  iVar4
+EFTFitter: starting fit on variable b2n in iteration 5
+Adding input with key ut_0 of type all...
+
+Adding input with key ut_1 of type all...
+
+Adding input with key ut_-1 of type all...
+
+Preparing the base contents for all operators...
+Contribution of each operator at 1 (in xsec) is:
+[ [ ut :: linear ] :: 4.35133, 0 ]
+[ [ ut :: quadratic ] :: -4.16334e-17, 0 ]
+For reference: SM xsec is 0.598143, 0
+
+Assigning key ut_0 of type linear as data...
+Note: previous data is overwritten by this method!!
+
+Reading matrix TotalSystCovMatrix_AllVarNorm_rebinnedA from file /nfs/dust/cms/user/zimermma/EFTFitter/inputs/covariance_matrix/covMatSyst_purdue_full2016.root and assigning it as finalcov
+
+Drawing the requested covariance matrices...
+finalcov
+
+Info in <TCanvas::Print>: pdf file /nfs/dust/cms/user/zimermma/EFTFitter/fit_output/ttbareft_translationp_Breuther_dim6top_reweighting_13TeV/TotalSystCovMatrix_AllVarNorm_rebinnedA/ut/cov_finalcov.pdf has been created
+
+Drawing the requested key-sample templates ...
+[ ut_-1 :: all ]
+[ ut_1 :: all ]
+[ ut_0 :: all ]
+[ data :: all ]
+
+Info in <TCanvas::Print>: pdf file /nfs/dust/cms/user/zimermma/EFTFitter/fit_output/ttbareft_translationp_Breuther_dim6top_reweighting_13TeV/TotalSystCovMatrix_AllVarNorm_rebinnedA/ut/ut_var_b2n_iter_5_shape.pdf has been created
+
+Unpacking the grid of requested operator values into individual keys...
+
+Computing the chi2 for all requested keys...
+
+Drawing the 1D dChi2 graph for each operator...
+
+Minimum for op ut, sample linear found at 0 with chi2/nDoF 0/29, with p-value 1
+Best fit result ut, sample linear: 0 - 0.000356 + 0.000356 (1 sigma) - 0.000712 + 0.000712 (2 sigma)
+Best fit dChi2 ut, sample linear: 0 - 1.00633 + 1.00633 (1 sigma) - 4.0253 + 4.0253 (2 sigma)
+Info in <TCanvas::Print>: pdf file /nfs/dust/cms/user/zimermma/EFTFitter/fit_output/ttbareft_translationp_Breuther_dim6top_reweighting_13TeV/TotalSystCovMatrix_AllVarNorm_rebinnedA/ut/ut_dChi2.pdf has been created
+
+Clearing up contents of the current EFTFitter object...
+
+Chi2 values and corresponding keys cleared.
+
+All EFTFitter object content cleared.
+
+EFTFitter: fit on variable b2n in iteration 5 saved for evolution scan...
+Entering the IF 
+  iVar6
+Entering the IF 
+  iVar7
+Entering the IF 
+  iVar8
+Entering the IF 
+  iVar9
+Entering the IF 
+  iVar10
+Entering the IF 
+  iVar11
+Entering the IF 
+  iVar12
+EFTFitter: starting fit on variable cP_rk in iteration 5
+Adding input with key ut_0 of type all...
+
+Adding input with key ut_1 of type all...
+
+Adding input with key ut_-1 of type all...
+
+Preparing the base contents for all operators...
+Contribution of each operator at 1 (in xsec) is:
+[ [ ut :: linear ] :: 4.35133, 0 ]
+[ [ ut :: quadratic ] :: -4.16334e-17, 0 ]
+For reference: SM xsec is 0.598143, 0
+
+Assigning key ut_0 of type linear as data...
+Note: previous data is overwritten by this method!!
+
+Reading matrix TotalSystCovMatrix_AllVarNorm_rebinnedA from file /nfs/dust/cms/user/zimermma/EFTFitter/inputs/covariance_matrix/covMatSyst_purdue_full2016.root and assigning it as finalcov
+
+Drawing the requested covariance matrices...
+finalcov
+
+Info in <TCanvas::Print>: pdf file /nfs/dust/cms/user/zimermma/EFTFitter/fit_output/ttbareft_translationp_Breuther_dim6top_reweighting_13TeV/TotalSystCovMatrix_AllVarNorm_rebinnedA/ut/cov_finalcov.pdf has been created
+
+Drawing the requested key-sample templates ...
+[ ut_-1 :: all ]
+[ ut_1 :: all ]
+[ ut_0 :: all ]
+[ data :: all ]
+
+Info in <TCanvas::Print>: pdf file /nfs/dust/cms/user/zimermma/EFTFitter/fit_output/ttbareft_translationp_Breuther_dim6top_reweighting_13TeV/TotalSystCovMatrix_AllVarNorm_rebinnedA/ut/ut_var_cP_rk_iter_5_shape.pdf has been created
+
+Unpacking the grid of requested operator values into individual keys...
+
+Computing the chi2 for all requested keys...
+
+Drawing the 1D dChi2 graph for each operator...
+
+Minimum for op ut, sample linear found at 0 with chi2/nDoF 0/29, with p-value 1
+Best fit result ut, sample linear: 0 - 0.000232 + 0.000232 (1 sigma) - 0.000464 + 0.000464 (2 sigma)
+Best fit dChi2 ut, sample linear: 0 - 1.00834 + 1.00834 (1 sigma) - 4.03337 + 4.03337 (2 sigma)
+Info in <TCanvas::Print>: pdf file /nfs/dust/cms/user/zimermma/EFTFitter/fit_output/ttbareft_translationp_Breuther_dim6top_reweighting_13TeV/TotalSystCovMatrix_AllVarNorm_rebinnedA/ut/ut_dChi2.pdf has been created
+
+Clearing up contents of the current EFTFitter object...
+
+Chi2 values and corresponding keys cleared.
+
+All EFTFitter object content cleared.
+
+EFTFitter: fit on variable cP_rk in iteration 5 saved for evolution scan...
+EFTFitter: starting fit on variable cM_rk in iteration 5
+Adding input with key ut_0 of type all...
+
+Adding input with key ut_1 of type all...
+
+Adding input with key ut_-1 of type all...
+
+Preparing the base contents for all operators...
+Contribution of each operator at 1 (in xsec) is:
+[ [ ut :: linear ] :: 4.35133, 0 ]
+[ [ ut :: quadratic ] :: -4.16334e-17, 0 ]
+For reference: SM xsec is 0.598143, 0
+
+Assigning key ut_0 of type linear as data...
+Note: previous data is overwritten by this method!!
+
+Reading matrix TotalSystCovMatrix_AllVarNorm_rebinnedA from file /nfs/dust/cms/user/zimermma/EFTFitter/inputs/covariance_matrix/covMatSyst_purdue_full2016.root and assigning it as finalcov
+
+Drawing the requested covariance matrices...
+finalcov
+
+Info in <TCanvas::Print>: pdf file /nfs/dust/cms/user/zimermma/EFTFitter/fit_output/ttbareft_translationp_Breuther_dim6top_reweighting_13TeV/TotalSystCovMatrix_AllVarNorm_rebinnedA/ut/cov_finalcov.pdf has been created
+
+Drawing the requested key-sample templates ...
+[ ut_-1 :: all ]
+[ ut_1 :: all ]
+[ ut_0 :: all ]
+[ data :: all ]
+
+Info in <TCanvas::Print>: pdf file /nfs/dust/cms/user/zimermma/EFTFitter/fit_output/ttbareft_translationp_Breuther_dim6top_reweighting_13TeV/TotalSystCovMatrix_AllVarNorm_rebinnedA/ut/ut_var_cM_rk_iter_5_shape.pdf has been created
+
+Unpacking the grid of requested operator values into individual keys...
+
+Computing the chi2 for all requested keys...
+
+Drawing the 1D dChi2 graph for each operator...
+
+Minimum for op ut, sample linear found at 0 with chi2/nDoF 0/29, with p-value 1
+Best fit result ut, sample linear: 0 - 0.00032 + 0.00032 (1 sigma) - 0.000636 + 0.000636 (2 sigma)
+Best fit dChi2 ut, sample linear: 0 - 1.01732 + 1.01732 (1 sigma) - 4.01858 + 4.01858 (2 sigma)
+Info in <TCanvas::Print>: pdf file /nfs/dust/cms/user/zimermma/EFTFitter/fit_output/ttbareft_translationp_Breuther_dim6top_reweighting_13TeV/TotalSystCovMatrix_AllVarNorm_rebinnedA/ut/ut_dChi2.pdf has been created
+
+Clearing up contents of the current EFTFitter object...
+
+Chi2 values and corresponding keys cleared.
+
+All EFTFitter object content cleared.
+
+EFTFitter: fit on variable cM_rk in iteration 5 saved for evolution scan...
+Entering the IF 
+  iVar15
+Entering the IF 
+  iVar16
+Entering the IF 
+  iVar17
+Entering the IF 
+  iVar18
+EFTFitter: starting fit on variable cHel in iteration 5
+Adding input with key ut_0 of type all...
+
+Adding input with key ut_1 of type all...
+
+Adding input with key ut_-1 of type all...
+
+Preparing the base contents for all operators...
+Contribution of each operator at 1 (in xsec) is:
+[ [ ut :: linear ] :: 4.35133, 0 ]
+[ [ ut :: quadratic ] :: -4.16334e-17, 0 ]
+For reference: SM xsec is 0.598143, 0
+
+Assigning key ut_0 of type linear as data...
+Note: previous data is overwritten by this method!!
+
+Reading matrix TotalSystCovMatrix_AllVarNorm_rebinnedA from file /nfs/dust/cms/user/zimermma/EFTFitter/inputs/covariance_matrix/covMatSyst_purdue_full2016.root and assigning it as finalcov
+
+Drawing the requested covariance matrices...
+finalcov
+
+Info in <TCanvas::Print>: pdf file /nfs/dust/cms/user/zimermma/EFTFitter/fit_output/ttbareft_translationp_Breuther_dim6top_reweighting_13TeV/TotalSystCovMatrix_AllVarNorm_rebinnedA/ut/cov_finalcov.pdf has been created
+
+Drawing the requested key-sample templates ...
+[ ut_-1 :: all ]
+[ ut_1 :: all ]
+[ ut_0 :: all ]
+[ data :: all ]
+
+Info in <TCanvas::Print>: pdf file /nfs/dust/cms/user/zimermma/EFTFitter/fit_output/ttbareft_translationp_Breuther_dim6top_reweighting_13TeV/TotalSystCovMatrix_AllVarNorm_rebinnedA/ut/ut_var_cHel_iter_5_shape.pdf has been created
+
+Unpacking the grid of requested operator values into individual keys...
+
+Computing the chi2 for all requested keys...
+
+Drawing the 1D dChi2 graph for each operator...
+
+Minimum for op ut, sample linear found at 0 with chi2/nDoF 0/29, with p-value 1
+Best fit result ut, sample linear: 0 - 0.00036 + 0.00036 (1 sigma) - 0.000716 + 0.000716 (2 sigma)
+Best fit dChi2 ut, sample linear: 0 - 1.02203 + 1.02203 (1 sigma) - 4.0428 + 4.0428 (2 sigma)
+Info in <TCanvas::Print>: pdf file /nfs/dust/cms/user/zimermma/EFTFitter/fit_output/ttbareft_translationp_Breuther_dim6top_reweighting_13TeV/TotalSystCovMatrix_AllVarNorm_rebinnedA/ut/ut_dChi2.pdf has been created
+
+Clearing up contents of the current EFTFitter object...
+
+Chi2 values and corresponding keys cleared.
+
+All EFTFitter object content cleared.
+
+EFTFitter: fit on variable cHel in iteration 5 saved for evolution scan...
+EFTFitter: variable cP_rk with width 0.000928 is the best variable in iteration 5
+EFTFitter: iteration 5 completed!
+EFTFitter: iteration 6 starting...
+Entering the IF 
+  iVar0
+Entering the IF 
+  iVar1
+Entering the IF 
+  iVar2
+Entering the IF 
+  iVar3
+Entering the IF 
+  iVar4
+EFTFitter: starting fit on variable b2n in iteration 6
+Adding input with key ut_0 of type all...
+
+Adding input with key ut_1 of type all...
+
+Adding input with key ut_-1 of type all...
+
+Preparing the base contents for all operators...
+Contribution of each operator at 1 (in xsec) is:
+[ [ ut :: linear ] :: 4.35133, 0 ]
+[ [ ut :: quadratic ] :: -4.16334e-17, 0 ]
+For reference: SM xsec is 0.598143, 0
+
+Assigning key ut_0 of type linear as data...
+Note: previous data is overwritten by this method!!
+
+Reading matrix TotalSystCovMatrix_AllVarNorm_rebinnedA from file /nfs/dust/cms/user/zimermma/EFTFitter/inputs/covariance_matrix/covMatSyst_purdue_full2016.root and assigning it as finalcov
+
+Drawing the requested covariance matrices...
+finalcov
+
+Info in <TCanvas::Print>: pdf file /nfs/dust/cms/user/zimermma/EFTFitter/fit_output/ttbareft_translationp_Breuther_dim6top_reweighting_13TeV/TotalSystCovMatrix_AllVarNorm_rebinnedA/ut/cov_finalcov.pdf has been created
+
+Drawing the requested key-sample templates ...
+[ ut_-1 :: all ]
+[ ut_1 :: all ]
+[ ut_0 :: all ]
+[ data :: all ]
+
+Info in <TCanvas::Print>: pdf file /nfs/dust/cms/user/zimermma/EFTFitter/fit_output/ttbareft_translationp_Breuther_dim6top_reweighting_13TeV/TotalSystCovMatrix_AllVarNorm_rebinnedA/ut/ut_var_b2n_iter_6_shape.pdf has been created
+
+Unpacking the grid of requested operator values into individual keys...
+
+Computing the chi2 for all requested keys...
+
+Drawing the 1D dChi2 graph for each operator...
+
+Minimum for op ut, sample linear found at 0 with chi2/nDoF 0/34, with p-value 1
+Best fit result ut, sample linear: 0 - 0.000108 + 0.000108 (1 sigma) - 0.000216 + 0.000216 (2 sigma)
+Best fit dChi2 ut, sample linear: 0 - 1.01567 + 1.01567 (1 sigma) - 4.0627 + 4.0627 (2 sigma)
+Info in <TCanvas::Print>: pdf file /nfs/dust/cms/user/zimermma/EFTFitter/fit_output/ttbareft_translationp_Breuther_dim6top_reweighting_13TeV/TotalSystCovMatrix_AllVarNorm_rebinnedA/ut/ut_dChi2.pdf has been created
+
+Clearing up contents of the current EFTFitter object...
+
+Chi2 values and corresponding keys cleared.
+
+All EFTFitter object content cleared.
+
+EFTFitter: fit on variable b2n in iteration 6 saved for evolution scan...
+Entering the IF 
+  iVar6
+Entering the IF 
+  iVar7
+Entering the IF 
+  iVar8
+Entering the IF 
+  iVar9
+Entering the IF 
+  iVar10
+Entering the IF 
+  iVar11
+Entering the IF 
+  iVar12
+Entering the IF 
+  iVar13
+Entering the IF 
+  iVar14
+Entering the IF 
+  iVar15
+Entering the IF 
+  iVar16
+Entering the IF 
+  iVar17
+Entering the IF 
+  iVar18
+EFTFitter: starting fit on variable cHel in iteration 6
+Adding input with key ut_0 of type all...
+
+Adding input with key ut_1 of type all...
+
+Adding input with key ut_-1 of type all...
+
+Preparing the base contents for all operators...
+Contribution of each operator at 1 (in xsec) is:
+[ [ ut :: linear ] :: 4.35133, 0 ]
+[ [ ut :: quadratic ] :: -4.16334e-17, 0 ]
+For reference: SM xsec is 0.598143, 0
+
+Assigning key ut_0 of type linear as data...
+Note: previous data is overwritten by this method!!
+
+Reading matrix TotalSystCovMatrix_AllVarNorm_rebinnedA from file /nfs/dust/cms/user/zimermma/EFTFitter/inputs/covariance_matrix/covMatSyst_purdue_full2016.root and assigning it as finalcov
+
+Drawing the requested covariance matrices...
+finalcov
+
+Info in <TCanvas::Print>: pdf file /nfs/dust/cms/user/zimermma/EFTFitter/fit_output/ttbareft_translationp_Breuther_dim6top_reweighting_13TeV/TotalSystCovMatrix_AllVarNorm_rebinnedA/ut/cov_finalcov.pdf has been created
+
+Drawing the requested key-sample templates ...
+[ ut_-1 :: all ]
+[ ut_1 :: all ]
+[ ut_0 :: all ]
+[ data :: all ]
+
+Info in <TCanvas::Print>: pdf file /nfs/dust/cms/user/zimermma/EFTFitter/fit_output/ttbareft_translationp_Breuther_dim6top_reweighting_13TeV/TotalSystCovMatrix_AllVarNorm_rebinnedA/ut/ut_var_cHel_iter_6_shape.pdf has been created
+
+Unpacking the grid of requested operator values into individual keys...
+
+Computing the chi2 for all requested keys...
+
+Drawing the 1D dChi2 graph for each operator...
+
+Minimum for op ut, sample linear found at 0 with chi2/nDoF 0/34, with p-value 1
+Best fit result ut, sample linear: 0 - 0.00014 + 0.00014 (1 sigma) - 0.000276 + 0.000276 (2 sigma)
+Best fit dChi2 ut, sample linear: 0 - 1.03768 + 1.03768 (1 sigma) - 4.03299 + 4.03299 (2 sigma)
+Info in <TCanvas::Print>: pdf file /nfs/dust/cms/user/zimermma/EFTFitter/fit_output/ttbareft_translationp_Breuther_dim6top_reweighting_13TeV/TotalSystCovMatrix_AllVarNorm_rebinnedA/ut/ut_dChi2.pdf has been created
+
+Clearing up contents of the current EFTFitter object...
+
+Chi2 values and corresponding keys cleared.
+
+All EFTFitter object content cleared.
+
+EFTFitter: fit on variable cHel in iteration 6 saved for evolution scan...
+EFTFitter: variable b2n with width 0.000432 is the best variable in iteration 6
+EFTFitter: iteration 6 completed!
+EFTFitter: iteration 7 starting...
+Entering the IF 
+  iVar0
+Entering the IF 
+  iVar1
+Entering the IF 
+  iVar2
+Entering the IF 
+  iVar3
+Entering the IF 
+  iVar4
+Entering the IF 
+  iVar5
+Entering the IF 
+  iVar6
+Entering the IF 
+  iVar7
+Entering the IF 
+  iVar8
+Entering the IF 
+  iVar9
+Entering the IF 
+  iVar10
+Entering the IF 
+  iVar11
+Entering the IF 
+  iVar12
+Entering the IF 
+  iVar13
+Entering the IF 
+  iVar14
+Entering the IF 
+  iVar15
+Entering the IF 
+  iVar16
+Entering the IF 
+  iVar17
+Entering the IF 
+  iVar18
+EFTFitter: starting fit on variable cHel in iteration 7
+Adding input with key ut_0 of type all...
+
+Adding input with key ut_1 of type all...
+
+Adding input with key ut_-1 of type all...
+
+Preparing the base contents for all operators...
+Contribution of each operator at 1 (in xsec) is:
+[ [ ut :: linear ] :: 4.35133, 0 ]
+[ [ ut :: quadratic ] :: -4.16334e-17, 0 ]
+For reference: SM xsec is 0.598143, 0
+
+Assigning key ut_0 of type linear as data...
+Note: previous data is overwritten by this method!!
+
+Reading matrix TotalSystCovMatrix_AllVarNorm_rebinnedA from file /nfs/dust/cms/user/zimermma/EFTFitter/inputs/covariance_matrix/covMatSyst_purdue_full2016.root and assigning it as finalcov
+
+Drawing the requested covariance matrices...
+finalcov
+
+Info in <TCanvas::Print>: pdf file /nfs/dust/cms/user/zimermma/EFTFitter/fit_output/ttbareft_translationp_Breuther_dim6top_reweighting_13TeV/TotalSystCovMatrix_AllVarNorm_rebinnedA/ut/cov_finalcov.pdf has been created
+
+Drawing the requested key-sample templates ...
+[ ut_-1 :: all ]
+[ ut_1 :: all ]
+[ ut_0 :: all ]
+[ data :: all ]
+
+Info in <TCanvas::Print>: pdf file /nfs/dust/cms/user/zimermma/EFTFitter/fit_output/ttbareft_translationp_Breuther_dim6top_reweighting_13TeV/TotalSystCovMatrix_AllVarNorm_rebinnedA/ut/ut_var_cHel_iter_7_shape.pdf has been created
+
+Unpacking the grid of requested operator values into individual keys...
+
+Computing the chi2 for all requested keys...
+
+Drawing the 1D dChi2 graph for each operator...
+
+Minimum for op ut, sample linear found at 0 with chi2/nDoF 0/39, with p-value 1
+Best fit result ut, sample linear: 0 - 0.0001 + 0.0001 (1 sigma) - 0.000124 + 0.000124 (2 sigma)
+Best fit dChi2 ut, sample linear: 0 - 2.70281 + 2.70281 (1 sigma) - 4.15585 + 4.15585 (2 sigma)
+Info in <TCanvas::Print>: pdf file /nfs/dust/cms/user/zimermma/EFTFitter/fit_output/ttbareft_translationp_Breuther_dim6top_reweighting_13TeV/TotalSystCovMatrix_AllVarNorm_rebinnedA/ut/ut_dChi2.pdf has been created
+
+Clearing up contents of the current EFTFitter object...
+
+Chi2 values and corresponding keys cleared.
+
+All EFTFitter object content cleared.
+
+EFTFitter: fit on variable cHel in iteration 7 saved for evolution scan...
+EFTFitter: variable cHel with width 0.000248 is the best variable in iteration 7
+EFTFitter: iteration 7 completed!
+EFTFitter: iteration 8 starting...
+Entering the IF 
+  iVar0
+Entering the IF 
+  iVar1
+Entering the IF 
+  iVar2
+Entering the IF 
+  iVar3
+Entering the IF 
+  iVar4
+Entering the IF 
+  iVar5
+Entering the IF 
+  iVar6
+Entering the IF 
+  iVar7
+Entering the IF 
+  iVar8
+Entering the IF 
+  iVar9
+Entering the IF 
+  iVar10
+Entering the IF 
+  iVar11
+Entering the IF 
+  iVar12
+Entering the IF 
+  iVar13
+Entering the IF 
+  iVar14
+Entering the IF 
+  iVar15
+Entering the IF 
+  iVar16
+Entering the IF 
+  iVar17
+Entering the IF 
+  iVar18
+Entering the IF 
+  iVar19
+EFTFitter: iteration 8 aborted; no further variables can make up an independent set.
+
+Job stoped at Fri Feb 3 11:29:14 CET 2023 on bird632.desy.de
+
+005 (1803356.000.000) 2023-02-03 11:29:14 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:07:26, Sys 0 00:00:05  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:07:26, Sys 0 00:00:05  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	0  -  Total Bytes Sent By Job
+	0  -  Total Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated 
+	   Cpus                 :     0.98        1         1 
+	   Disk (KB)            :     1    20480000  20846711 
+	   Memory (MB)          :   128        1536      1536 
+
+	Job terminated of its own accord at 2023-02-03T10:29:14Z.
+...

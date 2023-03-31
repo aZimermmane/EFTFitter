@@ -9,6 +9,7 @@
 // for iOp in ut dt cmm cmp cvv cva cav c1 c3 c123; do root -l -b '../../../exec/plotEvolution.cc++("'${iOp}'/'${iOp}'_evolution.root", "'${iOp}'_evolution.pdf", "'${iOp}'", false, false)'; sleep 0.1; done
 //for iOp in ut dt cmm cmp cvv cva cav c1 c3 c123; do root -l -b 'plotEvolution.cc++("../fit_output/ttbareft_translationp_Breuther_dim6top_reweighting_13TeV/Systematics_AllVars_1D_228x228_1000PE/TotalStatCovMatrix_AllVarNorm_rebinnedA/'${iOp}'/'${iOp}'_evolution.root","../evolution_output/'${iOp}'_stat_evolution.pdf","'${iOp}'",false,false)'; done
 
+
 //for iOp in ut dt cmm cmp cvv cva cav c1 c3 c123; do root -l -b 'plotEvolution.cc++("../fit_output/ttbareft_translationp_Breuther_dim6top_reweighting_13TeV/Systematics_AllVars_1D_132x132/TotalStatCovMatrix_AllVarNorm_rebinnedA/'${iOp}'/'${iOp}'_evolution.root","../fit_output/ttbareft_translationp_Breuther_dim6top_reweighting_13TeV/Systematics_AllVars_1D_132x132/TotalStatCovMatrix_AllVarNorm_rebinnedA/'${iOp}'/'${iOp}'_evolution.pdf","'${iOp}'",false,false)'; done
 void plotEvolution(const std::string &fileName = "", const std::string &pdfName = "./evo.pdf",
                    const std::string &opName = "", const bool isData = false, const bool addCentral = false) {
@@ -35,6 +36,7 @@ void plotEvolution(const std::string &fileName = "", const std::string &pdfName 
   m_plot_config.insert({"c1", {0., 0.7}});
   m_plot_config.insert({"c3", {0., 1.}});
   m_plot_config.insert({"c123", {0., 0.4}});
+  m_plot_config.insert({"cnn", {0., 0.1}});
 
   std::map<std::string, std::string> root_ope_config;
   root_ope_config.insert({"ctG", "c_{tG} / {#Lambda}^2"});
@@ -48,6 +50,8 @@ void plotEvolution(const std::string &fileName = "", const std::string &pdfName 
   root_ope_config.insert({"c1", "#hat c_{1}"});
   root_ope_config.insert({"c3", "#hat c_{3}"});
   root_ope_config.insert({"c123", "#hat{c}_{1}-#hat{c}_{2}+#hat{c}_{3}"});
+  root_ope_config.insert({"cnn", "#hat{C}_{nn}"});
+
 
 
 

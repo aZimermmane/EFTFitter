@@ -48,6 +48,13 @@ bool independentSet(const std::vector<int> &v_index, const int &index) {
   // eg set of b1k, b1r and b1n is not, since b1k^2 + b1r^2 + b1n^2 = 1
   // ie weed out anything that can be written as an identity
   static const std::vector<std::vector<int>> v_dependent = {
+    {10}, // excludes ckk
+    {11}, //excludes crr for debugging
+    {12}, //excludes cnn for debugging
+    // {29}, //excludes crk- for debugging
+    {21},
+    {22},
+    {23},
     {19},
     {20},
     {24},
@@ -70,6 +77,10 @@ bool independentSet(const std::vector<int> &v_index, const int &index) {
     {10, 14, 21, 29, 34}, // cnn -> cMrk crkM, crr -> chan
     {10, 14, 22, 29, 34}, // cnn -> cMrk crkM, crr -> ctra
     {10, 14, 23, 29, 34}, // cnn -> cMrk crkM, crr -> csca
+    {10, 14, 29, 32, 34}, // cnn -> cMrk crkM, crr -> c_nkP
+    {10, 14, 29, 33, 34}, // cnn -> cMrk crkM, crr -> c_nkM
+
+
 
     // {11, 12, 15, 30, 34}, //ckk -> cPnr + cnrP
     // {11, 15, 21, 30, 34}, //ckk -> cPnr + cnrP , crr -> chan
@@ -493,7 +504,7 @@ bool independentSet(const std::vector<int> &v_index, const int &index) {
 }
 
 int main(int argc, char** argv) {
-  if (argc < 2)
+  if (argc < 3)
     return 0;
 
   using EFT = EFTFitter;
@@ -506,7 +517,7 @@ int main(int argc, char** argv) {
   //EFT eft("data", 1., EFT::Fit::shape, EFT::Stat::xsec); // Modified by andre 01.02.23
   EFT eft("data", 1., EFT::Fit::hybrid, EFT::Stat::xsec);
   //const std::string inDir = "/nfs/dust/cms/user/afiqaize/cms/rand/eftRivet_290118/EFTFitter/wbern_0519/root/", opName = argv[1];
-  const std::string inDir = "/nfs/dust/cms/user/zimermma/EFTFitter/wbern_0314/root/", opName = argv[1];
+  const std::string inDir = "/nfs/dust/cms/user/zimermma/EFTFitter/wbern_0314/root/", opName = argv[1], max_it = argv[2];
   //const std::string inDir = "../histograms/ttbareft_translationp_Breuther_dim6top_reweighting_13TeV/", opName = argv[1];
   const std::string covMatrix ="Systematics_AllVars_1D_228x228_1000PE/TotalStatCovMatrix_AllVarNorm_rebinnedA";// Modified by andre 01.02.23
   //const std::string covMatrix ="TotalStatCovMatrix_AllVarNorm_rebinnedA";
@@ -530,7 +541,7 @@ int main(int argc, char** argv) {
                                                  {"dt", 0.04}, {"cmm", 0.08},
                                                  {"cva", 0.5}, {"c3", 0.5},
                                                  {"cav", 0.1}, {"c123", 0.5},
-                                                 {"cmp", 0.05}};
+                                                 {"cmp", 0.05}, {"cnn", 0.5}};
 
   const double opRange = m_range.at(opName);
   const int binToIgnore = 0;
@@ -549,11 +560,11 @@ int main(int argc, char** argv) {
                                            "cP_rk", "cM_rk", "cP_nr", "cM_nr", "cP_nk", "cM_nk",
                                            "ckj","crq",
                                            "chan","ctra","csca",
-                                           "cPrj","cM_rj",
+                                           "cP_rj","cM_rj",
                                            "c_kjL", "c_rqL",
                                            "c_rkP", "c_rkM", "c_nrP", "c_nrM", "c_nkP", "c_nkM",
                                            "cHel"};
-
+  const int maxIt = (std::stoi(max_it) > v_hStr.size()) ? v_hStr.size() : std::stoi(max_it);
 
 
   //const std::vector<std::string> v_hStr = {"cP_rk"};
@@ -579,7 +590,7 @@ int main(int argc, char** argv) {
   std::vector<int> v_fit_var;
 
   //for (int iIt = 0; iIt < v_hStr.size(); ++iIt) {
-  for (int iIt = 0; iIt < 5; ++iIt) {
+  for (int iIt = 0; iIt < maxIt; ++iIt) {
   //for (int iIt = 0; iIt < 1; ++iIt) {
     std::cout << "EFTFitter: iteration " << iIt << " starting..." << std::endl;
     std::vector<std::array<std::unique_ptr<TGraphAsymmErrors>, 2>> v_current_result;
@@ -722,10 +733,10 @@ int main(int argc, char** argv) {
       //eft.readCovMatRoot("finalcov", "/nfs/dust/cms/user/zimermma/EFTFitter/inputs/covariance_matrix/covMatSyst_purdue_full2016.root", covMatrix, covMat_binRange);
       //eft.makeFinalCovMat({"totalStat","totalSyst"});
 
-      eft.drawCovMat(outDir,{},true);
-      gSystem->Exec( ("mv " + outDir + "cov_finalcov.txt " + outDir + "covMat_" + v_hStr.at(iFit) + "_iter_" + toStr(iIt) + ".txt").c_str() );
-      gSystem->Exec( ("mv " + outDir + "cov_finalcov.pdf " + outDir + "covMat_" + v_hStr.at(iFit) + "_iter_" + toStr(iIt) + ".pdf").c_str() );
-      gSystem->Exec( ("rm " + outDir + "cov_all.root").c_str() );
+      //eft.drawCovMat(outDir,{},true);
+      //gSystem->Exec( ("mv " + outDir + "cov_finalcov.txt " + outDir + "covMat_" + v_hStr.at(iFit) + "_iter_" + toStr(iIt) + ".txt").c_str() );
+      //gSystem->Exec( ("mv " + outDir + "cov_finalcov.pdf " + outDir + "covMat_" + v_hStr.at(iFit) + "_iter_" + toStr(iIt) + ".pdf").c_str() );
+      //gSystem->Exec( ("rm " + outDir + "cov_all.root").c_str() );
 
       std::vector<std::tuple<std::string, EFT::Sample, std::string>> vt_keySampleLegend;
       vt_keySampleLegend.push_back({opName + "_-1", EFT::Sample::all, opName + " -1"});
@@ -734,10 +745,10 @@ int main(int argc, char** argv) {
       vt_keySampleLegend.push_back({opName + "_0", EFT::Sample::all, "SM"});
       vt_keySampleLegend.push_back({"data", EFT::Sample::all, "Data"});
 
-      eft.drawHistogram(vt_keySampleLegend,
-                        outDir + opName + "_var_" + v_hStr.at(iFit) + "_iter_" + toStr(iIt) + "_shape",
-                        "Fraction", "Index", -0.4999, 0.4999, 0.0001, 1.9999,
-                        false, "", false, "none");
+      //eft.drawHistogram(vt_keySampleLegend,
+                        // outDir + opName + "_var_" + v_hStr.at(iFit) + "_iter_" + toStr(iIt) + "_shape",
+                        // "Fraction", "Index", -0.4999, 0.4999, 0.0001, 1.9999,
+                        // false, "", false, "none");
 
       eft.listKeyToFit({ {opName, v_opPoint}});
       eft.computeFitChi2(v_sample);

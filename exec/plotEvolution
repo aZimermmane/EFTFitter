@@ -1,0 +1,46 @@
+
+Processing plotEvolution.cc++("../fit_output/ttbareft_translationp_Breuther_dim6top_reweighting_13TeV/TotalStatCovMatrix_AllVarNorm_rebinnedA/ut/ut_evolution.root","../fit_output/ttbareft_translationp_Breuther_dim6top_reweighting_13TeV/TotalSystStatCovMatrix_AllVarNorm_rebinnedA/ut/ut_evolution.pdf","ut",false,false)...
+Best in iteration 1: cHel, best fit value 0, 1 sigma width 0.012592, 2 sigma width 0.025184 at index 19
+1 
+Best in iteration 2: ckk, best fit value 0, 1 sigma width 0.011528, 2 sigma width 0.023056 at index 10
+1 
+Best in iteration 3: cnn, best fit value 0, 1 sigma width 0.009936, 2 sigma width 0.019864 at index 12
+1 
+Best in iteration 4: cM_rk, best fit value 0, 1 sigma width 0.009752, 2 sigma width 0.019504 at index 14
+1 
+Best in iteration 5: cM_nr, best fit value 0, 1 sigma width 0.00944, 2 sigma width 0.018872 at index 16
+1 
+Best in iteration 6: b1j, best fit value 0, 1 sigma width 0.009376, 2 sigma width 0.018752 at index 6
+1 
+2 
+2 
+2 
+2 
+2 
+2 
+3 
+4 
+4 
+4 
+4 
+4 
+4 
+5 
+
+Processing plotEvolution.cc++("../fit_output/ttbareft_translationp_Breuther_dim6top_reweighting_13TeV/TotalStatCovMatrix_AllVarNorm_rebinnedA/dt/dt_evolution.root","../fit_output/ttbareft_translationp_Breuther_dim6top_reweighting_13TeV/TotalSystStatCovMatrix_AllVarNorm_rebinnedA/dt/dt_evolution.pdf","dt",false,false)...
+
+Processing plotEvolution.cc++("../fit_output/ttbareft_translationp_Breuther_dim6top_reweighting_13TeV/TotalStatCovMatrix_AllVarNorm_rebinnedA/cmm/cmm_evolution.root","../fit_output/ttbareft_translationp_Breuther_dim6top_reweighting_13TeV/TotalSystStatCovMatrix_AllVarNorm_rebinnedA/cmm/cmm_evolution.pdf","cmm",false,false)...
+
+Processing plotEvolution.cc++("../fit_output/ttbareft_translationp_Breuther_dim6top_reweighting_13TeV/TotalStatCovMatrix_AllVarNorm_rebinnedA/cmp/cmp_evolution.root","../fit_output/ttbareft_translationp_Breuther_dim6top_reweighting_13TeV/TotalSystStatCovMatrix_AllVarNorm_rebinnedA/cmp/cmp_evolution.pdf","cmp",false,false)...
+
+Processing plotEvolution.cc++("../fit_output/ttbareft_translationp_Breuther_dim6top_reweighting_13TeV/TotalStatCovMatrix_AllVarNorm_rebinnedA/cvv/cvv_evolution.root","../fit_output/ttbareft_translationp_Breuther_dim6top_reweighting_13TeV/TotalSystStatCovMatrix_AllVarNorm_rebinnedA/cvv/cvv_evolution.pdf","cvv",false,false)...
+
+Processing plotEvolution.cc++("../fit_output/ttbareft_translationp_Breuther_dim6top_reweighting_13TeV/TotalStatCovMatrix_AllVarNorm_rebinnedA/cva/cva_evolution.root","../fit_output/ttbareft_translationp_Breuther_dim6top_reweighting_13TeV/TotalSystStatCovMatrix_AllVarNorm_rebinnedA/cva/cva_evolution.pdf","cva",false,false)...
+
+Processing plotEvolution.cc++("../fit_output/ttbareft_translationp_Breuther_dim6top_reweighting_13TeV/TotalStatCovMatrix_AllVarNorm_rebinnedA/cav/cav_evolution.root","../fit_output/ttbareft_translationp_Breuther_dim6top_reweighting_13TeV/TotalSystStatCovMatrix_AllVarNorm_rebinnedA/cav/cav_evolution.pdf","cav",false,false)...
+
+Processing plotEvolution.cc++("../fit_output/ttbareft_translationp_Breuther_dim6top_reweighting_13TeV/TotalStatCovMatrix_AllVarNorm_rebinnedA/c1/c1_evolution.root","../fit_output/ttbareft_translationp_Breuther_dim6top_reweighting_13TeV/TotalSystStatCovMatrix_AllVarNorm_rebinnedA/c1/c1_evolution.pdf","c1",false,false)...
+
+Processing plotEvolution.cc++("../fit_output/ttbareft_translationp_Breuther_dim6top_reweighting_13TeV/TotalStatCovMatrix_AllVarNorm_rebinnedA/c3/c3_evolution.root","../fit_output/ttbareft_translationp_Breuther_dim6top_reweighting_13TeV/TotalSystStatCovMatrix_AllVarNorm_rebinnedA/c3/c3_evolution.pdf","c3",false,false)...
+
+Processing plotEvolution.cc++("../fit_output/ttbareft_translationp_Breuther_dim6top_reweighting_13TeV/TotalStatCovMatrix_AllVarNorm_rebinnedA/c123/c123_evolution.root","../fit_output/ttbareft_translationp_Breuther_dim6top_reweighting_13TeV/TotalSystStatCovMatrix_AllVarNorm_rebinnedA/c123/c123_evolution.pdf","c123",false,false)...
