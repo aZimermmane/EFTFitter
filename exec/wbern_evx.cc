@@ -48,19 +48,22 @@ bool independentSet(const std::vector<int> &v_index, const int &index) {
   // eg set of b1k, b1r and b1n is not, since b1k^2 + b1r^2 + b1n^2 = 1
   // ie weed out anything that can be written as an identity
   static const std::vector<std::vector<int>> v_dependent = {
-    {10}, // excludes ckk
-    {11}, //excludes crr for debugging
-    {12}, //excludes cnn for debugging
-    // {29}, //excludes crk- for debugging
-    {21},
-    {22},
-    {23},
-    {19},
-    {20},
-    {24},
-    {25},
-    {26},
-    {27},
+    //  Excluding observables for debbuging
+    //{10}, //ckk
+    //{11}, //crr
+    //{12}, //cnn
+    // {29}, //crk-
+    // {21}, //chan
+    // {22}, //ctra
+    // {23}, //csca
+    // Excluding observables that are not available from Bernreuther predictions
+    {19}, //ckj
+    {20}, //ckq
+    {24}, //cP_rj
+    {25}, //cM_rj
+    {26}, //c_kjL
+    {27}, //c_rqL
+    // Excluding identities uf up to 5 observables (list is non exaustive)
     {10, 11, 12, 34}, // cHel = cii / 3
     {11, 12, 15, 30, 34}, //ckk -> cPnr cnrP
     {11, 12, 16, 31, 34}, //ckk -> cMnr cnrM

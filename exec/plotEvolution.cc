@@ -33,9 +33,9 @@ void plotEvolution(const std::string &fileName = "", const std::string &pdfName 
   m_plot_config.insert({"cvv", {0., 0.06}});
   m_plot_config.insert({"cva", {0., 0.06}});
   m_plot_config.insert({"cav", {0., 0.120}});
-  m_plot_config.insert({"c1", {0., 0.7}});
-  m_plot_config.insert({"c3", {0., 1.}});
-  m_plot_config.insert({"c123", {0., 0.4}});
+  m_plot_config.insert({"c1", {0., 0.5}});
+  m_plot_config.insert({"c3", {0., 0.5}});
+  m_plot_config.insert({"c123", {0., 0.5}});
   m_plot_config.insert({"cnn", {0., 0.1}});
 
   std::map<std::string, std::string> root_ope_config;
