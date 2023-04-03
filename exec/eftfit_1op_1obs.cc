@@ -14,13 +14,13 @@ int main() {
 
   // these are just to avoid writing them out repeatedly
   const std::string input_dir = "../histograms/ttbareft_translationp_Breuther_dim6top_reweighting_13TeV/";
-  const std::string output_dir = "./fit_output/ttbareft_translationp_Breuther_dim6top_reweighting_13TeV";
+  const std::string output_dir = "/afs/desy.de/user/z/zimermma/work/EFTFitter/fit_output/ttbareft_translationp_Breuther_dim6top_reweighting_13TeV";
   // const std::string covMat_file = "./inputs/covariance_matrix/covMatStat_purdue_full2016.root";
   // const std::string covMat = "TotalStatCovMatrix_AllVarNorm_rebinnedA";
-  const std::string histName = "gen_cHel";
+  const std::string histName = "gen_cLab";
   const std::string sumName = ""; //Modified by Andre 02.02..23
       //const std::string sumName = "TTbarSpinDensityMatrix/sumWgt_noCut";
-  const int histIndex = 19; // index of Hist in the order it appears on the covMatt, ranging from 1 to 22
+  const int histIndex = 35; // index of Hist in the order it appears on the covMatt, ranging from 1 to 22
   const int nRebin = 1;
   const int nCovMatBins = 6;
   //const double k_nnlo_lo = 1.667296656, br_tt_2l = 0.041062412; // NNLO/LO k-factor
@@ -72,14 +72,14 @@ int main() {
   // can also partially extract along the diagonal, pass a vector of bin index range eg {{1, 6}, {115, 120}} as last arg
   //eft.readCovMatRoot("finalcov", covMat_file, covMat ,{{(histIndex-1)*nCovMatBins+1, (histIndex-1)*nCovMatBins+(nCovMatBins)}});
   //eft.readCovMatRoot("finalcov", input_dir + "covariance_matrix/covMatSyst_purdue_full2016.root", "TotalSystCovMatrix_AllVarNorm_rebinnedA",{{(histIndex-1)*nCovMatBins+1, (histIndex-1)*nCovMatBins+(nCovMatBins)}});
-  eft.readCovMatRoot("finalcov", "./inputs/covariance_matrix/covmat_190114.root", "TotalStat_shape_a",{{(histIndex-1)*nCovMatBins+1, (histIndex-1)*nCovMatBins+(nCovMatBins)}});
+  //eft.readCovMatRoot("finalcov", "./inputs/covariance_matrix/covmat_190114.root", "TotalStat_shape_a",{{(histIndex-1)*nCovMatBins+1, (histIndex-1)*nCovMatBins+(nCovMatBins)}});
   // eft.readCovMatRoot("finalcov", "./inputs/covariance_matrix/covmat_190114.root", "TotalSyst_shape_a",{{(histIndex-1)*nCovMatBins+1, (histIndex-1)*nCovMatBins+(nCovMatBins)}});
   // eft.readCovMatRoot("totalStat", "./inputs/covariance_matrix/covMatStat_purdue_full2016.root", "TotalStatCovMatrix_AllVarNorm_rebinnedA",{{(histIndex-1)*nCovMatBins+1, (histIndex-1)*nCovMatBins+(nCovMatBins)}});
   // eft.readCovMatRoot("totalSyst", "./inputs/covariance_matrix/covMatSyst_purdue_full2016.root", "TotalSystCovMatrix_AllVarNorm_rebinnedA",{{(histIndex-1)*nCovMatBins+1, (histIndex-1)*nCovMatBins+(nCovMatBins)}});
- // eft.readCovMatRoot("totalStat", "./inputs/covariance_matrix/Systematics_AllVars_1D_132x132.root", "TotalStatCovMatrix_AllVarNorm_rebinnedA",{{(histIndex-1)*nCovMatBins+1, (histIndex-1)*nCovMatBins+(nCovMatBins)}});
+  //eft.readCovMatRoot("totalStat", "/afs/desy.de/user/z/zimermma/work/EFTFitter/inputs/covariance_matrix/Systematics_AllVars_1D_228x228_1000PE.root", "TotalStatCovMatrix_AllVarNorm_rebinnedA",{{(histIndex-1)*nCovMatBins+1, (histIndex-1)*nCovMatBins+(nCovMatBins)}});
 //  eft.readCovMatRoot("totalSyst", "./inputs/covariance_matrix/Systematics_AllVars_1D_132x132.root", "TotalSystCovMatrix_AllVarNorm_rebinnedA",{{(histIndex-1)*nCovMatBins+1, (histIndex-1)*nCovMatBins+(nCovMatBins)}});
 
-  //eft.readCovMatRoot("finalcov", "./inputs/covariance_matrix/Systematics_AllVars_1D_132x132.root", "TotalStatCovMatrix_AllVarNorm_rebinnedA",{{(histIndex-1)*nCovMatBins+1, (histIndex-1)*nCovMatBins+(nCovMatBins)}});
+  eft.readCovMatRoot("finalcov", "/afs/desy.de/user/z/zimermma/work/EFTFitter/inputs/covariance_matrix/Systematics_AllVars_1D_228x228_1000PE.root", "TotalStatCovMatrix_AllVarNorm_rebinnedA",{{(histIndex-1)*nCovMatBins+1, (histIndex-1)*nCovMatBins+(nCovMatBins)}});
 
 // can add more matrices if needed
   //eft.readCovMatRoot("totalSyst", input_dir + "/unfolded_data.root", "other_matrix_name");
