@@ -11,7 +11,7 @@ if [ -z "$1" ] ; then
     echo "Need to give an operator name!"
     exit 0
 fi
-/nfs/dust/cms/user/zimermma/EFTFitter/exec/wbern_evx_test  "$1"
+/nfs/dust/cms/user/zimermma/EFTFitter/exec/wbern_evx_test "$1" "1"
 
 #done
 echo -e "\nJob stoped at "`date`" on "`hostname --fqdn`"\n"
