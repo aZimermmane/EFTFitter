@@ -520,14 +520,14 @@ int main(int argc, char** argv) {
   //EFT eft("data", 1., EFT::Fit::shape, EFT::Stat::xsec); // Modified by andre 01.02.23
   EFT eft("data", 1., EFT::Fit::hybrid, EFT::Stat::xsec);
   //const std::string inDir = "/nfs/dust/cms/user/afiqaize/cms/rand/eftRivet_290118/EFTFitter/wbern_0519/root/", opName = argv[1];
-  const std::string inDir = "/nfs/dust/cms/user/zimermma/EFTFitter/wbern_0314/root/", opName = argv[1], max_it = argv[2];
+  const std::string inDir = "/afs/desy.de/user/z/zimermma/work/EFTFitter/wbern_0314/root/", opName = argv[1], max_it = argv[2];
   //const std::string inDir = "../histograms/ttbareft_translationp_Breuther_dim6top_reweighting_13TeV/", opName = argv[1];
-  const std::string covMatrix ="Systematics_AllVars_1D_228x228_1000PE/TotalStatCovMatrix_AllVarNorm_rebinnedA";// Modified by andre 01.02.23
+  const std::string covMatrix ="Systematics_AllVars_1D_228x228_1000PE/TotalStatSystCovMatrix_AllVarNorm_rebinnedA";// Modified by andre 01.02.23
   //const std::string covMatrix ="TotalStatCovMatrix_AllVarNorm_rebinnedA";
   //const std::string covMatrix ="TotalSystCovMatrix_AllVarNorm_rebinnedA";
   //const std::string covMatrix ="TotalSystStatCovMatrix_AllVarNorm_rebinnedA";
   //const std::string covMatrix = "TotalStat_shape_a_drop_bin_1";
-  const std::string outDir = "/nfs/dust/cms/user/zimermma/EFTFitter/fit_output/ttbareft_translationp_Breuther_dim6top_reweighting_13TeV/" + covMatrix + "/" + opName + "/";
+  const std::string outDir = "/afs/desy.de/user/z/zimermma/work/EFTFitter/output-2016-1D/" + covMatrix + "/" + opName + "/";
 
   gSystem->Exec(("mkdir -p "+ outDir).c_str() );
 
@@ -731,12 +731,12 @@ int main(int argc, char** argv) {
       //eft.readCovMatRoot("finalcov", "/nfs/dust/cms/user/afiqaize/cms/rand/eftRivet_290118/EFTFitter/covariance_matrix/covmat_190114.root", covMatrix, covMat_binRange);
       //eft.readCovMatRoot("finalcov", "/nfs/dust/cms/user/zimermma/EFTFitter/inputs/covariance_matrix/covmat_190114.root", "TotalStat_shape_a", covMat_binRange);
       //eft.readCovMatRoot("totalStat", "/nfs/dust/cms/user/zimermma/EFTFitter/inputs/covariance_matrix/Systematics_AllVars_1D_132x132.root", "TotalStatCovMatrix_AllVarNorm_rebinnedA", covMat_binRange);
-      eft.readCovMatRoot("finalcov", "/nfs/dust/cms/user/zimermma/EFTFitter/inputs/covariance_matrix/Systematics_AllVars_1D_228x228_1000PE.root", "TotalStatCovMatrix_AllVarNorm_rebinnedA", covMat_binRange);
-    //  eft.readCovMatRoot("totalSyst", "/nfs/dust/cms/user/zimermma/EFTFitter/inputs/covariance_matrix/Systematics_AllVars_1D_228x228_1000PE.root", "TotalSystCovMatrix_AllVarNorm_rebinnedA", covMat_binRange);
+      eft.readCovMatRoot("finalcov", "/afs/desy.de/user/z/zimermma/work/EFTFitter/inputs/covariance_matrix/Systematics_AllVars_1D_228x228_1000PE.root", "TotalStatCovMatrix_AllVarNorm_rebinnedA", covMat_binRange);
+      //eft.readCovMatRoot("totalSyst", "/afs/desy.de/user/z/zimermma/work/EFTFitter/inputs/covariance_matrix/Systematics_AllVars_1D_228x228_1000PE.root", "TotalSystCovMatrix_AllVarNorm_rebinnedA", covMat_binRange);
       //eft.readCovMatRoot("finalcov", "/nfs/dust/cms/user/zimermma/EFTFitter/inputs/covariance_matrix/covMatSyst_purdue_full2016.root", covMatrix, covMat_binRange);
       //eft.makeFinalCovMat({"totalStat","totalSyst"});
 
-      //eft.drawCovMat(outDir,{},true);
+      eft.drawCovMat(outDir,{},true);
       //gSystem->Exec( ("mv " + outDir + "cov_finalcov.txt " + outDir + "covMat_" + v_hStr.at(iFit) + "_iter_" + toStr(iIt) + ".txt").c_str() );
       //gSystem->Exec( ("mv " + outDir + "cov_finalcov.pdf " + outDir + "covMat_" + v_hStr.at(iFit) + "_iter_" + toStr(iIt) + ".pdf").c_str() );
       //gSystem->Exec( ("rm " + outDir + "cov_all.root").c_str() );
@@ -748,10 +748,10 @@ int main(int argc, char** argv) {
       vt_keySampleLegend.push_back({opName + "_0", EFT::Sample::all, "SM"});
       vt_keySampleLegend.push_back({"data", EFT::Sample::all, "Data"});
 
-      //eft.drawHistogram(vt_keySampleLegend,
-                        // outDir + opName + "_var_" + v_hStr.at(iFit) + "_iter_" + toStr(iIt) + "_shape",
-                        // "Fraction", "Index", -0.4999, 0.4999, 0.0001, 1.9999,
-                        // false, "", false, "none");
+      eft.drawHistogram(vt_keySampleLegend,
+                         outDir + opName + "_var_" + v_hStr.at(iFit) + "_iter_" + toStr(iIt) + "_shape",
+                         "Fraction", "Index", -0.4999, 0.4999, 0.0001, 1.9999,
+                         false, "", false, "none");
 
       eft.listKeyToFit({ {opName, v_opPoint}});
       eft.computeFitChi2(v_sample);
