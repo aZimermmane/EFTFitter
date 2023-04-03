@@ -79,7 +79,7 @@ int main() {
   //eft.readCovMatRoot("totalStat", "/afs/desy.de/user/z/zimermma/work/EFTFitter/inputs/covariance_matrix/Systematics_AllVars_1D_228x228_1000PE.root", "TotalStatCovMatrix_AllVarNorm_rebinnedA",{{(histIndex-1)*nCovMatBins+1, (histIndex-1)*nCovMatBins+(nCovMatBins)}});
 //  eft.readCovMatRoot("totalSyst", "./inputs/covariance_matrix/Systematics_AllVars_1D_132x132.root", "TotalSystCovMatrix_AllVarNorm_rebinnedA",{{(histIndex-1)*nCovMatBins+1, (histIndex-1)*nCovMatBins+(nCovMatBins)}});
 
-  eft.readCovMatRoot("finalcov", "/afs/desy.de/user/z/zimermma/work/EFTFitter/inputs/covariance_matrix/Systematics_AllVars_1D_228x228_1000PE.root", "TotalStatCovMatrix_AllVarNorm_rebinnedA",{{(histIndex-1)*nCovMatBins+1, (histIndex-1)*nCovMatBins+(nCovMatBins)}});
+  eft.readCovMatRoot("finalcov", "/afs/desy.de/user/z/zimermma/work/EFTFitter/inputs/covariance_matrix/Systematics_AllVars_1D_228x228_1000PE.root", "TotalStatCovMatrix_AllVarNorm_rebinnedA",{{1+(histIndex*nCovMatBins), (histIndex+1)*nCovMatBins}});
 
 // can add more matrices if needed
   //eft.readCovMatRoot("totalSyst", input_dir + "/unfolded_data.root", "other_matrix_name");
