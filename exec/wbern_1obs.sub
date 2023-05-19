@@ -1,0 +1,24 @@
+# HTCondor submit file to submit all jobs
+
+executable              = /nfs/dust/cms/user/zimermma/EFTFitter/exec/wbern_1obs.sh
+arguments               = $(operator) $(dataset) $(covariance) $(covTag)
+dataset = 2016preUL 
+#dataset <2016preUL |2016UL >
+covariance = total
+#covariance # <stat|total>
+#covTag = _1000PE_MCStatFixed
+#covTag < _1000PE_MCStatFixed |... > optional for UL sets, so that we can fit and save different versions ofd the cov matrices
+log                     = /afs/desy.de/user/z/zimermma/work/EFTFitter/output-2016-1D/sigleObsFit/$(dataset)_$(covariance)$(covTag)/wbern_1obs_$(operator).log
+output                  = /afs/desy.de/user/z/zimermma/work/EFTFitter/output-2016-1D/sigleObsFit/$(dataset)_$(covariance)$(covTag)/wbern_1obs_$(operator).txt
+error                   = /afs/desy.de/user/z/zimermma/work/EFTFitter/output-2016-1D/sigleObsFit/$(dataset)_$(covariance)$(covTag)/wbern_1obs_$(operator).txt
+getenv = TRUE
+should_transfer_files   = NO
+#when_to_transfer_output = ON_EXIT #_OR_EVICT
+#request_memory          = 4G
+#request_cpus            = 1
+notification            = error
+max_retries             = 3
+#+RequestRuntime         = 10800
+queue 1 operator in dt ut cvv c1 cmm cva c3 cav c123 cmp b1k b2k b1r b2r b1n b2n b1j b2j b1q b2q ckk crr cnn cPrk cMrk cPnr cMnr cPnk cMnk
+#queue 1 operator in b1j
+#queue 1 operator in dt ut cvv c1 cmm cva c3 cav c123 cmp b1k b2k b1r b2r b1n b2n b1j b2j b1q b2q ckk crr cnn cPrk cMrk cPnr cMnr cPnk cMnk ckj crq cPrj cMrj

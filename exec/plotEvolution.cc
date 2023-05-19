@@ -5,12 +5,8 @@
 
 // usage: root -l -b 'plotEvolution.cc++("input.root", "output.pdf", "op", <isData>, <addCentral>)'
 // evolution plot where the evolution is directly in the exec macro instead of manual fits
-//for iOp in dt cmm cmp cvv cva cav c1 c3 c123 root -l -b 'plotEvolution.cc++("../fit_output/ttbareft_translationp_Breuther_dim6top_reweighting_13TeV/TotalStatCovMatrix_AllVarNorm_rebinnedA/'${iOp}'/'${iOp}'_evolution.root","../fit_output/ttbareft_translationp_Breuther_dim6top_reweighting_13TeV/TotalStatCovMatrix_AllVarNorm_rebinnedA/'${iOp}'_evolution.pdf","'${iOp}'",false,false)'; sleep 0.1; done
-// for iOp in ut dt cmm cmp cvv cva cav c1 c3 c123; do root -l -b '../../../exec/plotEvolution.cc++("'${iOp}'/'${iOp}'_evolution.root", "'${iOp}'_evolution.pdf", "'${iOp}'", false, false)'; sleep 0.1; done
-//for iOp in ut dt cmm cmp cvv cva cav c1 c3 c123; do root -l -b 'plotEvolution.cc++("../fit_output/ttbareft_translationp_Breuther_dim6top_reweighting_13TeV/Systematics_AllVars_1D_228x228_1000PE/TotalStatCovMatrix_AllVarNorm_rebinnedA/'${iOp}'/'${iOp}'_evolution.root","../evolution_output/'${iOp}'_stat_evolution.pdf","'${iOp}'",false,false)'; done
+//for iOp in ut dt cmm cmp cvv cva cav c1 c3 c123; do root -l -b 'plotEvolution.cc++("/afs/desy.de/user/z/zimermma/work/EFTFitter/output-2016-1D/Systematics_AllVars_1D_1000PE_MCStatFixed/TotalStatCovMatrix_AllVarNorm_rebinnedA//'${iOp}'/'${iOp}'_evolution.root","/afs/desy.de/user/z/zimermma/work/EFTFitter/output-2016-1D/Systematics_AllVars_1D_1000PE_MCStatFixed/'${iOp}'_Stat_evolution.pdf","'${iOp}'",false,false)'; done
 
-
-//for iOp in ut dt cmm cmp cvv cva cav c1 c3 c123; do root -l -b 'plotEvolution.cc++("../fit_output/ttbareft_translationp_Breuther_dim6top_reweighting_13TeV/Systematics_AllVars_1D_132x132/TotalStatCovMatrix_AllVarNorm_rebinnedA/'${iOp}'/'${iOp}'_evolution.root","../fit_output/ttbareft_translationp_Breuther_dim6top_reweighting_13TeV/Systematics_AllVars_1D_132x132/TotalStatCovMatrix_AllVarNorm_rebinnedA/'${iOp}'/'${iOp}'_evolution.pdf","'${iOp}'",false,false)'; done
 void plotEvolution(const std::string &fileName = "", const std::string &pdfName = "./evo.pdf",
                    const std::string &opName = "", const bool isData = false, const bool addCentral = false) {
   gROOT->Reset();
@@ -26,17 +22,52 @@ void plotEvolution(const std::string &fileName = "", const std::string &pdfName 
   // map for the plot settings - key is opName, value is y axis range
   std::map<std::string, std::array<double, 2>> m_plot_config;
   m_plot_config.insert({"ctG", {0.0001, 0.4999}});
-  m_plot_config.insert({"ut", {0., 0.03}});
-  m_plot_config.insert({"dt", {0.0, 0.03}});
-  m_plot_config.insert({"cmm", {0.0, 0.08}});
-  m_plot_config.insert({"cmp", {0., 0.02}});
-  m_plot_config.insert({"cvv", {0., 0.06}});
-  m_plot_config.insert({"cva", {0., 0.06}});
-  m_plot_config.insert({"cav", {0., 0.120}});
-  m_plot_config.insert({"c1", {0., 0.5}});
-  m_plot_config.insert({"c3", {0., 0.5}});
-  m_plot_config.insert({"c123", {0., 0.5}});
-  m_plot_config.insert({"cnn", {0., 0.1}});
+  m_plot_config.insert({"ut", {0., 0.02999}});
+  m_plot_config.insert({"dt", {0.0, 0.044999}});
+  m_plot_config.insert({"cmm", {0.0, 0.064999}});
+  m_plot_config.insert({"cmp", {0., 0.01999}});
+  m_plot_config.insert({"cvv", {0., 0.04999}});
+  m_plot_config.insert({"cva", {0., 0.14999}});
+  m_plot_config.insert({"cav", {0., 0.14999}});
+  m_plot_config.insert({"c1", {0., 0.4999}});
+  m_plot_config.insert({"c3", {0., 0.9999}});
+  m_plot_config.insert({"c123", {0., 0.9999}});
+  //m_plot_config.insert({"cnn", {0., 0.1}});
+
+  //m_plot_config.insert({"ctG", {0.0001, 0.4999}});
+  //m_plot_config.insert({"ut", {0., 0.1999}});
+  //m_plot_config.insert({"dt", {0., 0.1999}});
+  //m_plot_config.insert({"cmm", {0., 0.1999}});
+  //m_plot_config.insert({"cmp", {0., 0.04999}});
+  //m_plot_config.insert({"cvv", {0., 0.7999}});
+  //m_plot_config.insert({"cva", {0., 0.7999}});
+  //m_plot_config.insert({"cav", {0., 0.1499}});
+  //m_plot_config.insert({"c1", {0., 6.4999}});
+  //m_plot_config.insert({"c3", {0., 2.4999}});
+  //m_plot_config.insert({"c123",{0., 0.7999}});
+  m_plot_config.insert({"b1k", {0., 0.12999}});
+  m_plot_config.insert({"b2k", {0., 0.12999}});
+  m_plot_config.insert({"b1r", {0., 0.12999}});
+  m_plot_config.insert({"b2r", {0., 0.12999}});
+  m_plot_config.insert({"b1n", {0., 0.125999}});
+  m_plot_config.insert({"b2n", {0., 0.125999}});
+  m_plot_config.insert({"b1j", {0., 0.125999}});
+  m_plot_config.insert({"b2j", {0., 0.125999}});
+  m_plot_config.insert({"b1q", {0., 0.125999}});
+  m_plot_config.insert({"b2q", {0., 0.125999}});
+  m_plot_config.insert({"ckk", {0., 0.16999}});
+  m_plot_config.insert({"crr", {0., 0.16999}});
+  m_plot_config.insert({"cnn", {0., 0.16999}});
+  m_plot_config.insert({"cPrk", {0., 0.16999}});
+  m_plot_config.insert({"cMrk", {0., 0.16999}});
+  m_plot_config.insert({"cPnr", {0., 0.16999}});
+  m_plot_config.insert({"cMnr", {0., 0.16999}});
+  m_plot_config.insert({"cPnk", {0., 0.16999}});
+  m_plot_config.insert({"cMnk", {0., 0.16999}});
+  m_plot_config.insert({"ckj", {0., 0.16999}});
+  m_plot_config.insert({"crq", {0., 0.16999}});
+  m_plot_config.insert({"cPrj", {0., 0.16999}});
+  m_plot_config.insert({"cMrj", {0., 0.16999}});
 
   std::map<std::string, std::string> root_ope_config;
   root_ope_config.insert({"ctG", "c_{tG} / {#Lambda}^2"});
@@ -50,8 +81,29 @@ void plotEvolution(const std::string &fileName = "", const std::string &pdfName 
   root_ope_config.insert({"c1", "#hat c_{1}"});
   root_ope_config.insert({"c3", "#hat c_{3}"});
   root_ope_config.insert({"c123", "#hat{c}_{1}-#hat{c}_{2}+#hat{c}_{3}"});
-  root_ope_config.insert({"cnn", "#hat{C}_{nn}"});
-
+  root_ope_config.insert({"b1k", "B^{1}_{k}"});
+  root_ope_config.insert({"b2k", "B^{2}_{k}"});
+  root_ope_config.insert({"b1r", "B^{1}_{r}"});
+  root_ope_config.insert({"b2r", "B^{2}_{r}"});
+  root_ope_config.insert({"b1n", "B^{1}_{n}"});
+  root_ope_config.insert({"b2n", "B^{2}_{n}"});
+  root_ope_config.insert({"b1j", "B^{1}_{k*}"});
+  root_ope_config.insert({"b2j", "B^{2}_{k*}"});
+  root_ope_config.insert({"b1q", "B^{1}_{r*}"});
+  root_ope_config.insert({"b2q", "B^{2}_{r*}"});
+  root_ope_config.insert({"ckk", "C_{kk}"});
+  root_ope_config.insert({"crr", "C_{rr}"});
+  root_ope_config.insert({"cnn", "C_{nn}"});
+  root_ope_config.insert({"cPrk", "C_{+rk}"});
+  root_ope_config.insert({"cMrk", "C_{-rk}"});
+  root_ope_config.insert({"cPnr", "C_{+nr}"});
+  root_ope_config.insert({"cMnr", "C_{-nr}"});
+  root_ope_config.insert({"cPnk", "C_{+nk}"});
+  root_ope_config.insert({"cMnk", "C_{-nk}"});
+  root_ope_config.insert({"ckj", "C_{kk*}"});
+  root_ope_config.insert({"crq", "C_{rk*}"});
+  root_ope_config.insert({"cPrj", "C_{+rk*}"});
+  root_ope_config.insert({"cMrj", "C_{-rk*}"});
 
 
 

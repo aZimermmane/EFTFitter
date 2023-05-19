@@ -1,7 +1,7 @@
-// usage: root -l -b 'singleFitReport.cc++("output.pdf", "dt", 0)'
+// usage: root -l -b 'singleFitReport.cc++("/afs/desy.de/user/z/zimermma/work/EFTFitter/output-2016-1D/sigleObsFit/Systematics_AllVars_1D_1000PE_MCStatFixed/dt_1var_shape_sm_StatSyst.pdf", "dt", 0)'
 // pure spin op list b1k b2k b1r b2r b1n b2n b1j b2j b1q b2q ckk crr cnn cPrk cMrk cPnr cMnr cPnk cMnk ckj crq cPrj cMrj
-//for iOp in c1 c3 b1k b2k b1r b2r b1n b2n b1j b2j b1q b2q ckk crr cnn cPrk cMrk cPnr cMnr cPnk cMnk ckj crq cPrj cMrj ; do root -l -b 'singleFitReport.cc++("/afs/desy.de/user/z/zimermma/work/EFTFitter/output-2016-1D/sigleObsFit/2016UL_stat_1000PE_MCStatFixed/'${iOp}'_1var_shape_sm.pdf", "'${iOp}'", 0)' > /afs/desy.de/user/z/zimermma/work/EFTFitter/output-2016-1D/sigleObsFit/2016UL_stat_1000PE_MCStatFixed/singleFitReport_"${iOp}"_out.txt ; done
-
+//for iOp in c3 c123; do root -l -b 'singleFitReport.cc++("/afs/desy.de/user/z/zimermma/work/EFTFitter/output-2016-1D/sigleObsFit/Systematics_AllVars_1D_1000PE_MCStatFixed/'${iOp}'_1var_shape_sm.pdf", "'${iOp}'", 0)' > /afs/desy.de/user/z/zimermma/work/EFTFitter/output-2016-1D/sigleObsFit/Systematics_AllVars_1D_1000PE_MCStatFixed/singleFitReport_"${iOp}"_out.txt ; done
+//for iOp in ckk crr cnn cPrk cMrk cPnr cMnr cPnk cMnk ckj crq cPrj cMrj; do root -l -b 'singleFitReport.cc++("/afs/desy.de/user/z/zimermma/work/EFTFitter/output-2016-1D/sigleObsFit/Systematics_AllVars_1D_1000PE_MCStatFixed/'${iOp}'_1var_shape_sm.pdf", "'${iOp}'", 0)' > /afs/desy.de/user/z/zimermma/work/EFTFitter/output-2016-1D/sigleObsFit/Systematics_AllVars_1D_1000PE_MCStatFixed/singleFitReport_"${iOp}"_out.txt ; done
 
 
 #include "../src/PlotUtil.h"
@@ -54,6 +54,7 @@ std::string join(const std::vector<std::string> &strs, const std::string &sep = 
   return str;
 }
 
+
 // check if file exists - works only for full absolute path
 bool is_nonexistent(const std::string& name) {
   return ifstream(name.c_str()).fail();
@@ -62,21 +63,22 @@ bool is_nonexistent(const std::string& name) {
 
 
 //std::array<std::unique_ptr<TGraphAsymmErrors>, 3> makeConstraintGraph(const std::string &varName, const std::string &opName, const int nVar, const int nStep) {
-std::array<std::unique_ptr<TGraphAsymmErrors>, 3> makeConstraintGraph(const std::string &fileName, const int &iFile, std::string varName, const int nVar, const int nStep) {
+std::array<std::unique_ptr<TGraphAsymmErrors>, 3> makeConstraintGraph(std::string varName, const std::string &opName, const int nVar, const int nStep) {
   // read the graph and transform them to the single point
-  // const std::string fileName = "/afs/desy.de/user/z/zimermma/work/EFTFitter/output-2016-1D/sigleObsFit/Systematics_AllVars_1D_1000PE_MCStatFixed/TotalStatCovMatrix_AllVarNorm_rebinnedA/"+opName+"/"+opName+"_dchi2.root";
-  // const std::string fileName2 ="/afs/desy.de/user/z/zimermma/work/EFTFitter/output-2016-1D/sigleObsFit/Systematics_AllVars_1D_1000PE_MCStatFixed/TotalStatCovMatrix_AllVarNorm_rebinnedA/"+opName+"/"+opName+"_dchi2.root";
+  const std::string fileName = "/afs/desy.de/user/z/zimermma/work/EFTFitter/output-2016-1D/sigleObsFit/Systematics_AllVars_1D_1000PE_MCStatFixed/TotalStatSystCovMatrix_AllVarNorm_rebinnedA/"+opName+"/"+opName+"_dchi2.root";
+  const std::string fileName2 ="/afs/desy.de/user/z/zimermma/work/EFTFitter/output-2016-1D/sigleObsFit/Systematics_AllVars_1D_1000PE_MCStatFixed/TotalStatCovMatrix_AllVarNorm_rebinnedA/"+opName+"/"+opName+"_dchi2.root";
 
   // first check if file is there - MUST be direct path, method can't handle links
   const bool isNull = is_nonexistent(fileName);
-
+  
   // make the graph for each point
-  std::array<std::unique_ptr<TGraphAsymmErrors>, 3> a_graph = {nullptr, nullptr, nullptr};
+  //std::array<std::unique_ptr<TGraphAsymmErrors>, 6> a_graph = {nullptr, nullptr, nullptr, nullptr, nullptr, nullptr};
+  std::array<std::unique_ptr<TGraphAsymmErrors>, 3  > a_graph = {nullptr, nullptr, nullptr};
   if (isNull)
     return a_graph;
 
   auto file = std::unique_ptr<TFile>(TFile::Open( fileName.c_str() ));
-  std::cout << "Point 1 " << std::endl;
+  std::cout << "BP 0 " << std::endl;
 
   if (varName == ""s) {
     TIter keys( file->GetListOfKeys() );
@@ -90,8 +92,6 @@ std::array<std::unique_ptr<TGraphAsymmErrors>, 3> makeConstraintGraph(const std:
           tokens.erase(tokens.begin());
           return join(tokens, "_"s);
         } ();
-          std::cout << "Point 1.1 " << varName << std::endl;
-
 
         break;
       }
@@ -100,45 +100,40 @@ std::array<std::unique_ptr<TGraphAsymmErrors>, 3> makeConstraintGraph(const std:
 
   if (varName == ""s)
     throw std::invalid_argument( "varName is empty. something went wrong." );
+    std::cout << "BP 1 " << "varName: " << varName << std::endl;
 
   // read the real best fit and sigmas
   //auto g_src1 = std::unique_ptr<TGraphAsymmErrors>(dynamic_cast<TGraphAsymmErrors *>(( file->Get(("linear_"+varName+"_sigma1").c_str() ))->Clone() ));
   //auto g_src2 = std::unique_ptr<TGraphAsymmErrors>(dynamic_cast<TGraphAsymmErrors *>(( file->Get(("linear_"+varName+"_sigma2").c_str() ))->Clone() ));
-  std::cout << "Point 1.2 " << varName << std::endl;
   if ( file->Get(("linear_"+varName+"_sigma1").c_str()) && file->Get(("linear_"+varName+"_sigma2").c_str()) ) {
-  auto g_src1 = std::unique_ptr<TGraphAsymmErrors>(dynamic_cast<TGraphAsymmErrors *>(( file->Get(("linear_"+varName+"_sigma1").c_str() ))->Clone() ));
-  auto g_src2 = std::unique_ptr<TGraphAsymmErrors>(dynamic_cast<TGraphAsymmErrors *>(( file->Get(("linear_"+varName+"_sigma2").c_str() ))->Clone() ));
-  std::cout << "Point 2 " << std::endl;
+    auto g_src1 = std::unique_ptr<TGraphAsymmErrors>(dynamic_cast<TGraphAsymmErrors *>(( file->Get(("linear_"+varName+"_sigma1").c_str() ))->Clone() ));
+    auto g_src2 = std::unique_ptr<TGraphAsymmErrors>(dynamic_cast<TGraphAsymmErrors *>(( file->Get(("linear_"+varName+"_sigma2").c_str() ))->Clone() ));
 
-  double best_fit = 0., dummy = 0.;
-  g_src1->GetPoint(0, best_fit, dummy);
-  const double sig1U = g_src1->GetErrorXhigh(0), sig1D = g_src1->GetErrorXlow(0);
-  const double sig2U = g_src2->GetErrorXhigh(0), sig2D = g_src2->GetErrorXlow(0);
+    double best_fit = 0., dummy = 0.;
+    g_src1->GetPoint(0, best_fit, dummy);
+    const double sig1U = g_src1->GetErrorXhigh(0), sig1D = g_src1->GetErrorXlow(0);
+    const double sig2U = g_src2->GetErrorXhigh(0), sig2D = g_src2->GetErrorXlow(0);
 
-  std::cout << "Point 3 " << std::endl;
-  double transp = 0.3;
-  if (iFile == 0) transp = 1.0;
+    a_graph.at(0) = std::make_unique<TGraphAsymmErrors>(1);
+    a_graph.at(0)->SetName((varName + "_sig2_" + toStr(nVar) + "_" + toStr(nStep)).c_str());
+    a_graph.at(0)->SetPoint(0, nVar, best_fit + nStep);
+    a_graph.at(0)->SetPointError(0, 0., 0., sig2D, sig2U);
+    stylePlot(a_graph.at(0).get(), kOrange, 1., 1001, 0, 1.5, 1, 3);
 
-  a_graph.at(0) = std::make_unique<TGraphAsymmErrors>(1);
-  a_graph.at(0)->SetName((varName + "_sig2_" + toStr(nVar) + "_" + toStr(nStep)).c_str());
-  a_graph.at(0)->SetPoint(0, nVar, best_fit + nStep);
-  a_graph.at(0)->SetPointError(0, 0., 0., sig2D, sig2U);
-  stylePlot(a_graph.at(0).get(), kOrange - (iFile), transp, 1001, 0, 1.5, 1, 3);
+    a_graph.at(1) = std::make_unique<TGraphAsymmErrors>(1);
+    a_graph.at(1)->SetName((varName + "_sig1_" + toStr(nVar) + "_" + toStr(nStep)).c_str());
+    a_graph.at(1)->SetPoint(0, nVar, best_fit + nStep);
+    a_graph.at(1)->SetPointError(0, 0., 0., sig1D, sig1U);
+    stylePlot(a_graph.at(1).get(), kGreen + 1, 1., 1001, 0, 1.5, 1, 3);
 
-  a_graph.at(1) = std::make_unique<TGraphAsymmErrors>(1);
-  a_graph.at(1)->SetName((varName + "_sig1_" + toStr(nVar) + "_" + toStr(nStep)).c_str());
-  a_graph.at(1)->SetPoint(0, nVar, best_fit + nStep);
-  a_graph.at(1)->SetPointError(0, 0., 0., sig1D, sig1U);
-  stylePlot(a_graph.at(1).get(), kGreen + 1 - (iFile), transp, 1001, 0, 1.5, 1, 3);
-
-  a_graph.at(2) = std::make_unique<TGraphAsymmErrors>(1);
-  a_graph.at(2)->SetName((varName + "_best_" + toStr(nVar) + "_" + toStr(nStep)).c_str());
-  a_graph.at(2)->SetPoint(0, nVar, best_fit + nStep);
-  a_graph.at(2)->SetPointError(0, 0., 0., 0., 0.);
-  stylePlot(a_graph.at(2).get(), kBlack, 1., 0, 0, 1.5, 1, 2);
+    a_graph.at(2) = std::make_unique<TGraphAsymmErrors>(1);
+    a_graph.at(2)->SetName((varName + "_best_" + toStr(nVar) + "_" + toStr(nStep)).c_str());
+    a_graph.at(2)->SetPoint(0, nVar, best_fit + nStep);
+    a_graph.at(2)->SetPointError(0, 0., 0., 0., 0.);
+    stylePlot(a_graph.at(2).get(), kBlack, 1., 0, 0, 1.5, 1, 2);
   };
 
-  // std::cout << "Point 4 " << std::endl;
+  std::cout << "BP 2 " << std::endl;
   // a_graph.at(3) = std::make_unique<TGraphAsymmErrors>(1);
   // a_graph.at(4) = std::make_unique<TGraphAsymmErrors>(1);
   // a_graph.at(5) = std::make_unique<TGraphAsymmErrors>(1);
@@ -168,37 +163,36 @@ std::array<std::unique_ptr<TGraphAsymmErrors>, 3> makeConstraintGraph(const std:
   //   }
   //   std::cout << "BP 3a " << file2->Get(("linear_"+varName+"_sigma1").c_str()) << std::endl;
   //   std::cout << "BP 3b " << file2->Get(("linear_"+varName+"_sigma2").c_str()) << std::endl;
-  //   if ( file2->Get(("linear_"+varName+"_sigma1").c_str()) && file2->Get(("linear_"+varName+"_sigma2").c_str()) ) {
-  //     auto g_src1 = std::unique_ptr<TGraphAsymmErrors>(dynamic_cast<TGraphAsymmErrors *>(( file2->Get(("linear_"+varName+"_sigma1").c_str() ))->Clone() ));
-  //     auto g_src2 = std::unique_ptr<TGraphAsymmErrors>(dynamic_cast<TGraphAsymmErrors *>(( file2->Get(("linear_"+varName+"_sigma2").c_str() ))->Clone() ));
+    // if ( file2->Get(("linear_"+varName+"_sigma1").c_str()) && file2->Get(("linear_"+varName+"_sigma2").c_str()) ) {
+    //   auto g_src1 = std::unique_ptr<TGraphAsymmErrors>(dynamic_cast<TGraphAsymmErrors *>(( file2->Get(("linear_"+varName+"_sigma1").c_str() ))->Clone() ));
+    //   auto g_src2 = std::unique_ptr<TGraphAsymmErrors>(dynamic_cast<TGraphAsymmErrors *>(( file2->Get(("linear_"+varName+"_sigma2").c_str() ))->Clone() ));
       
-  //     double best_fit = 0., dummy = 0.;
-  //     g_src1->GetPoint(0, best_fit, dummy);
-  //     const double sig1U = g_src1->GetErrorXhigh(0), sig1D = g_src1->GetErrorXlow(0);
-  //     const double sig2U = g_src2->GetErrorXhigh(0), sig2D = g_src2->GetErrorXlow(0);
+    //   double best_fit = 0., dummy = 0.;
+    //   g_src1->GetPoint(0, best_fit, dummy);
+    //   const double sig1U = g_src1->GetErrorXhigh(0), sig1D = g_src1->GetErrorXlow(0);
+    //   const double sig2U = g_src2->GetErrorXhigh(0), sig2D = g_src2->GetErrorXlow(0);
 
-  //     a_graph.at(3) = std::make_unique<TGraphAsymmErrors>(1);
-  //     a_graph.at(3)->SetName((varName + "_sig2_" + toStr(nVar) + "_" + toStr(nStep)).c_str());
-  //     a_graph.at(3)->SetPoint(0, nVar, best_fit + nStep);
-  //     a_graph.at(3)->SetPointError(0, 0., 0., sig2D, sig2U);
-  //     stylePlot(a_graph.at(3).get(), kOrange -8, 0.5, 1001, 0, 1.5, 1, 3);
+    //   a_graph.at(3) = std::make_unique<TGraphAsymmErrors>(1);
+    //   a_graph.at(3)->SetName((varName + "_sig2_" + toStr(nVar) + "_" + toStr(nStep)).c_str());
+    //   a_graph.at(3)->SetPoint(0, nVar, best_fit + nStep);
+    //   a_graph.at(3)->SetPointError(0, 0., 0., sig2D, sig2U);
+    //   stylePlot(a_graph.at(3).get(), kOrange -8, 1., 1001, 0, 1.5, 1, 3);
 
-  //     a_graph.at(4) = std::make_unique<TGraphAsymmErrors>(1);
-  //     a_graph.at(4)->SetName((varName + "_sig1_" + toStr(nVar) + "_" + toStr(nStep)).c_str());
-  //     a_graph.at(4)->SetPoint(0, nVar, best_fit + nStep);
-  //     a_graph.at(4)->SetPointError(0, 0., 0., sig1D, sig1U);
-  //     stylePlot(a_graph.at(4).get(), kGreen -10, 0.5, 1001, 0, 1.5, 1, 3);
+    //   a_graph.at(4) = std::make_unique<TGraphAsymmErrors>(1);
+    //   a_graph.at(4)->SetName((varName + "_sig1_" + toStr(nVar) + "_" + toStr(nStep)).c_str());
+    //   a_graph.at(4)->SetPoint(0, nVar, best_fit + nStep);
+    //   a_graph.at(4)->SetPointError(0, 0., 0., sig1D, sig1U);
+    //   stylePlot(a_graph.at(4).get(), kGreen -10, 1., 1001, 0, 1.5, 1, 3);
 
-  //     a_graph.at(5) = std::make_unique<TGraphAsymmErrors>(1);
-  //     a_graph.at(5)->SetName((varName + "_best_" + toStr(nVar) + "_" + toStr(nStep)).c_str());
-  //     a_graph.at(5)->SetPoint(0, nVar, best_fit + nStep);
-  //     a_graph.at(5)->SetPointError(0, 0., 0., 0., 0.);
-  //     stylePlot(a_graph.at(5).get(), kBlack, 1., 0, 0, 1.5, 1, 2);
-  //         std::cout << "BP 4 " << std::endl;
+    //   a_graph.at(5) = std::make_unique<TGraphAsymmErrors>(1);
+    //   a_graph.at(5)->SetName((varName + "_best_" + toStr(nVar) + "_" + toStr(nStep)).c_str());
+    //   a_graph.at(5)->SetPoint(0, nVar, best_fit + nStep);
+    //   a_graph.at(5)->SetPointError(0, 0., 0., 0., 0.);
+    //   stylePlot(a_graph.at(5).get(), kBlack, 1., 0, 0, 1.5, 1, 2);
+    //       std::cout << "BP 4 " << std::endl;
 
-  //   };
-  // };
-
+    //};
+  //};
   return a_graph;
 
 }
@@ -227,8 +221,6 @@ std::string variableString(const std::vector<std::string> &v_src, std::vector<in
       varStr = varStr + "_" + v_src.at(v_ind.at(iI));
 
     return varStr + "_" + v_src.at(index);
-    return varStr;
-
   }
 
   // ok fine it's somewhere in the middle
@@ -245,25 +237,27 @@ std::string variableString(const std::vector<std::string> &v_src, std::vector<in
   return varStr;
 }
 
-std::array<double, 2> iterativeConstraint(const std::string &fileName, const int &iFile,const std::vector<std::string> &v_var, std::vector<int> &v_index, std::vector<int> &v_unsorted,
+std::array<double, 2> iterativeConstraint(const std::vector<std::string> &v_var,const std::string &opName, std::vector<int> &v_index, std::vector<int> &v_unsorted,
                                           std::vector<std::unique_ptr<TGraphAsymmErrors>> &v_graph, const std::string &best) {
   int iMin = -1;
+  //int iMin_2nd=-1;
   double minSig1 = 9999., minSig2 = 9999.;
-
+  double minSig1_2nd = 9999., minSig2_2nd = 9999.;
   for (long unsigned int iV = 0; iV < v_var.size(); ++iV) {
     if (std::count(std::begin(v_index), std::end(v_index), iV)) continue;
-      std::cout << "Point 4 " << std::endl;
 
-    auto a_tmp = makeConstraintGraph(fileName,iFile,variableString(v_var, v_index, iV), (iV * 5) + 3, v_index.size());
-      std::cout << "Point 5 " << std::endl;
+    auto a_tmp = makeConstraintGraph(variableString(v_var, v_index, iV),opName, (iV * 5) + 3, v_index.size());
 
     if (a_tmp.at(0) != nullptr) {
-      for (auto &tmp : a_tmp)
+      for (auto &tmp : a_tmp){
+        //if ( tmp->GetErrorYlow(0) == 0.) break;
         tmp->SetPointError(0, 2.999, 1.999, tmp->GetErrorYlow(0), tmp->GetErrorYhigh(0));
-      std::cout << "Point 6 " << std::endl;
+      }
 
       if (a_tmp.at(0)->GetErrorYlow(0) + a_tmp.at(0)->GetErrorYhigh(0) < minSig2) {
-              std::cout << "Point 7 " << std::endl;
+        // iMin_2nd = iMin;
+        // minSig1_2nd = minSig1;
+        // minSig2_2nd = minSig2;
         iMin = iV;
         minSig1 = a_tmp.at(1)->GetErrorYlow(0) + a_tmp.at(1)->GetErrorYhigh(0);
         minSig2 = a_tmp.at(0)->GetErrorYlow(0) + a_tmp.at(0)->GetErrorYhigh(0);
@@ -275,6 +269,9 @@ std::array<double, 2> iterativeConstraint(const std::string &fileName, const int
 
   std::cout << "Best in iteration " << v_index.size() + 1 << ": " << v_var.at(iMin)
             << ", 1 sigma width " << minSig1 << ", 2 sigma width " << minSig2 << " at index " << iMin << std::endl;
+  // std::cout << "2nd Best in iteration " << v_index.size() + 1 << ": " << v_var.at(iMin_2nd)
+  //           << ", 1 sigma width " << minSig1_2nd << ", 2 sigma width " << minSig2_2nd << " at index " << iMin_2nd << std::endl;
+
   v_index.push_back(std::distance(std::begin(v_var), std::find(std::begin(v_var), std::end(v_var), best)));
   v_unsorted.push_back(v_index.back());
 
@@ -288,30 +285,43 @@ void singleFitReport(const std::string &pdfName, const std::string &opName = "",
   // start by making the snake graph at each step
   std::vector<std::unique_ptr<TGraphAsymmErrors>> v_graph;
   const int nStep = 1;
-  const std::string fileName = "/afs/desy.de/user/z/zimermma/work/EFTFitter/output-2016-1D/sigleObsFit/2016UL_stat_1000PE_MCStatFixed/"+opName+"/"+opName+"_dchi2.root";
-  //const std::string fileName2 ="/afs/desy.de/user/z/zimermma/work/EFTFitter/output-2016-1D/sigleObsFit/2016preUL_stat/"+opName+"/"+opName+"_dchi2.root";
 
   double snakeSig1, snakeSig2;
-  // make the snake graph and modify its x error to cover entire range
+  //make the snake graph and modify its x error to cover entire range
   std::string varAsSnake = (showSnake) ? "snake_spinHeli" : "cHel";
-  auto a_tmp = makeConstraintGraph(fileName,0,"", 55, 0);
+  //auto a_tmp = makeConstraintGraph(varAsSnake,opName, 55, 0);
+  auto a_tmp = makeConstraintGraph("",opName, 55, 0);
+  std::cout << "BP 5 " << std::endl;
 
-  // and some manipulations to get these to look right
-  for (auto &tmp : a_tmp)
+  //and some manipulations to get these to look right
+  for (auto &tmp : a_tmp){
+    std::cout << "BP 6 " << std::endl;
     tmp->SetPointError(0, 110., 110., tmp->GetErrorYlow(0), tmp->GetErrorYhigh(0));
+    std::cout << "BP 6.1 " << std::endl;
+  };
   stylePlot(a_tmp.at(0).get(), kGray + 1, 1., 1001, 0, 1.5, 1, 3);
   stylePlot(a_tmp.at(1).get(), kGray + 2, 1., 1001, 0, 1.5, 1, 3);
   stylePlot(a_tmp.at(2).get(), kBlack, 1., 0, 0, 1.5, 2, 1);
-  
+  // stylePlot(a_tmp.at(3).get(), kGray + 1, 1., 1001, 0, 1.5, 1, 3);
+  // stylePlot(a_tmp.at(4).get(), kGray + 2, 1., 1001, 0, 1.5, 1, 3);
+  // stylePlot(a_tmp.at(5).get(), kBlack, 1., 0, 0, 1.5, 2, 1);
+        std::cout << "BP 7 " << std::endl;
+
+
   snakeSig1 = a_tmp.at(1)->GetErrorYlow(0) + a_tmp.at(1)->GetErrorYhigh(0);
   snakeSig2 = a_tmp.at(0)->GetErrorYlow(0) + a_tmp.at(0)->GetErrorYhigh(0);
-  
+
+          std::cout << "BP 8 " << std::endl;
+
+
   std::move(std::begin(a_tmp), std::end(a_tmp), std::back_inserter(v_graph));
+            std::cout << "BP 9 " << std::endl;
+
 
   // map for the plot settings - key is opName, value is y axis range
   std::map<std::string, std::array<double, 2>> m_plot_config;
   m_plot_config.insert({"ctG", {0.0001, 0.4999}});
-  m_plot_config.insert({"ut", {-0.1499, 0.1499}});
+  m_plot_config.insert({"ut", {-0.1999, 0.1999}});
   m_plot_config.insert({"dt", {-0.1999, 0.1999}});
   m_plot_config.insert({"cmm", {-0.1999, 0.1999}});
   m_plot_config.insert({"cmp", {-0.04999, 0.04999}});
@@ -321,29 +331,29 @@ void singleFitReport(const std::string &pdfName, const std::string &opName = "",
   m_plot_config.insert({"c1", {-6.4999, 6.4999}});
   m_plot_config.insert({"c3", {-2.4999, 2.4999}});
   m_plot_config.insert({"c123", {-0.7999, 0.7999}});
-  m_plot_config.insert({"b1k", {-0.04999, 0.04999}});
-  m_plot_config.insert({"b2k", {-0.04999, 0.04999}});
-  m_plot_config.insert({"b1r", {-0.04999, 0.04999}});
-  m_plot_config.insert({"b2r", {-0.04999, 0.04999}});
-  m_plot_config.insert({"b1n", {-0.04999, 0.04999}});
-  m_plot_config.insert({"b2n", {-0.04999, 0.04999}});
-  m_plot_config.insert({"b1j", {-0.04999, 0.04999}});
-  m_plot_config.insert({"b2j", {-0.04999, 0.04999}});
-  m_plot_config.insert({"b1q", {-0.04999, 0.04999}});
-  m_plot_config.insert({"b2q", {-0.04999, 0.04999}});
-  m_plot_config.insert({"ckk", {-0.11999, 0.11999}});
-  m_plot_config.insert({"crr", {-0.11999, 0.11999}});
-  m_plot_config.insert({"cnn", {-0.11999, 0.11999}});
-  m_plot_config.insert({"cPrk", {-0.11999, 0.11999}});
-  m_plot_config.insert({"cMrk", {-0.11999, 0.11999}});
-  m_plot_config.insert({"cPnr", {-0.11999, 0.11999}});
-  m_plot_config.insert({"cMnr", {-0.11999, 0.11999}});
-  m_plot_config.insert({"cPnk", {-0.11999, 0.11999}});
-  m_plot_config.insert({"cMnk", {-0.11999, 0.11999}});
-  m_plot_config.insert({"ckj", {-0.11999, 0.11999}});
-  m_plot_config.insert({"crq", {-0.11999, 0.11999}});
-  m_plot_config.insert({"cPrj", {-0.11999, 0.11999}});
-  m_plot_config.insert({"cMrj", {-0.11999, 0.11999}});
+  m_plot_config.insert({"b1k", {-0.025999, 0.025999}});
+  m_plot_config.insert({"b2k", {-0.025999, 0.025999}});
+  m_plot_config.insert({"b1r", {-0.025999, 0.025999}});
+  m_plot_config.insert({"b2r", {-0.025999, 0.025999}});
+  m_plot_config.insert({"b1n", {-0.025999, 0.025999}});
+  m_plot_config.insert({"b2n", {-0.025999, 0.025999}});
+  m_plot_config.insert({"b1j", {-0.025999, 0.025999}});
+  m_plot_config.insert({"b2j", {-0.025999, 0.025999}});
+  m_plot_config.insert({"b1q", {-0.025999, 0.025999}});
+  m_plot_config.insert({"b2q", {-0.025999, 0.025999}});
+  m_plot_config.insert({"ckk", {-0.07999, 0.07999}});
+  m_plot_config.insert({"crr", {-0.07999, 0.07999}});
+  m_plot_config.insert({"cnn", {-0.07999, 0.07999}});
+  m_plot_config.insert({"cPrk", {-0.07999, 0.07999}});
+  m_plot_config.insert({"cMrk", {-0.07999, 0.07999}});
+  m_plot_config.insert({"cPnr", {-0.07999, 0.07999}});
+  m_plot_config.insert({"cMnr", {-0.07999, 0.07999}});
+  m_plot_config.insert({"cPnk", {-0.07999, 0.07999}});
+  m_plot_config.insert({"cMnk", {-0.07999, 0.07999}});
+  m_plot_config.insert({"ckj", {-0.07999, 0.07999}});
+  m_plot_config.insert({"crq", {-0.07999, 0.07999}});
+  m_plot_config.insert({"cPrj", {-0.07999, 0.07999}});
+  m_plot_config.insert({"cMrj", {-0.07999, 0.07999}});
 
   std::map<std::string, std::string> root_ope_config;
   root_ope_config.insert({"ctG", "c_{tG} / {#Lambda}^2"});
@@ -389,19 +399,11 @@ void singleFitReport(const std::string &pdfName, const std::string &opName = "",
                                            "c_rkP", "c_rkM", "c_nrP", "c_nrM", "c_nkP", "c_nkM"/*,
                                            "cLab", "LL_dPhi"*/};
 
-
   // make the graphs for each step - keep track of two vectors, one sorted one not...
   std::vector<int> v_hInd, v_nInd;
   std::vector<std::array<double, 2>> v_band;
 
-  v_band.push_back( iterativeConstraint(fileName,0,v_hStr, v_hInd, v_nInd, v_graph, "cHel") );
-  a_tmp = makeConstraintGraph(fileName,0,"", 55, 0);
-
-  // bellow needed in case one wants fit to different datasets overlaid to the same plot 
-  //std::vector<int> v_hInd2, v_nInd2;
-  //v_band.push_back( iterativeConstraint(fileName2,1,v_hStr,v_hInd2, v_nInd2, v_graph, "cHel") );
-
-  std::cout << "Point 5 " << std::endl;
+  v_band.push_back( iterativeConstraint(v_hStr, opName, v_hInd, v_nInd, v_graph, "cHel") );
 
   //std::cout << "snake_spinCorr fit: 1 sigma width " <<  snakeSig1 << ", 2 sigma width " << snakeSig2 << std::endl;
 
@@ -434,20 +436,17 @@ void singleFitReport(const std::string &pdfName, const std::string &opName = "",
 
   auto &axis = v_graph.at(2);
   axis->GetHistogram()->GetXaxis()->Set(5 * v_hStr.size(), 0., 5. * v_hStr.size());
-  std::cout << "Point 8 " << std::endl;
 
   for (long unsigned int iV = 0; iV < 5 * v_hStr.size(); ++iV) {
     const std::string binStr = (iV % 5 != 2) ? "" : v_bStr.at(std::floor(iV / 5));
     axis->GetHistogram()->GetXaxis()->SetBinLabel(iV + 1, binStr.c_str());
   }
-  std::cout << "Point 9 " << std::endl;
 
   // axisPlot(axis.get(),
   //          -1.999, 1.999, "#hat #mu _{t} / #Lambda^{2} [TeV^{-2}]", 0.057, 0.47, 0.067,
   //          0., 0., "", 0.053, 1.11, 0.053);
   // axis->GetXaxis()->SetNdivisions(-v_hStr.size());
   // axis->GetXaxis()->SetTickSize(0.01);
-  std::cout << "Point 10 " << std::endl;
   const double &yMin = m_plot_config.at(opName).at(0), yMax = m_plot_config.at(opName).at(1);
   const std::string &legOperator =  root_ope_config.at(opName);
   axisPlot(axis.get(),
@@ -458,7 +457,6 @@ void singleFitReport(const std::string &pdfName, const std::string &opName = "",
   //axis->GetXaxis()->SetNdivisions(-v_hStr.size());
   //axis->GetYaxis()->SetNdivisions(220);
   axis->GetXaxis()->SetTickSize(0.01);
-  std::cout << "Point11 " << std::endl;
   // need to find first non-null index
   int isFirstValid = -1;
   for (long unsigned int iV = 3 * nStep; iV < v_graph.size(); ++iV) {
@@ -466,7 +464,6 @@ void singleFitReport(const std::string &pdfName, const std::string &opName = "",
     isFirstValid = iV;
     break;
   }
-  std::cout << "Point 12 " << std::endl;
   auto leg = std::make_unique<TLegend>();
   if (showSnake) leg->AddEntry(v_graph.at(2).get(), "Full best fit", "l");
   leg->AddEntry(v_graph.at(isFirstValid + 2).get(), "Best fit", "l");
@@ -477,7 +474,6 @@ void singleFitReport(const std::string &pdfName, const std::string &opName = "",
 
   // making the canvas
   setH1Style();
-  std::cout << "Point 13 " << std::endl;
   auto can = std::make_unique<TCanvas>("can", "can", 200, 10, 1920, 1080);
   can->SetTopMargin(0.09);
   can->SetBottomMargin(0.13);
@@ -490,7 +486,6 @@ void singleFitReport(const std::string &pdfName, const std::string &opName = "",
   txt.SetTextAlign(13);
 
   can->cd();
-  std::cout << "Point 14 " << std::endl;
 
   if (showSnake) {
     styleLegend(leg.get(), 2, 0, 0, 42, 0.043, "");

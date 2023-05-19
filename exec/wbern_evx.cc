@@ -14,7 +14,7 @@
 
 //g++ `root-config --cflags --evelibs` -std=c++17 -O3 -Wall -Wextra -Wpedantic -Werror -Wno-float-equal -Wno-sign-compare -I ./src -o ./exec/wbern_evx_total ./src/EFTFitter.cc ./exec/wbern_evx.cc
 
-//g++ `root-config --cflags --evelibs` -std=c++17 -O3 -Wall -Wextra -Wpedantic -Werror -Wno-float-equal -Wno-sign-compare -I ./src -o ./exec/wbern_evx_test ./src/EFTFitter.cc ./exec/wbern_evx.cc
+//g++ `root-config --cflags --evelibs` -std=c++17 -O3 -Wall -Wextra -Wpedantic -Werror -Wno-float-equal -Wno-sign-compare -I ./src -o ./exec/wbern_evx_stat ./src/EFTFitter.cc ./exec/wbern_evx.cc
 
 // g++ `root-config --cflags --evelibs` -std=c++17 -O3 -Wall -Wextra -Wpedantic -Werror -Wno-float-equal -Wno-sign-compare -o ./exec/wbern_evo ./exec/wbern_evo.cc ./src/EFTFitter.cc
 // for iOp in ut cvv c1 dt cmm cva c3 cav c123 cmp; do ${condorDir}/condorSubmit.sh -s ${condorDir}/condorParam.txt -w ${condorDir}/condorRun.sh -n wbern_evo_${iOp} -l ./wbern_0519/evolution_sm_tmp/${iOp} -e ./exec/wbern_evo -a "${iOp}"; sleep 0.1; done
@@ -57,12 +57,12 @@ bool independentSet(const std::vector<int> &v_index, const int &index) {
     // {22}, //ctra
     // {23}, //csca
     // Excluding observables that are not available from Bernreuther predictions
-    {19}, //ckj
-    {20}, //ckq
-    {24}, //cP_rj
-    {25}, //cM_rj
-    {26}, //c_kjL
-    {27}, //c_rqL
+   // {19}, //ckj
+  //  {20}, //ckq
+  //  {24}, //cP_rj
+   // {25}, //cM_rj
+   // {26}, //c_kjL
+   // {27}, //c_rqL
     // Excluding identities uf up to 5 observables (list is non exaustive)
     {10, 11, 12, 34}, // cHel = cii / 3
     {11, 12, 15, 30, 34}, //ckk -> cPnr cnrP
@@ -99,29 +99,31 @@ bool independentSet(const std::vector<int> &v_index, const int &index) {
 
 
     {10, 11, 12, 21}, // cHan = cii / 3
+    {10, 12, 21, 22}, // crr -> ctra
     {11, 12, 19, 21}, // cHan = cii / 3
     {10, 12, 20, 21}, // cHan = cii / 3
-    {19, 12, 20, 21}, // cHan = cii / 3
+    {12, 19, 20, 21}, // cHan = cii / 3
 
-    {10, 11, 12, 22}, // cSca = cii / 3
-    {11, 12, 19, 22}, // cSca = cii / 3
-    {10, 12, 20, 22}, // cSca = cii / 3
-    {19, 12, 20, 22}, // cSca = cii / 3
+    {10, 11, 12, 22}, // cTra = cii / 3
+    {11, 12, 19, 22}, // cTra = cii / 3
+    {10, 12, 20, 22}, // cTra = cii / 3
+    {12, 19, 20, 22}, // cTra = cii / 3
 
-    {10, 11, 12, 23}, // cTra = cii / 3
-    {11, 12, 19, 23}, // cTra = cii / 3
-    {10, 12, 20, 23}, // cTra = cii / 3
-    {19, 12, 20, 23}, // cTra = cii / 3
+    {10, 11, 12, 23}, // cSca = cii / 3
+    {11, 12, 19, 23}, // cSca = cii / 3
+    {10, 12, 20, 23}, // cSca = cii / 3
+    {12, 19, 20, 23}, // cSca = cii / 3
+    
 
     {10, 11, 12, 24}, // ckjL = cii / 3
     {11, 12, 19, 24}, // ckjL = cii / 3
     {10, 12, 20, 24}, // ckjL = cii / 3
-    {19, 12, 20, 24}, // ckjL = cii / 3
+    {12, 19, 20, 24}, // ckjL = cii / 3
 
     {10, 11, 12, 25}, // cqrL = cii / 3
-    {19, 12, 20, 25}, // cqrL = cii / 3
-    {19, 12, 20, 25}, // cqrL = cii / 3
-    {19, 12, 20, 25}, // cqrL = cii / 3
+    {12, 19, 20, 25}, // cqrL = cii / 3
+    {12, 19, 20, 25}, // cqrL = cii / 3
+    {12, 19,20, 25}, // cqrL = cii / 3
 
     {21, 22, 23, 34},  // CHan, cTra, csca, Chels alike
     {22, 23, 24, 34},  // ckjL,  cTra,  csca,  Chels alike
@@ -141,24 +143,28 @@ bool independentSet(const std::vector<int> &v_index, const int &index) {
     {10, 22, 23}, // ckk csca ctra
     {15, 22, 23, 30}, //ckk -> cPnr cnrP, csca ctra
     {16, 22, 23, 31}, //ckk -> cMnr cnrM, csca ctra
+    
+    {11,12,22,23}, //crr cnn, csca,ctra
+    {12,17,22,23,32}, // crr -> cPnk cnkP
+    {12,18,22,23,33}, // crr -> CMnk cnkM   
 
     {11, 21, 22}, //crr chan ctra
     {17, 21, 22, 32}, // crr -> cPnk cnkP, chan ctra
     {18, 21, 22, 33}, // crr -> cMnk cnkM, chan ctra
 
     {12, 21, 23}, //cnn chan csca
-    {13, 28, 21, 23}, //cnn->cPrk crkP chan csca
-    {14, 29, 21, 23}, //cnn->cMrk crkM chan csca
+    {13, 21, 23, 28}, //cnn->cPrk crkP chan csca
+    {14, 21, 23, 29}, //cnn->cMrk crkM chan csca
 
     {11, 12, 21, 34},  //crr cnn chan chel
-    {20, 12, 21, 34},  //crj cnn chan chel
+    {12, 20, 21, 34},  //crj cnn chan chel
     {11, 12, 26, 34},  //crr cnn ckjL chel
-    {20, 12, 26, 34},  //crj cnn ckjL chel
+    {12, 20, 26, 34},  //crj cnn ckjL chel
     {10, 12, 23, 34},  // ckk cnn csca chel
     {10, 12, 23, 34},  // ckk cnn csca chel
-    {19, 12, 23, 34},  // ckq cnn csca chel
+    {12, 29, 23, 34},  // ckq cnn csca chel
     {10, 12, 27, 34},  // ckk cnn crjL chel
-    {19, 12, 27, 34},  // ckq cnn crjL chel
+    {12, 29, 27, 34},  // ckq cnn crjL chel
     {10, 11, 22, 34},  // ckk crr ctra chel
     {10, 20, 22, 34},  // ckk crq ctra chel
 
@@ -522,7 +528,7 @@ int main(int argc, char** argv) {
   //const std::string inDir = "/nfs/dust/cms/user/afiqaize/cms/rand/eftRivet_290118/EFTFitter/wbern_0519/root/", opName = argv[1];
   const std::string inDir = "/afs/desy.de/user/z/zimermma/work/EFTFitter/wbern_0314/root/", opName = argv[1], max_it = argv[2];
   //const std::string inDir = "../histograms/ttbareft_translationp_Breuther_dim6top_reweighting_13TeV/", opName = argv[1];
-  const std::string covMatrix ="Systematics_AllVars_1D_228x228_1000PE/TotalStatSystCovMatrix_AllVarNorm_rebinnedA";// Modified by andre 01.02.23
+  const std::string covMatrix ="Systematics_AllVars_1D_1000PE_MCStatFixed/TotalStatCovMatrix_AllVarNorm_rebinnedA";// Modified by andre 01.02.23
   //const std::string covMatrix ="TotalStatCovMatrix_AllVarNorm_rebinnedA";
   //const std::string covMatrix ="TotalSystCovMatrix_AllVarNorm_rebinnedA";
   //const std::string covMatrix ="TotalSystStatCovMatrix_AllVarNorm_rebinnedA";
@@ -540,11 +546,18 @@ int main(int argc, char** argv) {
   //   }
 
   // goes forever due to 2D degeneracy: {cvv, c1} {cva, c3}, {cav, c123}
-  const std::map<std::string, double> m_range = {{"ctG",0.2},{"ut", 0.04}, {"cvv", 0.06}, {"c1", 0.5},
-                                                 {"dt", 0.04}, {"cmm", 0.08},
-                                                 {"cva", 0.5}, {"c3", 0.5},
-                                                 {"cav", 0.1}, {"c123", 0.5},
-                                                 {"cmp", 0.05}, {"cnn", 0.5}};
+
+  const std::map<std::string, double> m_range = {{"ctG",0.2},{"ut", 0.1}, {"cvv", 1.0}, {"c1", 6.0},
+                                                 {"dt", 0.2}, {"cmm", 0.5},
+                                                 {"cva", 1.0}, {"c3", 3.0},
+                                                 {"cav", 1.0}, {"c123", 3.0},
+                                                 {"cmp", 1.0},
+                                                 {"b1k",2.0}, {"b2k",2.0}, {"b1r",2.0}, {"b2r",2.0},
+                                                 {"b1n",2.0}, {"b2n",2.0}, {"b1j",2.0}, {"b2j",2.0},
+                                                 {"b1q",2.0}, {"b2q",2.0}, {"ckk",2.0}, {"crr",2.0},
+                                                 {"cnn",2.0}, {"cPrk",2.0}, {"cMrk",2.0}, {"cPnr",2.0},
+                                                 {"cMnr",2.0}, {"cPnk",2.0}, {"cMnk",2.0}, {"ckj",2.0},
+                                                 {"crq",2.0}, {"cPrj",2.0}, {"cMrj",2.0}};
 
   const double opRange = m_range.at(opName);
   const int binToIgnore = 0;
@@ -731,8 +744,8 @@ int main(int argc, char** argv) {
       //eft.readCovMatRoot("finalcov", "/nfs/dust/cms/user/afiqaize/cms/rand/eftRivet_290118/EFTFitter/covariance_matrix/covmat_190114.root", covMatrix, covMat_binRange);
       //eft.readCovMatRoot("finalcov", "/nfs/dust/cms/user/zimermma/EFTFitter/inputs/covariance_matrix/covmat_190114.root", "TotalStat_shape_a", covMat_binRange);
       //eft.readCovMatRoot("totalStat", "/nfs/dust/cms/user/zimermma/EFTFitter/inputs/covariance_matrix/Systematics_AllVars_1D_132x132.root", "TotalStatCovMatrix_AllVarNorm_rebinnedA", covMat_binRange);
-      eft.readCovMatRoot("finalcov", "/afs/desy.de/user/z/zimermma/work/EFTFitter/inputs/covariance_matrix/Systematics_AllVars_1D_228x228_1000PE.root", "TotalStatCovMatrix_AllVarNorm_rebinnedA", covMat_binRange);
-      //eft.readCovMatRoot("totalSyst", "/afs/desy.de/user/z/zimermma/work/EFTFitter/inputs/covariance_matrix/Systematics_AllVars_1D_228x228_1000PE.root", "TotalSystCovMatrix_AllVarNorm_rebinnedA", covMat_binRange);
+      eft.readCovMatRoot("finalcov", "/afs/desy.de/user/z/zimermma/work/EFTFitter/inputs/covariance_matrix/Systematics_AllVars_1D_1000PE_MCStatFixed.root", "TotalStatCovMatrix_AllVarNorm_rebinnedA", covMat_binRange);
+      //eft.readCovMatRoot("totalSyst", "/afs/desy.de/user/z/zimermma/work/EFTFitter/inputs/covariance_matrix/Systematics_AllVars_1D_1000PE_MCStatFixed.root", "TotalSystCovMatrix_AllVarNorm_rebinnedA", covMat_binRange);
       //eft.readCovMatRoot("finalcov", "/nfs/dust/cms/user/zimermma/EFTFitter/inputs/covariance_matrix/covMatSyst_purdue_full2016.root", covMatrix, covMat_binRange);
       //eft.makeFinalCovMat({"totalStat","totalSyst"});
 

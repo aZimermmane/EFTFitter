@@ -1,0 +1,17 @@
+# HTCondor submit file to submit all jobs
+
+executable              = /nfs/dust/cms/user/zimermma/EFTFitter/exec/condor_wbern_evx_total.sh
+arguments               = $(operator)
+log                     = /afs/desy.de/user/z/zimermma/work/EFTFitter/output-2016-1D/Systematics_AllVars_1D_1000PE_MCStatFixed/TotalStatSystCovMatrix_AllVarNorm_rebinnedA/wbern_evo_total_$(operator).log
+output                  = /afs/desy.de/user/z/zimermma/work/EFTFitter/output-2016-1D/Systematics_AllVars_1D_1000PE_MCStatFixed/TotalStatSystCovMatrix_AllVarNorm_rebinnedA/wbern_evo_total_$(operator).txt
+error                   = /afs/desy.de/user/z/zimermma/work/EFTFitter/output-2016-1D/Systematics_AllVars_1D_1000PE_MCStatFixed/TotalStatSystCovMatrix_AllVarNorm_rebinnedA/wbern_evo_total_$(operator).txt
+getenv = TRUE
+should_transfer_files   = NO
+#when_to_transfer_output = ON_EXIT #_OR_EVICT
+#request_memory          = 4G
+#request_cpus            = 1
+notification            = error
+max_retries             = 3
+#+RequestRuntime         = 10800
+#queue 1 operator in ut cvv c1 dt cmm cva c3 cav c123 cmp b1k b2k b1r b2r b1n b2n b1j b2j b1q b2q ckk crr cnn cPrk cMrk cPnr cMnr cPnk cMnk ckj crq cPrj cMrj
+queue 1 operator in cMrk ckj crq cPrj cMrj
