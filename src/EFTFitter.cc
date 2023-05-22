@@ -558,8 +558,14 @@ void EFTFitter::readCovMatRoot(const std::string &keyMat, const std::string &fil
 {
   std::cout << "Reading matrix " << histName << " from file " << fileName << 
     " and assigning it as " << keyMat << std::endl << std::endl;
-
-  const int nBin = v_rawBin.size() - 1;
+  
+  // int nBin = 0;
+  // if (fitMode == Fit::shape) {
+  //   nBin = v_rawBin.size() - 2;
+  //   std::cout << "shape, nbin:"<< nBin <<std::endl;
+  // }
+  // else 
+    const int nBin = v_rawBin.size() - 1;
 
   // if bin index range is invalid (like the default), then assume the hist matches raw inputs
   std::vector<int> v_index;
@@ -1033,7 +1039,7 @@ void EFTFitter::listKeyToFit(const std::map<std::string, std::vector<double>> &m
 
 
 
-void EFTFitter::computeFitChi2(const std::vector<Sample> &v_sample, int binToIgnore)
+void EFTFitter::computeFitChi2(const std::vector<Sample> &v_sample, int binToIgnore, bool DEBUG)
 {
   const bool rateFit = (fitMode == Fit::hybrid and v_rawBin.empty());
 
@@ -1048,7 +1054,6 @@ void EFTFitter::computeFitChi2(const std::vector<Sample> &v_sample, int binToIgn
   const std::vector<std::array<double, 2>> &dataContent = m_binContent.at({dataName, Sample::all});
   const int nBin = dataContent.size(), iXs = (statMode == Stat::xsec) ? 0 : 1;
   const double dataInt = getContentSum(dataContent);
-
   // ok here we copy and invert the matrix because this is what we actually use
   // a bit of shenanigan needed in case of shape fit since we need to ignore one bin for convertible matrix
   // on the other hand interpolation needs to see the full template, so it must not be done any earlier
@@ -1056,8 +1061,9 @@ void EFTFitter::computeFitChi2(const std::vector<Sample> &v_sample, int binToIgn
   // number of stitched templates obtained assuming shapes sum up to 1
   const int nBinEach = (nBin - 2) / int(shapeSum);
   const int nHist = (nBin - 2) / nBinEach;
-  //std::cout << "ignore " << binToIgnore << " nBin " << nBin << " nBinEach " << nBinEach << " nHist " << nHist << std::endl;
-
+  if (DEBUG)
+    std::cout << "DEBUG: binToignore=" << binToIgnore << " nBin=" << nBin << " nBinEach=" << nBinEach << " nHist=" << nHist << std::endl;
+  
   // reset the bin index in case requested argument doesn't make sense
   // probably fine to do so silently, it's only used to verify the bin dropper works correctly
   if (binToIgnore >= nBinEach or binToIgnore < 0)
@@ -1084,13 +1090,15 @@ void EFTFitter::computeFitChi2(const std::vector<Sample> &v_sample, int binToIgn
       iShpC = 0;
       for (int iAbsC = 0; iAbsC < nBin - 2; ++iAbsC) {
         if (iAbsC % nBinEach == binToIgnore) continue;
-
+        if (DEBUG)
+          std::cout << "DEBUG: invMat( " << iShpR << "," << iShpC  << ") = m_covMat.at(\"finalcov\")(" << iAbsR << "," << iAbsC << ") "<< std::endl;
         invMat(iShpR, iShpC) = m_covMat.at("finalcov")(iAbsR, iAbsC);
         ++iShpC;
-      }
 
+      }
       ++iShpR;
     }
+    //return;
   }
 
   // std::cout << "" << TDecompLU(invMat).Condition() << std::endl; // condition number of the matrix
@@ -1106,29 +1114,36 @@ void EFTFitter::computeFitChi2(const std::vector<Sample> &v_sample, int binToIgn
       double fitChi2 = 0.;
       for (int iAbsR = 2; iAbsR < nBin; ++iAbsR) {
         if (fitMode == Fit::shape and ((iAbsR - 2) % nBinEach == binToIgnore)) {
-          ++iShpR;
-          continue;
+         ++iShpR;
+        ++iShpC;
+         continue;
         }
 
         // the actual matrix index, which is strictly related to the actual row/col indices and offset
         // but doing it like this improves readability slightly
         int iMatR = iAbsR - 2 - iShpR;
+        //std::cout << "iAbsR: " << iAbsR << " iMatR: " << iMatR << " iShpR: " << iShpR  << std::endl;
 
-        iShpC = 0;
+        // iShpC = 0;
         for (int iAbsC = iAbsR; iAbsC < nBin; ++iAbsC) {
-          if (fitMode == Fit::shape and ((iAbsC - 2) % nBinEach == binToIgnore)) {
-            ++iShpC;
-            continue;
-          }
+        //for (int iAbsC = 2; iAbsC < nBin; ++iAbsC) {
+
+        //  if (fitMode == Fit::shape and ((iAbsC - 2) % nBinEach == binToIgnore)) {
+        //     ++iShpC;
+        //     continue;
+        //   }
           int iMatC = iAbsC - 2 - iShpC;
+          //std::cout << "iAbsC: " << iAbsC << " iMatC: " << iMatC << " iShpC: " << iShpC  << std::endl;
           double factor = (iMatR == iMatC) ? 1. : 2.;
 
           // first compute the bin differences
           const double deltaR = (dataInt * dataContent.at(iAbsR).at(0)) - (opInt * opContent.at(iAbsR).at(0));
-          const double deltaC = (dataInt * dataContent.at(iAbsC).at(0)) - (opInt * opContent.at(iAbsC).at(0));
-
+          const double deltaC = (dataInt * dataContent.at(iAbsC).at(0)) - (opInt * opContent.at(iAbsC).at(0));;
+          if (DEBUG)
+            std::cout << "DEBUG: template bin: ( " << iAbsR << "," << iAbsC  << ") with invMat bin: " << iMatR << "," << iMatC << ") "<< std::endl;
           fitChi2 += deltaR * deltaC * invMat(iMatR, iMatC) * factor;
         }
+
       }
 
       if (fitMode == Fit::hybrid and dataContent.at(iXs).at(0) > 0.) {
@@ -1137,6 +1152,7 @@ void EFTFitter::computeFitChi2(const std::vector<Sample> &v_sample, int binToIgn
       }
 
       m_fitChi2.insert({{key, samp}, fitChi2});
+
     }
   }
 
