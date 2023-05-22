@@ -17,37 +17,25 @@ int main() {
 
   // these are just to avoid writing them out repeatedly
   //const std::string obsName = "cHel";
-  const std::string sumName = "TTbarSpinDensityMatrix/sumWgt_noCut";
-  //const std::string input_dir = "/nfs/dust/cms/user/zimermma/histograms/makeHistograms/coffeaSpin/";
-  //const std::string input_dir = "/nfs/dust/cms/user/zimermma/histograms/eftsamples_ttbar_eft_fcnc_Breuther_dim6top_reweighting_13TeV_extra/";
-  const std::string input_dir = "/nfs/dust/cms/user/zimermma/histograms/ttbareft_translationp_Breuther_dim6top_reweighting_13TeV/";
-  //const std::string mcSample = "ttbareft_4f_Breuther_dim6top_reweighting_13TeV";
-  //const std::string mcSample = "eftsamples_ttbar_eft_fcnc_Breuther_dim6top_reweighting_13TeV";
-  const std::string mcSample = "ttbareft_translationp_Breuther_dim6top_reweighting_13TeV";
-  const int nRebin = 4;
+  const std::string input_dir = "/nfs/dust/cms/user/zimermma/analyseRoot/hists/ttbareft_translationp_Breuther_dim6top_reweighting_13TeV/";
+  const std::string mcSample = "hist_Nevents10000000";
+  const int nRebin = 1;
   //const std::string fitMode = eft.dumpFitMode();
-  const double k_nnlo_lo = 1.667296656, br_tt_2l = 0.041062412; // NNLO/LO k-factor
-  //const double k_nnlo_lo = 1.0 , br_tt_2l = 0.06635231524673364;
-  //const double k_nnlo_lo = 1.0 , br_tt_2l = 1.0;
-  //const std::vector<std::string> opNameStr = {/*"ctu8","ctq8","ctd8","cQu8","cQq83","cQq81",*/
-  //                                            "cQd8"
-  //                                          /*,"ctG","ctGI"*/};
-  //const std::vector<std::string> opNameStr = { "cmp" ,"cmmfcnc"}
-  const std::vector<std::string> opNameStr = {"cAVp","cVAp","cVVp","cAAp","c1p","c3p",
-                                             "c1mc2pc3p","ctG","ctGI"};
-  //const std::vector<std::string> opNameStr ={"ctG"};
-  //const std::vector<std::string> opLatexStr ={"c_{tG}"};
-  //const std::vector<std::string> opLatexStr = { "c_{-+}" ,"c_{--}"}
-  const std::vector<std::string> opLatexStr = {"c'_{AV}","c'_{VA}","c'_{VV}","c'_{AA}","c'_{1}","c'_{3}",
-                                             "c'_{1}-c'_{2}+c'_{3}","c_{tG}","c_{tG}^{I}"};
-  //const std::vector<std::string>  WCvalueList = {"-2"};
-  const std::vector<std::string> WCvalueList = {"-5","-2","-1","1","2","5"};
+  const double k_nnlo_lo = 1.0 , br_tt_2l = 1.0;
+  //const std::vector<std::string> opNameStr = {"cAVp","cVAp","cVVp","cAAp","c1p","c3p",
+  //                                           "c1mc2pc3p","ctG","ctGI"};
+  const std::vector<std::string> opNameStr ={"ctG","cVVp"};
+  //const std::vector<std::string> opLatexStr = {"c'_{AV}","c'_{VA}","c'_{VV}","c'_{AA}","c'_{1}","c'_{3}",
+  //                                           "c'_{1}-c'_{2}+c'_{3}","c_{tG}","c_{tG}^{I}"};
+  const std::vector<std::string> opLatexStr ={"c_{tG}","cVVp"};
+  const std::vector<std::string> WCvalueList = {"-5","-1","-0.1","-0.05","0.05","0.1","1","5"};
+  //const std::vector<std::string> WCvalueList = {"-5","-2","-1","1","2","5"};
   //const std::vector<std::string> WCvalueList = {"-0.1","-0.01","0.01","0.1"};
   for (int i = 0; i < opNameStr.size(); ++i) {
     const std::string &opName = opNameStr.at(i);
     const std::string &opLatex = opLatexStr.at(i);
-    const std::vector<std::string> spinVarStr = {"b1k", "b2k", "b1j", "b2j","b1r", "b2r", "b1q", "b2q", "b1n", "b2n","ckk", "ckj", "crr", "crq", "cnn", "cHel", "cHan","cSca",
-    "cTra","cPrk","cMrk", "cPrj", "cMrj", "cPnr", "cMnr", "cPnk", "cMnk"};
+    //const std::vector<std::string> spinVarStr = {"b1k", "b2k", "b1j", "b2j","b1r", "b2r", "b1q", "b2q", "b1n", "b2n","ckk", "ckj", "crr", "crq", "cnn", "cHel", "cHan","cSca",
+    //"cTra","cPrk","cMrk", "cPrj", "cMrj", "cPnr", "cMnr", "cPnk", "cMnk"};
                    //"bPkk","bMkk","bPjj","bMjj","bPrr","bMrr","bPqq","bMqq","bPnn","bMnn",
                    //"ckjL","crqL",
                    //"cPqk", "cMqk",
@@ -58,9 +46,10 @@ int main() {
 
     //const std::vector<std::string> spinVarStr = {"ttbar_mass_no_cut","ttbar_pt_no_cut", "lepton_pt_no_cut","lepton_eta_no_cut"};
     //const std::vector<std::string> spinVarStr = {"b1k"};
+    const std::vector<std::string> spinVarStr = {"cHel_mtt_flat","cHel_cosThetaTopBeam_flat"};
 
-     const std::vector<std::string> spinVarLatex = {"b_{k}^{1}", "b_{k}^{2}","b_{k*}^{1}", "b_{k*}^{2}", "b_{r}^{1}", "b_{r}^{2}","b_{r*}^{1}", "b_{r*}^{2}", "b_{n}^{1}", "b_{n}^{2}","c_{kk}", "c_{kj}","c_{rr}","c_{rq}","c_{nn}","c_{Hel}","c_{Han}","c_{Sca}","c_{Tra}","c_{rk}+c_{kr}"
-     ,"c_{rk}-c_{kr}","c_{rk*}+c_{k*r}", "c_{rk*}-c_{k*r}", "c_{nr}+c_{rn}", "c_{nr}-c_{rn}", "c_{nk}+c_{kn}", "c_{nk}-c_{kn}" };
+    // const std::vector<std::string> spinVarLatex = {"b_{k}^{1}", "b_{k}^{2}","b_{k*}^{1}", "b_{k*}^{2}", "b_{r}^{1}", "b_{r}^{2}","b_{r*}^{1}", "b_{r*}^{2}", "b_{n}^{1}", "b_{n}^{2}","c_{kk}", "c_{kj}","c_{rr}","c_{rq}","c_{nn}","c_{Hel}","c_{Han}","c_{Sca}","c_{Tra}","c_{rk}+c_{kr}"
+    // ,"c_{rk}-c_{kr}","c_{rk*}+c_{k*r}", "c_{rk*}-c_{k*r}", "c_{nr}+c_{rn}", "c_{nr}-c_{rn}", "c_{nk}+c_{kn}", "c_{nk}-c_{kn}" };
 
                                                    //"b_{k}^{1}+b_{k}^{2}","b_{k}^{1}-b_{k}^{2}","b_{k*}^{1}+b_{k*}^{2}","b_{k*}^{1}-b_{k*}^{2}","b_{r}^{1}+b_{r}^{2}","b_{r}^{1}-b_{r}^{2}","b_{r*}^{1}+b_{r*}^{2}","b_{r*}^{1}-b_{r*}^{2}","b_{r}^{n}+b_{n}^{2}","b_{n}^{1}-b_{n}^{2}",
 
@@ -69,10 +58,8 @@ int main() {
                                                    //"c_{r*k}+c_{kr*}", "c_{r*k}-c_{kr*}",
                                                    //"c_{rk}^{+}", "c_{rk}^{-}", "c_{rj}^{+}", "c_{rj}^{-}", "c_{qk}^{+}", "c_{qk}^{-}", "c_{nr}^{+}", "c_{nr}^{-}","c_{nk}^{+}", "c_{nk}^{-}"
 
-    //const std::vector<std::string> spinVarLatex = {"b_{x}^{1}", "b_{x}^{2}","b_{y}^{1}", "b_{y}^{2}","b_{z}^{1}", "b_{z}^{2}","b_{x*}^{1}", "b_{x*}^{2}","b_{y*}^{1}", "b_{y*}^{2}","b_{z*}^{1}", "b_{z*}^{2}","c_{xx}","c_{yy}","c_{zz}","c_{xx*}","c_{yy*}","c_{zz*}"};
-    //const std::vector<std::string> spinVarLatex = {"b_{x}^{1}", "b_{x}^{2}","b_{x*}^{1}", "b_{x*}^{2}"};
     //const std::vector<std::string> spinVarLatex = {"m_{tt}","pt_{tt}", "pt_{l}","eta_{l}"};
-    //const std::vector<std::string> spinVarLatex = {"b_{k}^{1}"};
+    const std::vector<std::string> spinVarLatex = {"c_{hel} x m_{tt}","c_{hel} x cos#Theta_{t}"};
   //const std::vector<std::array<int, 2>> v_snake = {{1, 6}, {7, 12}, {13, 18}, {19, 24}, {25, 30}, {31, 36}, {37, 42},
     //                                      {43, 48}, {49, 54}, {55, 60}, {61, 66}, {67, 72}, {73, 78}, {79, 84},
     //                                      {85, 90}, {91, 96}, {97, 102}, {103, 108}, {109, 114},
@@ -86,10 +73,10 @@ int main() {
 
 
   // Creating a directory
-  mkdir(("./fit_output/"+mcSample+"/").c_str(), 0777);
-  mkdir(("./fit_output/"+mcSample+"/dumplinear").c_str(), 0777);
-  if (mkdir(("./fit_output/"+mcSample+"/dumplinear/").c_str(), 0777) != -1) std::cout << "Directory created";
-  if (mkdir(("./fit_output/"+mcSample+"/dumplinear/"+opName+"/").c_str(), 0777) != -1) std::cout << "Directory created";
+  mkdir(("/afs/desy.de/user/z/zimermma/work/EFTFitter/fit_output/"+mcSample+"/").c_str(), 0777);
+  mkdir(("/afs/desy.de/user/z/zimermma/work/EFTFitter/fit_output/"+mcSample+"/dumplinear").c_str(), 0777);
+  if (mkdir(("/afs/desy.de/user/z/zimermma/work/EFTFitter/fit_output/"+mcSample+"/dumplinear/").c_str(), 0777) != -1) std::cout << "Directory created";
+  if (mkdir(("/afs/desy.de/user/z/zimermma/work/EFTFitter/fit_output/"+mcSample+"/dumplinear/"+opName+"/").c_str(), 0777) != -1) std::cout << "Directory created";
 
 
   for (int iVar = 0; iVar < spinVarStr.size(); ++iVar) {
@@ -100,7 +87,7 @@ int main() {
     for (int iVar  = 0; iVar  < WCvalueList.size(); ++iVar) {
       const std::string &WCvalue = WCvalueList.at(iVar);
 
-    const std::string output_dir = "./fit_output/"+mcSample+"/dumplinear/"+opName+"/"+hName +"/";
+    const std::string output_dir = "/afs/desy.de/user/z/zimermma/work/EFTFitter/fit_output/"+mcSample+"/dumplinear/"+opName+"/"+hName +"/";
     { // Creating a directory
     if (mkdir((output_dir).c_str(), 0777) != -1) std::cout << "Directory created";}
     { // Creating a directory
@@ -135,8 +122,8 @@ int main() {
   //eft.addRawInput("data", EFT::Sample::all, input_dir + "covariance_matrix/unfolded_data_190114.root",
   //               "TTbarSpinDensityMatrix/" + hName + "_absolute_data_a", "", 1, {0., 0.}, EFT::Stat::xsec);
 
-    eft.addRawInput(opName+"_0", EFT::Sample::all, input_dir + mcSample+"_SM_hist.root",
-                        histName, "", nRebin, {(k_nnlo_lo / br_tt_2l), 0.}, EFT::Stat::xsec);
+    eft.addRawInput(opName+"_0", EFT::Sample::all, input_dir + mcSample+"_baseline.root",
+                        histName+"_baseline", "", nRebin, {(k_nnlo_lo / br_tt_2l), 0.}, EFT::Stat::xsec);
 
   //eft.addRawInput("c1_0", EFT::Sample::all, input_dir + "SM_hist.root",
   //                      histName, "", nRebin, {(k_nnlo_lo / br_tt_2l), 0.}, EFT::Stat::xsec);
@@ -151,10 +138,10 @@ int main() {
   //eft.addRawInput("u_-0.15", EFT::Sample::all, input_dir + "ttbareft_translation2_dim6top_reweighting_13TeV_u_m0p15_hist.root",
   //                histName, "", nRebin, {(k_nnlo_lo / br_tt_2l), 0.}, EFT::Stat::xsec);
 
-    eft.addRawInput(opName+"_-4", EFT::Sample::all, input_dir + mcSample+"_"+opName+"_m4_hist.root",
-                                  histName, "", nRebin, {(k_nnlo_lo / br_tt_2l), 0.}, EFT::Stat::xsec);
-    eft.addRawInput(opName+"_8", EFT::Sample::all, input_dir + mcSample+"_"+opName+"_8_hist.root",
-                  histName, "", nRebin, {(k_nnlo_lo / br_tt_2l), 0.}, EFT::Stat::xsec);
+    eft.addRawInput(opName+"_-4", EFT::Sample::all, input_dir + mcSample+"_"+opName+"_m4.root",
+                                  histName+"_"+opName+"_m4", "", nRebin, {(k_nnlo_lo / br_tt_2l), 0.}, EFT::Stat::xsec);
+    eft.addRawInput(opName+"_8", EFT::Sample::all, input_dir + mcSample+"_"+opName+"_8.root",
+                  histName+"_"+opName+"_8", "", nRebin, {(k_nnlo_lo / br_tt_2l), 0.}, EFT::Stat::xsec);
 
 
   // prepare the base for interpolation ie compute individual contribution at 1
@@ -199,7 +186,7 @@ int main() {
       vt_keySampleLegend.push_back({"data", EFT::Sample::all, "SM"});
   // //
       eft.drawHistogram(vt_keySampleLegend,
-                      output_dir+"c"+WCvalue +"/"+ opName+"_" + hName + "", "Fraction", hNameLatex , 0.0001, 1.0, 0.96, 1.03, true,  "", false, "simple");
+                      output_dir+"c"+WCvalue +"/"+ opName+"_" + hName + "", "dif. cross. sec.", hNameLatex , 0.0001, 1.0, 0.889, 1.099  , true,  "", true, "simple");
   //
   // void drawHistogram(const std::vector< std::tuple<std::string, Sample, std::string> > &vt_keySampleLegend,
   //                    const std::string &plotName, const std::string &yLabel, const std::string &xLabel,

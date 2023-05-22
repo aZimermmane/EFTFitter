@@ -10,21 +10,26 @@ int main() {
   using EFT = EFTFitter;
 
   // construction done with the key we want to treat as data, lambda, fit mode and stat mode
-  EFT eft("data", 1., EFT::Fit::shape, EFT::Stat::xsec,3.);
+  EFT eft("data", 1., EFT::Fit::shape, EFT::Stat::xsec,1.);
 
   // these are just to avoid writing them out repeatedly
-  const std::string input_dir = "../histograms/ttbareft_translationp_Breuther_dim6top_reweighting_13TeV/";
-  const std::string output_dir = "/afs/desy.de/user/z/zimermma/work/EFTFitter/fit_output/ttbareft_translationp_Breuther_dim6top_reweighting_13TeV";
+  const std::string input_dir = "../analyseRoot/hists/ttbareft_translationp_Breuther_dim6top_reweighting_13TeV/";
+  const std::string mcSample = "hist_Nevents10000000";
+  const std::string output_dir = "/afs/desy.de/user/z/zimermma/work/EFTFitter/fit_output/" + mcSample ;
   // const std::string covMat_file = "./inputs/covariance_matrix/covMatStat_purdue_full2016.root";
   // const std::string covMat = "TotalStatCovMatrix_AllVarNorm_rebinnedA";
-  const std::string histName = "gen_cLab";
+  const std::string histName = "gen_cHel_mtt_flat";
+  const std::string opName = "ctG";
   const std::string sumName = ""; //Modified by Andre 02.02..23
       //const std::string sumName = "TTbarSpinDensityMatrix/sumWgt_noCut";
-  const int histIndex = 35; // index of Hist in the order it appears on the covMatt, ranging from 1 to 22
+  //const int histIndex = 34; // index of Hist in the order it appears on the covMatt, ranging from 1 to 22
+  const int histIndex = 34; // index of Hist in the order it appears on the covMatt, ranging from 1 to 22
+  int binToIgnore = 0;
   const int nRebin = 1;
-  const int nCovMatBins = 6;
+  const int nCovMatBins = 6*4;
   //const double k_nnlo_lo = 1.667296656, br_tt_2l = 0.041062412; // NNLO/LO k-factor
-  const double k_nnlo_lo = 1.0 , br_tt_2l = 0.06635231524673364;
+  //const double k_nnlo_lo = 1.0 , br_tt_2l = 0.06635231524673364;
+  std::vector<std::array<int, 2>> covMat_binRange;
 
 
   // add the input file and hist names (including if necessary the sum of weight hist for normalization)
@@ -39,22 +44,20 @@ int main() {
   // xsec given is some dummy values (with k-factor applied), last arg stands for the kind of histogram given: count vs xsec
   // more explanation in header
   // SM
-  eft.addRawInput("ctG_0", EFT::Sample::all, input_dir + "ttbareft_translationp_Breuther_dim6top_reweighting_13TeV_SM_hist.root",
-                  histName, sumName, nRebin, {(k_nnlo_lo / br_tt_2l), 0.}, EFT::Stat::xsec);
 
-  // 1D inputs - here c1 = 10 and c1 = 272 is chosen as raw inputs
-  eft.addRawInput("ctG_-4", EFT::Sample::all, input_dir + "ttbareft_translationp_Breuther_dim6top_reweighting_13TeV_ctG_m4_hist.root",
-                  histName, sumName, nRebin, {(k_nnlo_lo / br_tt_2l), 0.}, EFT::Stat::xsec);
-
-  eft.addRawInput("ctG_8", EFT::Sample::all, input_dir + "ttbareft_translationp_Breuther_dim6top_reweighting_13TeV_ctG_8_hist.root",
-                  histName, sumName, nRebin, {(k_nnlo_lo / br_tt_2l), 0.}, EFT::Stat::xsec);
+    eft.addRawInput(opName+"_0", EFT::Sample::all, input_dir + mcSample+"_baseline.root",
+                        histName+"_baseline", "", nRebin, {0., 0.}, EFT::Stat::xsec);
+    eft.addRawInput(opName+"_-4", EFT::Sample::all, input_dir + mcSample+"_"+opName+"_m4.root",
+                                  histName+"_"+opName+"_m4", "", nRebin, {0., 0.}, EFT::Stat::xsec);
+    eft.addRawInput(opName+"_8", EFT::Sample::all, input_dir + mcSample+"_"+opName+"_8.root",
+                  histName+"_"+opName+"_8", "", nRebin, {0., 0.}, EFT::Stat::xsec);
 
   // prepare the base for interpolation ie compute individual contribution at 1
   eft.prepareInterpolationBase();
 
   // in case of fitting to MC
   // assign as data a particular key of choice
-  eft.assignAsData("ctG_0", EFT::Sample::all);
+  eft.assignAsData(opName+"_0", EFT::Sample::all);
 
   /*/ data needs to be in the list to be drawn - in the braces are key, type and legend text
   std::vector<std::tuple<std::string, EFT::Sample, std::string>> vt_keySampleLegend;
@@ -78,8 +81,10 @@ int main() {
   // eft.readCovMatRoot("totalSyst", "./inputs/covariance_matrix/covMatSyst_purdue_full2016.root", "TotalSystCovMatrix_AllVarNorm_rebinnedA",{{(histIndex-1)*nCovMatBins+1, (histIndex-1)*nCovMatBins+(nCovMatBins)}});
   //eft.readCovMatRoot("totalStat", "/afs/desy.de/user/z/zimermma/work/EFTFitter/inputs/covariance_matrix/Systematics_AllVars_1D_228x228_1000PE.root", "TotalStatCovMatrix_AllVarNorm_rebinnedA",{{(histIndex-1)*nCovMatBins+1, (histIndex-1)*nCovMatBins+(nCovMatBins)}});
 //  eft.readCovMatRoot("totalSyst", "./inputs/covariance_matrix/Systematics_AllVars_1D_132x132.root", "TotalSystCovMatrix_AllVarNorm_rebinnedA",{{(histIndex-1)*nCovMatBins+1, (histIndex-1)*nCovMatBins+(nCovMatBins)}});
-
-  eft.readCovMatRoot("finalcov", "/afs/desy.de/user/z/zimermma/work/EFTFitter/inputs/covariance_matrix/Systematics_AllVars_1D_228x228_1000PE.root", "TotalStatCovMatrix_AllVarNorm_rebinnedA",{{1+(histIndex*nCovMatBins), (histIndex+1)*nCovMatBins}});
+  covMat_binRange.push_back({(1+(histIndex) * nCovMatBins), ((histIndex + 1) * nCovMatBins)}); //modified by Andre 01.02. (always ignore the first bin of each dib)
+  //eft.readCovMatRoot("finalcov", "/afs/desy.de/user/z/zimermma/work/EFTFitter/inputs/covariance_matrix/Systematics_AllVars_1D_1000PE_MCStatFixed.root", "TotalStatCovMatrix_AllVarNorm_rebinnedA", covMat_binRange);
+  //eft.readCovMatRoot("finalcov", "/afs/desy.de/user/z/zimermma/work/EFTFitter/inputs/covariance_matrix/covmat_190114.root", "TotalStat_shape_a", covMat_binRange);
+  eft.readCovMatRoot("finalcov", "/afs/desy.de/user/z/zimermma/work/EFTFitter/inputs/covariance_matrix/Systematics_AllVars_2D_100PE_MCStatFixed.root", "TotalStatCovMatrix_AllVarNorm_rebinnedA", covMat_binRange);
 
 // can add more matrices if needed
   //eft.readCovMatRoot("totalSyst", input_dir + "/unfolded_data.root", "other_matrix_name");
@@ -121,13 +126,14 @@ int main() {
   eft.listKeyToFit({ {"ctG", v_opPoint} });
 
   const std::vector<EFT::Sample> v_sample = {EFT::Sample::all, EFT::Sample::linear};
-  eft.computeFitChi2(v_sample);
-
+  //eft.computeFitChi2(v_sample);
+  eft.computeFitChi2(v_sample,binToIgnore);
+  
   // now we provide the op for which we wanna draw the dChi2 plot on
   // insert into map: op key, op string in plot, op range (if none, select by dChi2), y axis range, x axis range
   std::map<std::string, std::tuple<std::string, std::vector<double>, std::array<double, 2>, std::array<double, 2>>> m_1D;
   //m_1D.insert({"c1", { "c1", {/* op range in min, max */}, {0., 9.999}, {-1.499, 1.999} }});
-  m_1D.insert({"ctG", { "ctG", {/* op range in min, max */}, {0., 9.999}, {-0.1, 0.2} }});
+  m_1D.insert({"ctG", { "ctG", {/* op range in min, max */}, {0., 9.999}, {-0.2, 0.4} }});
 
   // in this case we just draw for cQq11 - also include a filename for the resulting plot
   eft.draw1DChi2(m_1D, output_dir + "ctG_constraint", v_sample);
@@ -141,5 +147,5 @@ int main() {
 
   //eft.draw2DChi2(m_2D_all, output_dir + "c1_c2_constraint", v_sample);
 
-  return 0;
-}
+   return 0;
+ }
