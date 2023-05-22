@@ -127,7 +127,7 @@ class EFTFitter {
   /// compute the test statistic for a given set of keys and fill into map
   /// can control if want the fit only for a sample
   /// also which bin to ignore in case of shape fit (for the automatic bin dropper algo)
-  void computeFitChi2(const std::vector<Sample> &v_sample = {Sample::all, Sample::linear}, int binToIgnore = 1);
+  void computeFitChi2(const std::vector<Sample> &v_sample = {Sample::all, Sample::linear}, int binToIgnore = 1, bool DEBUG=false);
 
   /// save the computed chi2 into a tree
   void saveFitChi2(const std::string &fileName = "./fit");
