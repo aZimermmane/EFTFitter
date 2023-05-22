@@ -1,0 +1,98 @@
+
+Processing plotEvolution.cc++("../fit_output/ttbareft_translationp_Breuther_dim6top_reweighting_13TeV/TotalStatCovMatrix_AllVarNorm_rebinnedA/ut/ut_evolution.root","../fit_output/ttbareft_translationp_Breuther_dim6top_reweighting_13TeV/TotalSystStatCovMatrix_AllVarNorm_rebinnedA/ut/ut_evolution.pdf","ut",false,false)...
+Best in iteration 1: cHel, best fit value 0, 1 sigma width 0.012592, 2 sigma width 0.025184 at index 19
+Best in iteration 2: ckk, best fit value 0, 1 sigma width 0.011528, 2 sigma width 0.023056 at index 10
+Best in iteration 3: cnn, best fit value 0, 1 sigma width 0.009936, 2 sigma width 0.019864 at index 12
+Best in iteration 4: cM_rk, best fit value 0, 1 sigma width 0.009752, 2 sigma width 0.019504 at index 14
+Best in iteration 5: cM_nr, best fit value 0, 1 sigma width 0.00944, 2 sigma width 0.018872 at index 16
+Best in iteration 6: b1j, best fit value 0, 1 sigma width 0.009376, 2 sigma width 0.018752 at index 6
+Best in iteration 7: b2q, best fit value 0, 1 sigma width 0.009344, 2 sigma width 0.01868 at index 9
+Best in iteration 8: b2n, best fit value 0, 1 sigma width 0.009248, 2 sigma width 0.018488 at index 5
+
+Processing plotEvolution.cc++("../fit_output/ttbareft_translationp_Breuther_dim6top_reweighting_13TeV/TotalStatCovMatrix_AllVarNorm_rebinnedA/dt/dt_evolution.root","../fit_output/ttbareft_translationp_Breuther_dim6top_reweighting_13TeV/TotalSystStatCovMatrix_AllVarNorm_rebinnedA/dt/dt_evolution.pdf","dt",false,false)...
+Best in iteration 1: cM_nr, best fit value 0, 1 sigma width 0.020056, 2 sigma width 0.040104 at index 16
+Best in iteration 2: cM_nk, best fit value 0, 1 sigma width 0.019368, 2 sigma width 0.038736 at index 18
+Best in iteration 3: ckk, best fit value 0, 1 sigma width 0.019344, 2 sigma width 0.038688 at index 10
+Best in iteration 4: cHel, best fit value 0, 1 sigma width 0.01932, 2 sigma width 0.038632 at index 19
+Best in iteration 5: b1r, best fit value 0, 1 sigma width 0.01928, 2 sigma width 0.03856 at index 2
+Best in iteration 6: b2n, best fit value 0, 1 sigma width 0.019264, 2 sigma width 0.03852 at index 5
+Best in iteration 7: b1j, best fit value 0, 1 sigma width 0.01924, 2 sigma width 0.038472 at index 6
+Best in iteration 8: b2r, best fit value 0, 1 sigma width 0.019224, 2 sigma width 0.03844 at index 3
+
+Processing plotEvolution.cc++("../fit_output/ttbareft_translationp_Breuther_dim6top_reweighting_13TeV/TotalStatCovMatrix_AllVarNorm_rebinnedA/cmm/cmm_evolution.root","../fit_output/ttbareft_translationp_Breuther_dim6top_reweighting_13TeV/TotalSystStatCovMatrix_AllVarNorm_rebinnedA/cmm/cmm_evolution.pdf","cmm",false,false)...
+Best in iteration 1: cM_nk, best fit value 0, 1 sigma width 0.033008, 2 sigma width 0.066 at index 18
+Best in iteration 2: cM_nr, best fit value 0, 1 sigma width 0.029168, 2 sigma width 0.058336 at index 16
+Best in iteration 3: b1n, best fit value 0, 1 sigma width 0.028816, 2 sigma width 0.057616 at index 4
+Best in iteration 4: b2n, best fit value 0, 1 sigma width 0.028608, 2 sigma width 0.057216 at index 5
+Best in iteration 5: b1r, best fit value 0, 1 sigma width 0.028576, 2 sigma width 0.057152 at index 2
+Best in iteration 6: cHel, best fit value 0, 1 sigma width 0.028544, 2 sigma width 0.057088 at index 19
+Best in iteration 7: b2k, best fit value 0, 1 sigma width 0.028528, 2 sigma width 0.057056 at index 1
+Best in iteration 8: cP_rk, best fit value 0, 1 sigma width 0.028512, 2 sigma width 0.057024 at index 13
+
+Processing plotEvolution.cc++("../fit_output/ttbareft_translationp_Breuther_dim6top_reweighting_13TeV/TotalStatCovMatrix_AllVarNorm_rebinnedA/cmp/cmp_evolution.root","../fit_output/ttbareft_translationp_Breuther_dim6top_reweighting_13TeV/TotalSystStatCovMatrix_AllVarNorm_rebinnedA/cmp/cmp_evolution.pdf","cmp",false,false)...
+Best in iteration 1: b1n, best fit value 0, 1 sigma width 0.01239, 2 sigma width 0.02477 at index 4
+Best in iteration 2: b2n, best fit value 0, 1 sigma width 0.00943, 2 sigma width 0.01885 at index 5
+Best in iteration 3: cM_nk, best fit value 0, 1 sigma width 0.00922, 2 sigma width 0.01844 at index 18
+Best in iteration 4: b2j, best fit value 0, 1 sigma width 0.00916, 2 sigma width 0.01832 at index 7
+Best in iteration 5: b1r, best fit value 0, 1 sigma width 0.0091, 2 sigma width 0.01819 at index 2
+Best in iteration 6: crr, best fit value 0, 1 sigma width 0.00897, 2 sigma width 0.01793 at index 11
+Best in iteration 7: cHel, best fit value 0, 1 sigma width 0.00886, 2 sigma width 0.01771 at index 19
+Best in iteration 8: cP_rk, best fit value 0, 1 sigma width 0.00876, 2 sigma width 0.01752 at index 13
+
+Processing plotEvolution.cc++("../fit_output/ttbareft_translationp_Breuther_dim6top_reweighting_13TeV/TotalStatCovMatrix_AllVarNorm_rebinnedA/cvv/cvv_evolution.root","../fit_output/ttbareft_translationp_Breuther_dim6top_reweighting_13TeV/TotalSystStatCovMatrix_AllVarNorm_rebinnedA/cvv/cvv_evolution.pdf","cvv",false,false)...
+Best in iteration 1: cHel, best fit value 0, 1 sigma width 0.034188, 2 sigma width 0.068376 at index 19
+Best in iteration 2: cnn, best fit value 0, 1 sigma width 0.02802, 2 sigma width 0.05604 at index 12
+Best in iteration 3: crr, best fit value 0, 1 sigma width 0.025284, 2 sigma width 0.050556 at index 11
+Best in iteration 4: b1k, best fit value 0, 1 sigma width 0.0249, 2 sigma width 0.049788 at index 0
+Best in iteration 5: cM_rk, best fit value 0, 1 sigma width 0.024528, 2 sigma width 0.049056 at index 14
+Best in iteration 6: cM_nk, best fit value 0, 1 sigma width 0.023568, 2 sigma width 0.047136 at index 18
+Best in iteration 7: b2n, best fit value 0, 1 sigma width 0.023232, 2 sigma width 0.046452 at index 5
+Best in iteration 8: b2r, best fit value 0, 1 sigma width 0.022464, 2 sigma width 0.044916 at index 3
+
+Processing plotEvolution.cc++("../fit_output/ttbareft_translationp_Breuther_dim6top_reweighting_13TeV/TotalStatCovMatrix_AllVarNorm_rebinnedA/cva/cva_evolution.root","../fit_output/ttbareft_translationp_Breuther_dim6top_reweighting_13TeV/TotalSystStatCovMatrix_AllVarNorm_rebinnedA/cva/cva_evolution.pdf","cva",false,false)...
+Best in iteration 1: b1k, best fit value 0, 1 sigma width 0.029, 2 sigma width 0.058 at index 0
+Best in iteration 2: b2k, best fit value 0, 1 sigma width 0.019, 2 sigma width 0.038 at index 1
+Best in iteration 3: cP_nr, best fit value 0, 1 sigma width 0.0185, 2 sigma width 0.037 at index 15
+Best in iteration 4: cnn, best fit value 0, 1 sigma width 0.0178, 2 sigma width 0.0355 at index 12
+Best in iteration 5: b2r, best fit value 0, 1 sigma width 0.0169, 2 sigma width 0.0338 at index 3
+Best in iteration 6: cHel, best fit value 0, 1 sigma width 0.0165, 2 sigma width 0.033 at index 19
+Best in iteration 7: b1n, best fit value 0, 1 sigma width 0.016, 2 sigma width 0.032 at index 4
+Best in iteration 8: cM_rk, best fit value 0, 1 sigma width 0.0153, 2 sigma width 0.0306 at index 14
+
+Processing plotEvolution.cc++("../fit_output/ttbareft_translationp_Breuther_dim6top_reweighting_13TeV/TotalStatCovMatrix_AllVarNorm_rebinnedA/cav/cav_evolution.root","../fit_output/ttbareft_translationp_Breuther_dim6top_reweighting_13TeV/TotalSystStatCovMatrix_AllVarNorm_rebinnedA/cav/cav_evolution.pdf","cav",false,false)...
+Best in iteration 1: b1j, best fit value 0, 1 sigma width 0.06056, 2 sigma width 0.12112 at index 6
+Best in iteration 2: b2j, best fit value 0, 1 sigma width 0.0407, 2 sigma width 0.08138 at index 7
+Best in iteration 3: b1q, best fit value 0, 1 sigma width 0.03566, 2 sigma width 0.0713 at index 8
+Best in iteration 4: b2q, best fit value 0, 1 sigma width 0.0323, 2 sigma width 0.06458 at index 9
+Best in iteration 5: cnn, best fit value 0, 1 sigma width 0.03002, 2 sigma width 0.06004 at index 12
+Best in iteration 6: cM_rk, best fit value 0, 1 sigma width 0.0294, 2 sigma width 0.05878 at index 14
+Best in iteration 7: cHel, best fit value 0, 1 sigma width 0.02836, 2 sigma width 0.05672 at index 19
+
+Processing plotEvolution.cc++("../fit_output/ttbareft_translationp_Breuther_dim6top_reweighting_13TeV/TotalStatCovMatrix_AllVarNorm_rebinnedA/c1/c1_evolution.root","../fit_output/ttbareft_translationp_Breuther_dim6top_reweighting_13TeV/TotalSystStatCovMatrix_AllVarNorm_rebinnedA/c1/c1_evolution.pdf","c1",false,false)...
+Best in iteration 1: cHel, best fit value 0, 1 sigma width 0.2798, 2 sigma width 0.5595 at index 19
+Best in iteration 2: cnn, best fit value 0, 1 sigma width 0.2284, 2 sigma width 0.4567 at index 12
+Best in iteration 3: crr, best fit value 0, 1 sigma width 0.2058, 2 sigma width 0.4115 at index 11
+Best in iteration 4: b1k, best fit value 0, 1 sigma width 0.2026, 2 sigma width 0.4052 at index 0
+Best in iteration 5: cM_rk, best fit value 0, 1 sigma width 0.1997, 2 sigma width 0.3993 at index 14
+Best in iteration 6: cM_nk, best fit value 0, 1 sigma width 0.1919, 2 sigma width 0.3838 at index 18
+Best in iteration 7: b2n, best fit value 0, 1 sigma width 0.1891, 2 sigma width 0.3781 at index 5
+Best in iteration 8: b2r, best fit value 0, 1 sigma width 0.1828, 2 sigma width 0.3656 at index 3
+
+Processing plotEvolution.cc++("../fit_output/ttbareft_translationp_Breuther_dim6top_reweighting_13TeV/TotalStatCovMatrix_AllVarNorm_rebinnedA/c3/c3_evolution.root","../fit_output/ttbareft_translationp_Breuther_dim6top_reweighting_13TeV/TotalSystStatCovMatrix_AllVarNorm_rebinnedA/c3/c3_evolution.pdf","c3",false,false)...
+Best in iteration 1: b1k, best fit value 0, 1 sigma width 0.2316, 2 sigma width 0.4632 at index 0
+Best in iteration 2: b2k, best fit value 0, 1 sigma width 0.1519, 2 sigma width 0.3038 at index 1
+Best in iteration 3: cP_nr, best fit value 0, 1 sigma width 0.1476, 2 sigma width 0.2952 at index 15
+Best in iteration 4: cnn, best fit value 0, 1 sigma width 0.1417, 2 sigma width 0.2834 at index 12
+Best in iteration 5: b2r, best fit value 0, 1 sigma width 0.1349, 2 sigma width 0.2698 at index 3
+Best in iteration 6: cHel, best fit value 0, 1 sigma width 0.132, 2 sigma width 0.2639 at index 19
+Best in iteration 7: b1n, best fit value 0, 1 sigma width 0.1276, 2 sigma width 0.2552 at index 4
+Best in iteration 8: cM_rk, best fit value 0, 1 sigma width 0.1223, 2 sigma width 0.2445 at index 14
+
+Processing plotEvolution.cc++("../fit_output/ttbareft_translationp_Breuther_dim6top_reweighting_13TeV/TotalStatCovMatrix_AllVarNorm_rebinnedA/c123/c123_evolution.root","../fit_output/ttbareft_translationp_Breuther_dim6top_reweighting_13TeV/TotalSystStatCovMatrix_AllVarNorm_rebinnedA/c123/c123_evolution.pdf","c123",false,false)...
+Best in iteration 1: b1j, best fit value 0, 1 sigma width 0.2922, 2 sigma width 0.5844 at index 6
+Best in iteration 2: b2j, best fit value 0, 1 sigma width 0.1964, 2 sigma width 0.3927 at index 7
+Best in iteration 3: b1q, best fit value 0, 1 sigma width 0.1721, 2 sigma width 0.3441 at index 8
+Best in iteration 4: b2q, best fit value 0, 1 sigma width 0.1559, 2 sigma width 0.3117 at index 9
+Best in iteration 5: cnn, best fit value 0, 1 sigma width 0.1449, 2 sigma width 0.2898 at index 12
+Best in iteration 6: cM_rk, best fit value 0, 1 sigma width 0.1419, 2 sigma width 0.2837 at index 14
+Best in iteration 7: cHel, best fit value 0, 1 sigma width 0.1369, 2 sigma width 0.2738 at index 19

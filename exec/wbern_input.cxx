@@ -3,7 +3,7 @@
 
 // root -l -b wbern_input.cxx++
 
-void addHistogram(std::vector<std::pair<std::string, std::vector<std::unique_ptr<TH1D>>>>::const_iterator iOp, 
+void addHistogram(std::vector<std::pair<std::string, std::vector<std::unique_ptr<TH1D>>>>::const_iterator iOp,
                   const std::vector<std::pair<std::string, std::vector<std::unique_ptr<TH1D>>>> &vp_hist,
                   const std::vector<std::string> v_syst, std::unique_ptr<TFile> &file,
                   std::vector<std::pair<std::string, uint>> vp_index, const double &iAdd = 0.)
@@ -22,7 +22,7 @@ void addHistogram(std::vector<std::pair<std::string, std::vector<std::unique_ptr
       std::string name = vp_iH.at(0).first + "_" + v_syst.at(vp_iH.at(0).second);
 
       // sm is of course only added
-      auto hist = std::make_unique<TH1D>("xxx", "", 22, 0., 22.);
+      auto hist = std::make_unique<TH1D>("xxx", "", 37, 0., 37.);
       auto iHist0 = std::find_if(std::begin(vp_hist), std::end(vp_hist), [&vp_iH] (auto &p) { return p.first == vp_iH.at(0).first; });
       hist->Add(iHist0->second.at(vp_iH.at(0).second).get(), 1.);
 
@@ -50,10 +50,10 @@ void addHistogram(std::vector<std::pair<std::string, std::vector<std::unique_ptr
 
 void produceFile(const std::map<std::pair<std::string, std::string>, std::vector<double>> &m_coeff,
                  const std::vector<std::string> &v_opStr = {}) {
-  // it should be 22
+  // it should be 37
   for (const auto &pair : m_coeff) {
-    if (pair.second.size() != 22) {
-      std::cout << "Ok that's weird, somehow there's an element in coeff map that doesn't have 22 elements..." << std::endl;
+    if (pair.second.size() != 37) {
+      std::cout << "Ok that's weird, somehow there's an element in coeff map that doesn't have 37 elements..." << std::endl;
       std::cout << "First faulty element is " << pair.first << std::endl;
       return;
     }
@@ -66,7 +66,7 @@ void produceFile(const std::map<std::pair<std::string, std::string>, std::vector
     opStr = opStr + "_" + v_opStr.at(iOp);
   }
 
-  const std::string outName = "/nfs/dust/cms/user/afiqaize/cms/rand/eftRivet_290118/EFTFitter/wbern_0314/root/" + opStr + "_coeff.root";
+  const std::string outName = "../wbern_0314/root/" + opStr + "_coeff.root";
   const std::vector<std::string> v_syst = {"nominal", "up", "down"};
 
   // to dump all the histograms - vec<pair> rather than map to keep push order
@@ -81,7 +81,7 @@ void produceFile(const std::map<std::pair<std::string, std::string>, std::vector
     auto &v_hist = p_hist.second;
 
     for (const std::string &syst : v_syst) {
-      v_hist.emplace_back(std::make_unique<TH1D>((p_hist.first + "_" + syst).c_str(), "", 22, 0., 22.));
+      v_hist.emplace_back(std::make_unique<TH1D>((p_hist.first + "_" + syst).c_str(), "", 37, 0., 37.));
 
       for (uint iC = 0; iC < std::begin(m_coeff)->second.size(); ++iC) {
         double coeff = m_coeff.at({p_hist.first, "nominal"}).at(iC);
@@ -121,88 +121,131 @@ void wbern_input() {
   // signs are as in WB's mail 12/03/2019 for SM (blj and blq assumed same as blk and blr)
   // EFT numbers as in WB's mail 15/03/2019
   std::map<std::pair<std::string, std::string>, std::vector<double>> m_coeff;
-  m_coeff.insert({{"sm", "nominal"}, 
+  m_coeff.insert({{"sm", "nominal"},
         {0.004, 0.004, 0.0016, 0.0016, 0.0057, 0.0057, 0., 0., 0., 0., 0.331, 0.071, 0.326, -0.206, 0., 0.00106, 0., 0.00215, 0.}});
-  m_coeff.insert({{"sm", "up"}, 
+  m_coeff.insert({{"sm", "up"},
         {0.0017, 0.0017, 0.0012, 0.0012, -0.0004, -0.0004, 0.0005, 0.0005, 0.0005, 0.0005, 0.002, -0.006, 0.002, -0.002, 0., -0.00001, 0., -0.00007, 0.}});
-  m_coeff.insert({{"sm", "down"}, 
+  m_coeff.insert({{"sm", "down"},
         {-0.0012, -0.0012, -0.0009, -0.0009, 0.0005, 0.0005, -0.0005, -0.0005, -0.0005, -0.0005, -0.002, 0.008, -0.002, 0.002, 0., 0.00001, 0., 0.00004, 0.}});
 
-  m_coeff.insert({{"ut", "nominal"}, 
+  m_coeff.insert({{"ut", "nominal"},
         {0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.917, 2.475, 2.025, 0.74, 0., 0., 0., 0., 0.}});
-  m_coeff.insert({{"ut", "up"}, 
+  m_coeff.insert({{"ut", "up"},
         {0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.006, -0.019, -0.024, 0.001, 0., 0., 0., 0., 0.}});
-  m_coeff.insert({{"ut", "down"}, 
+  m_coeff.insert({{"ut", "down"},
         {0., 0., 0., 0., 0., 0., 0., 0., 0., 0., -0.006, 0.02, 0.025, -0.002, 0., 0., 0., 0., 0.}});
 
-  m_coeff.insert({{"cvv", "nominal"}, 
+  m_coeff.insert({{"cvv", "nominal"},
         {0., 0., 0., 0., 0., 0., 0., 0., 0., 0., -1.218, -0.697, -0.0799, -0.306, 0., 0., 0., 0., 0.}});
-  m_coeff.insert({{"cvv", "up"}, 
+  m_coeff.insert({{"cvv", "up"},
         {0., 0., 0., 0., 0., 0., 0., 0., 0., 0., -0.04, -0.027, -0.0085, -0.014, 0., 0., 0., 0., 0.}});
-  m_coeff.insert({{"cvv", "down"}, 
+  m_coeff.insert({{"cvv", "down"},
         {0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.039, 0.027, 0.008, 0.014, 0., 0., 0., 0., 0.}});
 
-  m_coeff.insert({{"c1", "nominal"}, 
+  m_coeff.insert({{"c1", "nominal"},
         {0., 0., 0., 0., 0., 0., 0., 0., 0., 0., -0.151, -0.0846, -0.00821, -0.0358, 0., 0., 0., 0., 0.}});
-  m_coeff.insert({{"c1", "up"}, 
+  m_coeff.insert({{"c1", "up"},
         {0., 0., 0., 0., 0., 0., 0., 0., 0., 0., -0.007, -0.0043, -0.00108, -0.002, 0., 0., 0., 0., 0.}});
-  m_coeff.insert({{"c1", "down"}, 
+  m_coeff.insert({{"c1", "down"},
         {0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.007, 0.0041, 0.00099, 0.002, 0., 0., 0., 0., 0.}});
 
-  m_coeff.insert({{"dt", "nominal"}, 
+  m_coeff.insert({{"dt", "nominal"},
         {0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., -4.143, 0., -0.8}});
-  m_coeff.insert({{"dt", "up"}, 
+  m_coeff.insert({{"dt", "up"},
         {0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.053, 0., 0.006}});
-  m_coeff.insert({{"dt", "down"}, 
+  m_coeff.insert({{"dt", "down"},
         {0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., -0.056, 0., -0.003}});
 
-  m_coeff.insert({{"cmm", "nominal"}, 
+  m_coeff.insert({{"cmm", "nominal"},
         {0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., -1.226, 0., -2.157}});
-  m_coeff.insert({{"cmm", "up"}, 
+  m_coeff.insert({{"cmm", "up"},
         {0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., -0.004, 0., 0.108}});
-  m_coeff.insert({{"cmm", "down"}, 
+  m_coeff.insert({{"cmm", "down"},
         {0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.007, 0., -0.087}});
 
   // for the sums and differences of CP-even, split as B1 = B2
-  m_coeff.insert({{"cva", "nominal"}, 
+  m_coeff.insert({{"cva", "nominal"},
         {0.8035, 0.8035, 0.105, 0.105, 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.}});
-  m_coeff.insert({{"cva", "up"}, 
+  m_coeff.insert({{"cva", "up"},
         {0.0255, 0.0255, 0.0045, 0.0045, 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.}});
-  m_coeff.insert({{"cva", "down"}, 
+  m_coeff.insert({{"cva", "down"},
         {-0.026, -0.026, -0.0045, -0.0045, 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.}});
 
-  m_coeff.insert({{"c3", "nominal"}, 
+  m_coeff.insert({{"c3", "nominal"},
         {0.1005, 0.1005, 0.01275, 0.01275, 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.}});
-  m_coeff.insert({{"c3", "up"}, 
+  m_coeff.insert({{"c3", "up"},
         {0.0045, 0.0045, 0.0007, 0.0007, 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.}});
-  m_coeff.insert({{"c3", "down"}, 
+  m_coeff.insert({{"c3", "down"},
         {-0.0045, -0.0045, -0.0007, -0.0007, 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.}});
 
-  m_coeff.insert({{"cav", "nominal"}, 
+  m_coeff.insert({{"cav", "nominal"},
         {0., 0., 0., 0., 0., 0., 0.4415, 0.4415, 0.396, 0.396, 0., 0., 0., 0., 0., 0., 0., 0., 0.}});
-  m_coeff.insert({{"cav", "up"}, 
+  m_coeff.insert({{"cav", "up"},
         {0., 0., 0., 0., 0., 0., 0.017, 0.017, 0.02, 0.02, 0., 0., 0., 0., 0., 0., 0., 0., 0.}});
-  m_coeff.insert({{"cav", "down"}, 
+  m_coeff.insert({{"cav", "down"},
         {0., 0., 0., 0., 0., 0., -0.017, -0.017, -0.0195, -0.0195, 0., 0., 0., 0., 0., 0., 0., 0., 0.}});
 
-  m_coeff.insert({{"c123", "nominal"}, 
+  m_coeff.insert({{"c123", "nominal"},
         {0., 0., 0., 0., 0., 0., 0.0915, 0.0915, 0.082, 0.082, 0., 0., 0., 0., 0., 0., 0., 0., 0.}});
-  m_coeff.insert({{"c123", "up"}, 
+  m_coeff.insert({{"c123", "up"},
         {0., 0., 0., 0., 0., 0., 0.004, 0.004, 0.0045, 0.0045, 0., 0., 0., 0., 0., 0., 0., 0., 0.}});
-  m_coeff.insert({{"c123", "down"}, 
+  m_coeff.insert({{"c123", "down"},
         {0., 0., 0., 0., 0., 0., -0.004, -0.004, -0.0045, -0.0045, 0., 0., 0., 0., 0., 0., 0., 0., 0.}});
 
   // this last guy that is P-even but CP-odd, assume maximal CPV => B1 = -B2
-  m_coeff.insert({{"cmp", "nominal"}, 
+  m_coeff.insert({{"cmp", "nominal"},
         {0., 0., 0., 0., 2.438, -2.438, 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.}});
-  m_coeff.insert({{"cmp", "up"}, 
+  m_coeff.insert({{"cmp", "up"},
         {0., 0., 0., 0., -0.062, 0.062, 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.}});
-  m_coeff.insert({{"cmp", "down"}, 
+  m_coeff.insert({{"cmp", "down"},
         {0., 0., 0., 0., 0.054, -0.054, 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.}});
+
+  m_coeff.insert({{"cnn", "nominal"},
+              {0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 1.0, 0.0, 0., 0., 0., 0., 0.}});
+  m_coeff.insert({{"cnn", "up"},
+              {0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 1., 0.0, 0., 0., 0., 0., 0.}});
+  m_coeff.insert({{"cnn", "down"},
+              {0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 1., 0.0, 0., 0., 0., 0., 0.}});
+
 
   // fill up cHel and labs - labs needed only so snake is there, but it's never used
   // so wont bother with correlation in scales
   for (auto &p_coeff : m_coeff) {
+    const double c_rj = 0.;
+    const double c_rq = 0.;
+    p_coeff.second.push_back(c_rj);
+    p_coeff.second.push_back(c_rq);
+
+    const double cHan = -1. * (-p_coeff.second.at(10) + p_coeff.second.at(11) + p_coeff.second.at(12)) / 3.;
+    const double cSca = -1. * (p_coeff.second.at(10) - p_coeff.second.at(11) + p_coeff.second.at(12)) / 3.;
+    const double cTra = -1. * (p_coeff.second.at(10) + p_coeff.second.at(11) - p_coeff.second.at(12)) / 3.;
+    p_coeff.second.push_back(cHan);
+    p_coeff.second.push_back(cSca);
+    p_coeff.second.push_back(cTra);
+
+    const double c_Prj = 0.;
+    const double c_Mrj = 0.;
+    p_coeff.second.push_back(c_Prj);
+    p_coeff.second.push_back(c_Mrj);
+
+    const double c_kjP =  0. ;
+    const double c_rqL =  0. ;
+    p_coeff.second.push_back(c_kjP);
+    p_coeff.second.push_back(c_rqL);
+
+    const double c_rkP = -1. * (p_coeff.second.at(13) + p_coeff.second.at(12)) / 3.;
+    const double c_rkM = -1. * (p_coeff.second.at(14) + p_coeff.second.at(12)) / 3.;
+    const double c_nrP = -1. * (p_coeff.second.at(15) + p_coeff.second.at(10)) / 3.;
+    const double c_nrM = -1. * (p_coeff.second.at(16) + p_coeff.second.at(10)) / 3.;
+    const double c_nkP = -1. * (p_coeff.second.at(17) + p_coeff.second.at(11)) / 3.;
+    const double c_nkM = -1. * (p_coeff.second.at(18) + p_coeff.second.at(11)) / 3.;
+    p_coeff.second.push_back(c_rkP);
+    p_coeff.second.push_back(c_rkM);
+    p_coeff.second.push_back(c_nrP);
+    p_coeff.second.push_back(c_nrM);
+    p_coeff.second.push_back(c_nkP);
+    p_coeff.second.push_back(c_nkM);
+
     const double cHel = -1. * (p_coeff.second.at(10) + p_coeff.second.at(11) + p_coeff.second.at(12)) / 3.;
     p_coeff.second.push_back(cHel);
 
@@ -226,7 +269,7 @@ void wbern_input() {
     }
   }
 
-  const std::vector<std::string> v_op = {"ut", "cvv", "c1", "dt", "cmm", "cva", "c3", "cav", "c123", "cmp"};
+  const std::vector<std::string> v_op = {"ut", "cvv", "c1", "dt", "cmm", "cva", "c3", "cav", "c123", "cmp","cnn"};
   //const std::vector<std::string> v_op = {"ut", "cvv"};
 
   // only go 2D since first: EFTFitter won't like the huge dimensions and second: these are the highest correlated ops (ignoring degeneracies)
